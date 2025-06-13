@@ -92,6 +92,7 @@ body{
     font-weight: 300;
     color: var(--color-text);
 }
+
 .titulo span{
     font-size: 73px;
     font-weight: 700;
@@ -102,6 +103,382 @@ body{
     font-size: 63px;
     font-weight: 300;
     color: var(--color-text);
+    
+}
+.titulou::after{
+    content: "";
+    display: block;
     border-bottom: 8px solid var(--color-secondary);
     width: 200px;
+    position: relative;
+    left: 80px;
+    margin: 0 auto;
 }
+
+
+.identidad-palabras {
+      background-color: var(--color-secondary);
+      display: flex;
+      align-items: center;
+      height: 160px;
+    }
+
+    .main__title {
+      color: white;
+      font-size: 63px;
+      font-weight: 700;
+    }
+
+    .main__word {
+      color: var(--color-text);
+      border-bottom: 10px solid;
+      border-color: white;
+      font-size: 63px;
+      font-weight: 700;
+    }
+    .typed-cursor{
+        color: var(--color-text);
+    }
+@media (max-width: 575.98px) { 
+    .identidad-palabras {
+        height: 335px;
+    }
+    .main__title, .main__word{
+        font-size: 52px;
+    }
+ }
+
+.accordion {
+  display: flex; /* O también inline-block, según el diseño */
+  flex-direction: row; /* Para colocar los elementos en horizontal */
+  /* Otras propiedades según sea necesario */
+}
+
+.accordion-button {
+  align-items: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  height: 100%;
+  font-size: 30px;
+  font-weight: 300;
+  padding: .5rem;
+  color: var(--color-text);
+}
+
+.accordion button   {
+    color: var(--color-secondary);
+}
+
+.accordion-button:not(.collapsed){
+        background-color: #fff;
+}
+.accordion-button::after{ 
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"  fill="%23C1D13F" class="bi bi-plus" viewBox="0 0 16 16" > <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/> </svg>');
+    background-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    top:10%;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"   fill="%23C1D13F" class="bi bi-dash" viewBox="0 0 16 16"> <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/> </svg>');
+    background-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    
+}
+.accordion-body {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-text);
+}
+.accordion-item{
+    display: flex;
+    height: 398px;
+}
+.titulo-boletin-home{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-text);
+}
+.fecha-boletin-home{
+    font-size: 16px;
+    color: var(--color-text);
+}
+
+
+@media (max-width: 575.98px) { 
+    .accordion {
+  display: inline-block; /* O también inline-block, según el diseño */
+  flex-direction: row; /* Para colocar los elementos en horizontal */
+  /* Otras propiedades según sea necesario */
+    }
+    .accordion-button{
+        writing-mode:horizontal-tb;
+        transform: rotate(0deg);
+        font-size: 28px;
+        width: 100%;
+    }
+    .accordion-item{
+        display: inline-block;
+        height: fit-content;
+        width: 100%;
+    }
+ }
+
+/* boton leer mas boletin home */
+
+.btn-leer-mas {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  position: relative;
+  background-color: transparent;
+  transition: .2s cubic-bezier(0.19, 1, 0.22, 1);
+color: var(--color-secondary);
+  font-size: 16px;
+}
+
+.btn-leer-mas::after {
+  content: '';
+  border-bottom: 3px double var(--color-secondary);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  margin-top: -5px;
+  top: 0;
+  left: 5px;
+  visibility: hidden;
+  transition: .2s linear;
+}
+
+.btn-leer-mas .icon {
+  transform: translateX(0%);
+  transition: .2s linear;
+  animation: attention 1.2s linear infinite;
+}
+
+.btn-leer-mas:hover::after {
+  visibility: visible;
+  width: 90%;
+}
+
+.btn-leer-mas:hover {
+    color: var(--color-text);
+}
+
+.btn-leer-mas:hover > .icon {
+  transform: translateX(30%);
+  animation: none;
+}
+
+@keyframes attention {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(30%);
+  }
+}
+
+/* banner colaborativos ----------------------------------------------*/
+
+
+.banner-colavorativos {
+  padding: 20px;
+  max-width: 1320;
+  margin: 0 auto;
+  view-transition-name: banner-colavorativos;
+}
+.banner-colavorativos svg{
+    stroke: var(--color-secondary);
+}
+  .list-item:nth-child(1) {
+    margin-bottom: -23%;
+  }
+
+  .list-item:nth-child(2) {
+    margin-bottom: -23%;
+    transform: scale(0.95);
+  }
+
+  .list-item:nth-child(3) {
+    margin-bottom: -23%;
+    transform: scale(0.9);
+  }
+
+   .list-item:nth-child(4) {
+    transform: scale(0.85);
+  }
+  .expanded {
+    .list-item:nth-child(1){
+      margin-bottom: 0;
+      transform: scale(.9);
+    }
+
+    .list-item:nth-child(2),
+    .list-item:nth-child(3),
+    .list-item:nth-child(4) {
+        margin-top: -45px;
+        margin-bottom: 0;
+        transform: scale(.8);
+    }
+    .list-item:nth-child(3),.list-item:nth-child(4){
+        margin-top: -60px;
+    }
+    .show-hide-btn svg {
+      transform: rotate(180deg);
+      transition: transform 0.6s;
+    }
+  }
+
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  view-transition-name: list;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: var(--bg-fondo);
+  border-radius: 16px;
+  border: 1px solid var(--color-secondary);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+}
+
+.list-item:nth-child(1) {
+  view-transition-name: list-item-1;
+  z-index: 3;
+}
+
+.list-item:nth-child(2) {
+  view-transition-name: list-item-2;
+  z-index: 2;
+}
+
+.list-item:nth-child(3) {
+  view-transition-name: list-item-3;
+  z-index: 1;
+}
+
+.list-item:nth-child(4) {
+  view-transition-name: list-item-4;
+  z-index: 0;
+}
+
+.show-hide-btn {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin:8px auto 0 auto;
+  background: none;
+  color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+  border-radius: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  view-transition-name: show-hide-btn;
+}
+.banner-colavorativos.expanded .show-hide-btn svg {
+  transform: rotate(-180deg);
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+::view-transition-group(*) {
+  animation-duration: 0.6s;
+  animation-timing-function: linear(0, 0.402 7.4%, 0.711 15.3%, 0.929 23.7%, 1.008 28.2%, 1.067 33%, 1.099 36.9%, 1.12 41%, 1.13 45.4%, 1.13 50.1%, 1.111 58.5%, 1.019 83.2%, 1.004 91.3%, 1);
+}
+
+::view-transition-old(*),
+::view-transition-new(*) {
+  height: 100%;
+}
+
+::view-transition-old(button-label),
+::view-transition-new(button-label) {
+  width: fit-content; 
+}
+
+::view-transition-old(button-label) {
+  animation-name: fade-out;
+  animation-duration: 0.6s;
+}
+
+#branding{
+    padding: 1.5rem;
+    text-transform: uppercase;
+    position: relative;
+}
+#branding .uno, #branding .tres{
+    font-size: 96px;
+    font-weight: 900;   
+    color: var(--color-secondary);
+    line-height: 80px;
+}
+#branding .dos{
+    font-size: 160px;
+    font-weight: 900;
+    color: var(--color-text);
+    line-height: 90px;
+}
+
+
+.carousel-identidad{
+    position: absolute;
+    top: 0;
+}
+
+.carousel-item{
+    max-width: 430px;
+}
+
+@media (max-width: 575.98px) { 
+    .carousel-item{
+        width: 130px;
+        margin-top: 20px;
+    }
+        #branding .uno, #branding .tres{
+        font-size: 28px;
+        font-weight: 900;   
+        color: var(--color-secondary);
+        line-height: 20px;
+    }
+    #branding .dos{
+        font-size:56px;
+        font-weight: 900;
+        color: var(--color-text);
+        line-height: 32px;
+    }
+ }
+
+
+ footer{
+    font-size: 18px;
+ }
+ footer svg{
+    fill:#5C5B5B;
+    stroke:#5C5B5B;
+ }
