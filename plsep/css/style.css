@@ -478,14 +478,17 @@ color: var(--color-secondary);
  footer{
     font-size: 18px;
     align-items: center;
+    margin-top: 80px;
  }
 
+ .bor{
+  border-left: 10px solid var(--color-secondary);
+  padding-left: 10px;
+ }
 
  .wrapper {
   display: inline-flex;
   list-style: none;
-  height: 120px;
-  width: 100%;
   padding-top: 40px;
   font-family: var(--text);
   justify-content: center;
@@ -495,8 +498,8 @@ color: var(--color-secondary);
   position: relative;
   background: transparent;
   border-radius: 50%;
-  border: 1px solid var(--color-text);
-  margin: 10px;
+  border: 2px solid var(--color-text);
+  margin-right: 15px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -552,29 +555,89 @@ color: var(--color-secondary);
 .wrapper .facebook:hover .tooltip::before {
   background: #1877f2;
   color: #fff;
-  
 }
 
 .wrapper .twitter:hover,
 .wrapper .twitter:hover .tooltip,
 .wrapper .twitter:hover .tooltip::before {
-  background: #1da1f2;
+  background: #000;
   color: #fff;
 }
 
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background: #e4405f;
+background: #d6249f; 
   color: #fff;
 }
-.wrapper .instagram:hover svg, .wrapper .twitter:hover svg{
-    stroke: #fff;
-    color   : #fff;
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #FF0000;
+  color: #fff;
+}
+.wrapper .tiktok:hover,
+.wrapper .tiktok:hover .tooltip,
+.wrapper .tiktok:hover .tooltip::before {
+  background: #010101;
+  color: #fff;
+}
+.wrapper .spotify:hover,
+.wrapper .spotify:hover .tooltip,
+.wrapper .spotify:hover .tooltip::before {
+  background: #1ed760;
+  color: #fff;
 }
 
+@media (max-width: 575.98px) { 
+  .bor{
+    border-top: 8px solid var(--color-secondary);
+    border-left: none;
+  }
+  footer{
+    margin-top: 0px;
+    padding: 2em 0;
+  }
+  .footer-pleca {
+    background-size: cover;
+  }
+ }
 
-/*  footer svg{
-    fill:#5C5B5B;
-    stroke:#5C5B5B;
- } */
+.footer-gob {
+    background-color: #611232;
+    color: #Fff;
+    padding-top: 1em;
+}
+
+.footer-gob h5 {
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 16px;
+}
+
+.footer-gob ul{
+  padding-left: 0px;
+}
+.footer-gob li, .footer-gob a {
+    color: #Fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+.footer-gob li {
+    margin: 0 0 2px;
+}
+.footer-gob div, .footer-gob li {
+    font-size: 15px;
+    list-style: none;
+}
+
+.list-inline {
+    display: inline-flex;
+}
+.footer-pleca {
+    background-color: #fff;
+    background-image: url(https://framework-gb.cdn.gob.mx/gobmx/img/pleca.svg);
+    background-repeat: repeat-x;
+    height: 51.41px;
+}
