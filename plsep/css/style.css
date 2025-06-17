@@ -151,6 +151,8 @@ body{
 .accordion {
   display: flex; /* O también inline-block, según el diseño */
   flex-direction: row; /* Para colocar los elementos en horizontal */
+  border-width: 0px;
+  border: none;
   /* Otras propiedades según sea necesario */
 }
 
@@ -171,7 +173,8 @@ body{
 }
 
 .accordion-button:not(.collapsed){
-        background-color: #fff;
+    background-color: #fff;
+    box-shadow: none;
 }
 .accordion-button::after{ 
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"  fill="%23C1D13F" class="bi bi-plus" viewBox="0 0 16 16" > <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/> </svg>');
@@ -197,6 +200,7 @@ body{
 .accordion-item{
     display: flex;
     height: 398px;
+    border: none;
 }
 .titulo-boletin-home{
     font-size: 30px;
@@ -208,6 +212,34 @@ body{
     color: var(--color-text);
 }
 
+.collapsing {
+  -webkit-transition-property: width, visibility;
+  transition-property: width, visibility;
+  width: 0;
+  height: auto;
+}
+.collapsed{
+      border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.accordion-collapse {
+  transition: height 0.2s ease-in-out;
+  border: 1px solid #ccc;
+}
+
+.accordion-body {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.accordion-body {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.accordion-collapse.show .accordion-body {
+    opacity: 1;
+}
 
 @media (max-width: 575.98px) { 
     .accordion {
@@ -218,7 +250,7 @@ body{
     .accordion-button{
         writing-mode:horizontal-tb;
         transform: rotate(0deg);
-        font-size: 28px;
+        font-size: 22px;
         width: 100%;
     }
     .accordion-item{
@@ -226,6 +258,10 @@ body{
         height: fit-content;
         width: 100%;
     }
+    .collapsing {
+    transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out !important; /* Or your desired transition */
+    overflow: hidden;
+  }
  }
 
 /* boton leer mas boletin home */
@@ -641,3 +677,4 @@ background: #d6249f;
     background-repeat: repeat-x;
     height: 51.41px;
 }
+
