@@ -270,7 +270,17 @@ body{
     .collapsing {
     transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out !important; /* Or your desired transition */
     overflow: hidden;
-  }
+    }
+    .accordion-button::after{
+      background-size: 2rem;
+      width: 2rem;
+      height: 2rem;
+    }
+    .accordion-button:not(.collapsed)::after{
+      background-size: 2rem;
+      width: 2rem;
+      height: 2rem;
+    }
  }
 
 /* boton leer mas boletin home */
@@ -285,7 +295,7 @@ body{
   position: relative;
   background-color: transparent;
   transition: .2s cubic-bezier(0.19, 1, 0.22, 1);
-color: var(--color-secondary);
+  color: var(--color-secondary);
   font-size: 16px;
 }
 
@@ -659,6 +669,7 @@ color: var(--color-secondary);
   padding-top: 40px;
   font-family: var(--text);
   justify-content: center;
+  padding-left: 0px;
 }
 
 .wrapper .icon {
