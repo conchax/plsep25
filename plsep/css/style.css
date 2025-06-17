@@ -258,7 +258,7 @@ body{
     .accordion-button{
         writing-mode:horizontal-tb;
         transform: rotate(0deg);
-        font-size: 22px;
+        font-size: 18px;
         width: 100%;
         border:1px solid #ccc;
     }
@@ -276,7 +276,7 @@ body{
 /* boton leer mas boletin home */
 
 .btn-leer-mas {
-  width: 140px;
+  width: 200px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -502,7 +502,9 @@ color: var(--color-secondary);
   border-radius: 30px;
   font-weight: 500;
   font-size: 20px;
+  z-index: 5;
   view-transition-name: show-hide-btn;
+  
 }
 .banner-colavorativos .expanded .show-hide-btn svg {
   transform: rotate(-180deg);
@@ -546,6 +548,7 @@ color: var(--color-secondary);
   }
   .show-hide-btn{
     margin:20px auto 0 auto;
+    z-index: 5;
   }
   .banner-colavorativos {
       padding: 5px;
