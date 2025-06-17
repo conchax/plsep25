@@ -12,18 +12,26 @@ body{
     color: var(--color-text);
     font-family: var(--text)
 }
-
-.nav-gob{
+.nav-gob {
     background-color: #611232;
-    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 40px;
 }
+.nav-gob .navbar-nav {
+    flex-direction: row;
+    padding-left: 10px !important;
+}
+
 .nav-gob a{
     color: white;
 }
 .nav-gob a:hover{
     background-color: rgba(255, 255, 255, .15);
     color: #d4c19c;
-
+}
+.nav-gob .nav-link {
+    padding-left: 10px !important;
 }
 .bg-institucional{
     background-color: #235C4E;
@@ -252,6 +260,7 @@ body{
         transform: rotate(0deg);
         font-size: 22px;
         width: 100%;
+        border:1px solid #ccc;
     }
     .accordion-item{
         display: inline-block;
@@ -326,7 +335,7 @@ color: var(--color-secondary);
 /* banner colaborativos ----------------------------------------------*/
 
 
-.banner-colavorativos {
+/* .banner-colavorativos {
   padding: 20px;
   max-width: 1320;
   margin: 0 auto;
@@ -352,6 +361,9 @@ color: var(--color-secondary);
    .list-item:nth-child(4) {
     transform: scale(0.85);
   }
+  .hide{
+    display: none;
+  }
   .expanded {
     .list-item:nth-child(1){
       margin-bottom: 0;
@@ -368,12 +380,77 @@ color: var(--color-secondary);
     .list-item:nth-child(3),.list-item:nth-child(4){
         margin-top: -60px;
     }
+
     .show-hide-btn svg {
       transform: rotate(180deg);
       transition: transform 0.6s;
     }
   }
+ */
 
+ .banner-colavorativos {
+  padding: 20px;
+  max-width: 1320px;
+  margin: 0 auto;
+  view-transition-name: banner-colavorativos;
+
+  .list-item:nth-child(1) {
+    margin-bottom: -23%;
+  }
+
+  .list-item:nth-child(2) {
+    margin-bottom: -23%;
+    transform: scale(0.95);
+  }
+
+  .list-item:nth-child(3) {
+    margin-bottom: -23%;
+    transform: scale(0.9);
+  }
+
+   .list-item:nth-child(4) {
+    transform: scale(0.85);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  &.expanded {
+    .list-item:nth-child(1){
+      margin-bottom: 0;
+      transform: scale(.9);
+    }
+
+    .list-item:nth-child(2),
+    .list-item:nth-child(3),
+    .list-item:nth-child(4) {
+        margin-top: -45px;
+        margin-bottom: 0;
+        transform: scale(.8);
+    }
+    .list-item:nth-child(3),.list-item:nth-child(4){
+        margin-top: -60px;
+    }
+
+    .show {
+      display: none;
+    }
+
+    .hide {
+      display: block;
+    }
+
+    .show-hide-btn svg {
+      transform: rotate(180deg);
+      transition: transform 0.6s;
+    }
+  }
+}
+
+.banner-colavorativos svg{
+    stroke: var(--color-secondary);
+}
 
 .list {
   display: flex;
@@ -417,17 +494,17 @@ color: var(--color-secondary);
   display: block;
   align-items: center;
   justify-content: center;
-  padding: 5px;
-  margin:8px auto 0 auto;
+  padding: 8px;
+  margin:10px auto 0 auto;
   background: none;
   color: var(--color-secondary);
   border: 2px solid var(--color-secondary);
-  border-radius: 24px;
+  border-radius: 30px;
   font-weight: 500;
   font-size: 20px;
   view-transition-name: show-hide-btn;
 }
-.banner-colavorativos.expanded .show-hide-btn svg {
+.banner-colavorativos .expanded .show-hide-btn svg {
   transform: rotate(-180deg);
 }
 
@@ -463,6 +540,57 @@ color: var(--color-secondary);
   animation-duration: 0.6s;
 }
 
+@media (max-width: 575.98px) {
+  .list-item{
+    padding: 8px;
+  }
+  .show-hide-btn{
+    margin:20px auto 0 auto;
+  }
+  .banner-colavorativos {
+      padding: 5px;
+      max-width: 100%;
+      margin: 0 auto;
+      view-transition-name: banner-colavorativos;
+
+    .list-item:nth-child(1) {
+      margin-bottom: -26%;
+    }
+
+    .list-item:nth-child(2) {
+      margin-bottom: -26%;
+      transform: scale(0.95);
+    }
+
+    .list-item:nth-child(3) {
+      margin-bottom: -26%;
+      transform: scale(0.9);
+    }
+
+    .list-item:nth-child(4) {
+      transform: scale(0.85);
+    }
+
+    &.expanded {
+      .list-item:nth-child(1){
+        margin-bottom: 0;
+        transform: scale(1);
+      }
+
+      .list-item:nth-child(2),
+      .list-item:nth-child(3),
+      .list-item:nth-child(4) {
+          margin-top: -12px;
+          margin-bottom: 0;
+          transform: scale(1);
+      }
+      .list-item:nth-child(3),.list-item:nth-child(4){
+          margin-top: -12px;
+      }      
+    }
+  }
+ }
+/* ------------------------------------------------------- */
 #branding{
     padding: 1.5rem;
     text-transform: uppercase;
@@ -639,8 +767,61 @@ background: #d6249f;
     background-size: cover;
   }
  }
+.main-footer {
+    font-family: "Montserrat";
+    background-color: #611232;
+    min-height: 56px;
+    color: #fff;
+    padding: 0px 0 0px;
+    text-align: left;
+    font-weight: 300;
+    width: auto;
+}
+.main-footer .list-info {
+    line-height: auto;
+    color: #fff;
+    background-size: cover;
+    background-position: bottom;
+    padding: 30px 10px 10px;
+}
 
-.footer-gob {
+.main-footer .list-info h5 {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.h5, h5 {
+    font-size: 18px;
+}
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+}
+.main-footer .list-info ul {
+    margin: 0 0 60px;
+    padding: 0;
+}
+.main-footer .list-info ul li {
+    list-style-type: none;
+    margin: 0 0 2px;
+    padding: 0;
+    line-height: 110%;
+}
+.main-footer .list-info a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.list-inline>li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.footer-pleca {
+    background-color: #fff;
+    background-image: url(https://framework-gb.cdn.gob.mx/gobmx/img/pleca.svg);
+    background-repeat: repeat-x;
+}
+/* .footer-gob {
     background-color: #611232;
     color: #Fff;
     padding-top: 1em;
@@ -677,4 +858,4 @@ background: #d6249f;
     background-repeat: repeat-x;
     height: 51.41px;
 }
-
+ */
