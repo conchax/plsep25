@@ -875,3 +875,61 @@ background: #d6249f;
     height: 51.41px;
 }
  */
+#prepa-distinta{
+  padding: 5rem 0;
+}
+ .ns{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text);
+  background-color: var(--color-secondary);
+  padding: 20px 40px;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 30px;
+ }
+.descripcion-servicios{
+  text-align: center;
+  padding: 1rem 0;
+}
+ .titulo-servicios{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-text);
+ }
+ .titulo-servicios-dos{
+  font-size: 20px;
+  color: var(--color-secondary);
+  font-weight: 700;
+ }
+ .parrafo-servicios{
+  font-size: 20px;
+ }
+
+.mask{
+  position: relative;  
+
+ } 
+ .linesvg{
+  position: absolute;
+  max-width: 1320px;
+  top: -37px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+    
+ } 
+
+
+ #padre{
+  position:relative;
+}
+
+#uno {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
