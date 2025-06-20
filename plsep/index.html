@@ -223,7 +223,7 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-center align-items-center mt-md-4">
+                    <div class="row justify-content-center align-items-center mt-md-3">
                         <div class="col-12 col-md-3 text-center">
                             <div class="descripcion-servicios d-md-inline-flex align-self-center">
                                 <svg width="60" height="60">
@@ -808,7 +808,7 @@
             });
         });
     </script>
-        <script>
+    <script>
         const showHideBtn = document.querySelector('.show-hide-btn');
         const container = document.querySelector('.banner-colavorativos');
 
@@ -824,48 +824,48 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script>
-                $(document).ready(function () {
-                   $(window).scroll(function () {
-                       drawLine($("#route"), document.querySelector("path"));
-                   });
-       
-                   // init the line length
-                   drawLine($("#route"), document.querySelector("path"));
-       
-                   //draw the line
-                   function drawLine(mask, line) {
-                       var pathLength = line.getTotalLength(),
-                           maxScrollTop = $(document).height() - $(window).height(),
-                           percentDone = $(window).scrollTop() / maxScrollTop,
-                           length = percentDone * pathLength;
-                       line.style.strokeDasharray = [length, pathLength].join(" ");
-                   }
-               });
-
-       /*  $(document).ready(function () {
-            $(document).scroll(function () {
+        $(document).ready(function () {
+            $(window).scroll(function () {
                 drawLine($("#route"), document.querySelector("path"));
-                let windowHeight = $(window).height() * 0.8;
-                // Recorrer cada elemento
-                $('.mask').each(function (i) {
-                    // Analizar posición del elemento actual
-                    if ($(document).scrollTop() >= $(this).offset().top - windowHeight) {
-                        // init the line length
-                        drawLine($("#route"), document.querySelector("path"));
-
-                        //draw the line
-                        function drawLine(container, line) {
-                            var pathLength = line.getTotalLength(),
-                                maxScrollTop = $(document).height() - $(window).height(),
-                                percentDone = $(window).scrollTop() / maxScrollTop,
-                                length = percentDone * pathLength;
-                            line.style.strokeDasharray = [length, pathLength].join(" ");
-                        }
-
-                    }
-                });
             });
-        }); */
+
+            // init the line length
+            drawLine($("#route"), document.querySelector("path"));
+
+            //draw the line
+            function drawLine(mask, line) {
+                var pathLength = line.getTotalLength(),
+                    maxScrollTop = $(document).height() - $(window).height(),
+                    percentDone = $(window).scrollTop() / maxScrollTop,
+                    length = percentDone * pathLength;
+                line.style.strokeDasharray = [length, pathLength].join(" ");
+            }
+        });
+
+        /*  $(document).ready(function () {
+             $(document).scroll(function () {
+                 drawLine($("#route"), document.querySelector("path"));
+                 let windowHeight = $(window).height() * 0.8;
+                 // Recorrer cada elemento
+                 $('.mask').each(function (i) {
+                     // Analizar posición del elemento actual
+                     if ($(document).scrollTop() >= $(this).offset().top - windowHeight) {
+                         // init the line length
+                         drawLine($("#route"), document.querySelector("path"));
+ 
+                         //draw the line
+                         function drawLine(container, line) {
+                             var pathLength = line.getTotalLength(),
+                                 maxScrollTop = $(document).height() - $(window).height(),
+                                 percentDone = $(window).scrollTop() / maxScrollTop,
+                                 length = percentDone * pathLength;
+                             line.style.strokeDasharray = [length, pathLength].join(" ");
+                         }
+ 
+                     }
+                 });
+             });
+         }); */
     </script>
 </body>
 
