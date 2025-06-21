@@ -42,42 +42,36 @@
                 </div>
             </div>
         </nav>
-        <section class="bg-institucional">
-            <div class="container">
-                <div class="row text-center">
-                    <svg width="250" height="34">
-                        <use xlink:href="./img/sprite.svg#logo-convivencia" />
-                    </svg>
+        <div class="fixed-top">
+            <div class="bg-institucional">
+                <div class="container">
+                    <div class="row text-center">
+                        <svg width="250" height="34">
+                            <use xlink:href="./img/sprite.svg#logo-convivencia" />
+                        </svg>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <nav class="navbar navbar-expand-lg bg-h shadow-sm">
-            <div class="container">
-                <a aria-label="home plsep" href="#">
-                    <svg width="193" height="33">
-                        <use xlink:href="./img/sprite.svg#logo-plsep" />
-                    </svg>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="btn-menu   active" aria-current="page" href="#">Preguntas frecuentes</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class=" btn-menu " href="#">Mi Counidad</a>
-                        </li>
-                        <li class="nav-item">
+            <div class=" bg-h shadow-sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 text-start">
+                            <a aria-label="home plsep" href="#">
+                                <svg width="193" height="33">
+                                    <use xlink:href="./img/sprite.svg#logo-plsep" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-6 text-end">
+                            <a class="btn-menu d-none d-md-inline-block" href="#">Preguntas frecuentes</a>
+                            <a class=" btn-menu d-none d-md-inline-block" href="#">Mi Comunidad</a>
                             <a class="btn-menu fw-bold" href="#">Ménu</a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
     <section id="banner">
         <div class="container">
@@ -822,11 +816,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- <script>
+             $(window).scroll(function() {
+    if ($(this).scrollTop()==0){
+      //Ejecutar función
+      alert('Top!!');
+    }
+  });
+        </script> -->
     <script>
         $(document).ready(function () {
             $(window).scroll(function () {
-                drawLine($("#route"), document.querySelector("path"));
+                if ($(this).scrollTop()==600){
+                    drawLine($("#route"), document.querySelector("path"));
+                }
             });
 
             // init the line length
@@ -841,7 +846,7 @@
                 line.style.strokeDasharray = [length, pathLength].join(" ");
             }
         });
-
+          
         /*  $(document).ready(function () {
              $(document).scroll(function () {
                  drawLine($("#route"), document.querySelector("path"));
@@ -866,6 +871,12 @@
                  });
              });
          }); */
+    </script>
+    <script>
+        window.addEventListener("scroll", (event) => {
+            let scroll = this.scrollY;
+            console.log(scroll)
+        });
     </script>
 </body>
 

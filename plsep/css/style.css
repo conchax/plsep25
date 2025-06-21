@@ -33,11 +33,21 @@ body{
 .nav-gob .nav-link {
     padding-left: 10px !important;
 }
+.fixedmenu{
+  position: fixed; 
+  top: 40px;
+  right: 0;
+  left: 0; 
+  z-index: 1400;
+}
 .bg-institucional{
+
     background-color: #235C4E;
     padding: 23px 0;
+   
 }
 .bg-h{
+    
     background-color: #fff;
     padding: 12px 0;
 }
