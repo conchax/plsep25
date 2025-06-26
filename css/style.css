@@ -677,7 +677,7 @@ body{
 }
 
 .carousel-inner{
-  overflow: hidden;
+  overflow: visible;
 }
 
 .carousel-identidad{
