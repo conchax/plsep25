@@ -256,7 +256,7 @@ body{
         height: 335px;
     }
     .main__title, .main__word{
-        font-size: 52px;
+        font-size: 56px;
     }
  }
 
@@ -678,7 +678,7 @@ body{
 }
 
 .carousel-inner{
-  overflow: visible;
+  overflow: hidden;
 }
 
 .carousel-identidad{
