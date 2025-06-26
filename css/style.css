@@ -921,11 +921,13 @@ background: #d6249f;
   padding: 1rem 0;
 }
  .titulo-servicios{
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 500;
+  width: 180px;
   text-align: center;
   color: var(--color-text);
+  margin: 0 auto;
  }
  .titulo-servicios-dos{
   font-size: 18px;
@@ -952,6 +954,24 @@ background: #d6249f;
   margin: 0 auto;
   z-index: 0;  
  } 
+.linesvgm{
+    position: absolute;
+    max-width: 353px;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 0; 
+  }
+
+  @media (max-width: 575.98px) { 
+    .descripcion-servicios{
+     padding: 1.6rem 0; 
+    }
+    .mtm{
+      margin-top: 60px;
+    }
+   }
 
 /* --------------------------------------------- menu old ---------------------------------------- */
 
