@@ -12,6 +12,8 @@ if (!defined('ABSPATH'))
 <link rel="preconnect" href="https://cdn.jsdelivr.net/">
 <link rel="preconnect" href="https://www.googletagmanager.com/">
 <link rel="preconnect" href="https://www.google-analytics.com/">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 <?php wp_head(); ?>
 
 <?php get_template_part( 'template-parts/gatm' ); ?>

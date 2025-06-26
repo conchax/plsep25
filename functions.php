@@ -7,8 +7,7 @@
 function plsep_assets()
 {
   wp_register_style("google-fonts", "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap", array(), false, 'all');
-  wp_register_style("bootstrap", "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css", array(), "5-2", 'all');
-  wp_enqueue_style("estilos", get_template_directory_uri() ."/css/pls.min.css", array("google-fonts", "bootstrap"));
+  wp_enqueue_style("estilos", get_template_directory_uri() ."/css/style.css", array("estilos", "bootstrap"));
   wp_enqueue_style("fachada", get_template_directory_uri() . "/css/lite-yt-embed.css", array());
 }
 add_action("wp_enqueue_scripts", "plsep_assets");
