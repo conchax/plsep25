@@ -719,6 +719,8 @@ body{
     font-size: 18px;
     align-items: center;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
  }
 
  .bor{
@@ -963,7 +965,9 @@ background: #d6249f;
     margin: 0 auto;
     z-index: 0; 
   }
-
+.mtm{
+  margin-top: 56px;
+}
   @media (max-width: 575.98px) { 
     .descripcion-servicios{
      padding: 1.6rem 0; 
