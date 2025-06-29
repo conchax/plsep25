@@ -726,6 +726,7 @@ body{
  .bor{
   border-left: 10px solid var(--color-secondary);
   padding-left: 10px;
+  font-weight: 400;
  }
 
  .wrapper {
@@ -843,6 +844,7 @@ background: #d6249f;
   .bor{
     border-top: 8px solid var(--color-secondary);
     border-left: none;
+    
   }
   footer{
     margin-top: 0px;
@@ -1269,4 +1271,8 @@ ul.menu li {
 }
 .button_container span:nth-of-type(3) {
     top: 20px;
+}
+
+.section-w{
+  margin-top: 100px;
 }

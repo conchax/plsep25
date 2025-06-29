@@ -1,0 +1,1 @@
+<h1 class="text-left"><?php the_title(); ?></h1>

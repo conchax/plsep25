@@ -1,0 +1,1 @@
+<h1 class="parrafo-nem text-center"><?php the_title(); ?></h1>
