@@ -84,7 +84,7 @@ while (have_posts()) :
 									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-pase-reglamentario" />
 								</svg>
 								<div class="titulo-servicios">
-									Pase<br>reglamentario
+									Continuo mis<br>estudios
 								</div>
 							</div>
 						</div>
