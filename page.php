@@ -1,11 +1,7 @@
-
-<?php get_header(); 
-/**
- * The template for displaying singular post-types: posts, pages and user-defined custom post types.
- *
- * @package 
- */
-
+<?php
+/*
+  Template  Name: Portal PL-SEP-2025
+*/
 
 while ( have_posts() ) :
 	the_post();

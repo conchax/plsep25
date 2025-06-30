@@ -5,8 +5,8 @@
  * 
  *
  * @package WordPress
- * @subpackage Prepa en Línea-SEP 2025
- * @since Prepa en Línea-SEP 2025 2.1
+ * @subpackage Portal PL-SEP-2025
+ * @since Portal PL-SEP-2025 2.1
  */
 
 get_header();?>
