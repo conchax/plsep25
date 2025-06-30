@@ -5,17 +5,17 @@
 ?>
 <?php get_header(); ?>
 
-<section class="header-blog">
+<section class="section-w">
   <div class="container">
-    <div class="row align-items-center" style="min-height: 300px;">
+    <div class="row align-items-center">
       <div class="col">
-        <h4 class="elementor-heading-title text-lg-start text-center ">Boletines PL-SEP</h4>
+        <h1 class="titulo text-center ">Boletines <span>PL-SEP</span></h1>
       </div>
     </div>
   </div>
 </section>
 <section>
-  <div class="container-xxl">
+  <div class="container">
     <div class="row">
       <div class="breadcrumb"><?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?></div>
     </div>

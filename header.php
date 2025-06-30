@@ -88,15 +88,15 @@ if (!defined('ABSPATH'))
         <div class="container">
           <div class="row">
             <div class="col-8 col-md-4 text-start">
-              <a aria-label="home plsep" href="#">
+              <a aria-label="home plsep" href="<?php echo SITE_URL ?>">
                 <svg width="193" height="33">
                   <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#logo-plsep" />
                 </svg>
               </a>
             </div>
             <div class="col-4 col-md-8 text-end">
-              <a class="btn-menu d-none d-md-inline-block" href="#">Preguntas frecuentes</a>
-              <a class="btn-menu d-none d-md-inline-block" href="#">Mi comunidad</a>
+              <a class="btn-menu d-none d-md-inline-block" href="<?php echo SITE_URL ?>/preguntas-frecuentes/">Preguntas frecuentes</a>
+              <a class="btn-menu d-none d-md-inline-block" data-bs-toggle="modal" data-bs-target="#micomunidad" href="#micomunidad">Mi comunidad</a>
               <div class="btn-menu fw-bold" onclick="myFunction()" id="toggle">
                 <div>Menú</div>
               </div>

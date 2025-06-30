@@ -51,7 +51,7 @@ while (have_posts()) :
 						<div class="col-12 col-md-2 ">
 							<div class="descripcion-servicios">
 								<svg width="50" height="50">
-									<use xlink:href="http://plsep25.local/wp-content/themes/plsep25/img/prepa-distinta.svg#icono-examen-unico" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-examen-unico" />
 								</svg>
 								<div class="titulo-servicios">
 									Examen <br> único
@@ -61,7 +61,7 @@ while (have_posts()) :
 						<div class="col-12 col-md-2">
 							<div class="descripcion-servicios">
 								<svg width="50" height="50">
-									<use xlink:href="http://plsep25.local/wp-content/themes/plsep25/img/prepa-distinta.svg#icono-atencion-temprana" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-atencion-temprana" />
 								</svg>
 								<div class="titulo-servicios">
 									Perfil del estudiante para tutoría
@@ -71,7 +71,7 @@ while (have_posts()) :
 						<div class="col-12 col-md-2">
 							<div class="descripcion-servicios">
 								<svg width="50" height="50">
-									<use xlink:href="http://plsep25.local/wp-content/themes/plsep25/img/prepa-distinta.svg#icono-orientacion-vocacional" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-orientacion-vocacional" />
 								</svg>
 								<div class="titulo-servicios">
 									Orientación<br>vocacional
@@ -81,7 +81,7 @@ while (have_posts()) :
 						<div class="col-12 col-md-2">
 							<div class="descripcion-servicios">
 								<svg width="50" height="50">
-									<use xlink:href="http://plsep25.local/wp-content/themes/plsep25/img/prepa-distinta.svg#icono-pase-reglamentario" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-pase-reglamentario" />
 								</svg>
 								<div class="titulo-servicios">
 									Pase<br>reglamentario
@@ -91,7 +91,7 @@ while (have_posts()) :
 						<div class="col-12 col-md-2">
 							<div class="descripcion-servicios">
 								<svg width="50" height="50">
-									<use xlink:href="http://plsep25.local/wp-content/themes/plsep25/img/prepa-distinta.svg#icono-educacion-continua" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-educacion-continua" />
 								</svg>
 								<div class="titulo-servicios">
 									Red de extensión académica y desarrollo integral
@@ -101,7 +101,7 @@ while (have_posts()) :
 						<div class="col-12 col-md-2">
 							<div class="descripcion-servicios">
 								<svg width="50" height="50">
-									<use xlink:href="http://plsep25.local/wp-content/themes/plsep25/img/prepa-distinta.svg#icono-bolsa-trabajo" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-bolsa-trabajo" />
 								</svg>
 								<div class="titulo-servicios">
 									Bolsa<br>de trabajo
@@ -114,7 +114,7 @@ while (have_posts()) :
 						<div class="col-12 col-md-3 text-center">
 							<div class="descripcion-servicios d-md-inline-flex align-self-center">
 								<svg width="50" height="50">
-									<use xlink:href="http://plsep25.local/wp-content/themes/plsep25/img/prepa-distinta.svg#icono-vida-saludable" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-vida-saludable" />
 								</svg>
 								<div class="titulo-servicios align-self-center ps-md-2">
 									Vida saludable
@@ -124,7 +124,7 @@ while (have_posts()) :
 						<div class="col-12 col-md-3 text-center">
 							<div class="descripcion-servicios mt-4 mt-md-0 d-md-inline-flex align-self-center">
 								<svg width="50" height="50">
-									<use xlink:href="http://plsep25.local/wp-content/themes/plsep25/img/prepa-distinta.svg#icono-cultura" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-cultura" />
 								</svg>
 								<div class="titulo-servicios align-self-center ps-md-2">
 									Cultura

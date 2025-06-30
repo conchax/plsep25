@@ -1,13 +1,17 @@
-<?php
-/*
-  Template  Name: Portal PL-SEP-2025
-*/
+
+<?php get_header(); 
+/**
+ * The template for displaying singular post-types: posts, pages and user-defined custom post types.
+ *
+ * @package 
+ */
+
 
 while ( have_posts() ) :
 	the_post();
 	?>
-<section>
-	<div class="container-xxl">
+<section class="section-w">
+	<div class="container">
 		<div class="row">
 			<div class="breadcrumb"><?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?></div>
 		</div>

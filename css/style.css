@@ -9,7 +9,9 @@
 body{
     background-color: var(--bg-fondo);
     color: var(--color-text);
-    font-family: var(--text)
+    font-family: "Noto Sans", sans-serif!important;
+    font-size: 20px;
+    font-weight: 300!important;
 }
 .nav-gob {
     background-color: #611232;
@@ -37,7 +39,7 @@ body{
   top: 40px;
   right: 0;
   left: 0; 
-  z-index: 1320;
+  z-index: 1050;
   transition: all 0.2s ease-out;
 
 }
@@ -120,6 +122,7 @@ body{
     font-size: 63px;
     font-weight: 300;
     color: var(--color-text);
+    text-align: center;
 }
 
 .titulo span{
@@ -673,27 +676,27 @@ body{
     line-height: 90px;
 }
 
-.carousel-inner{
+#branding .carousel-inner{
   overflow: visible;
 }
 
-.carousel-identidad{
+#branding .carousel-identidad{
     position: absolute;
     top: 0;
 }
 
-.carousel-item{
+#branding .carousel-item{
     max-width: 630px;
   transition: transform 1.5s ease-in-out;
 }
-.slow-carousel .carousel-item {
+#branding .slow-carousel .carousel-item {
   transition: transform 2s ease;
 }
 @media (max-width: 575.98px) { 
-    .carousel-inner{
+    #branding .carousel-inner{
       overflow:hidden;
     }
-    .carousel-item{
+    #branding .carousel-item{
         width: 270px;
         margin-top: 10px;
     }
@@ -734,6 +737,9 @@ body{
   justify-content: center;
   padding-left: 0px;
 }
+.wrapper a{
+  color: unset;
+}
 
 .wrapper .icon {
   position: relative;
@@ -759,12 +765,15 @@ body{
 .wrapper .tooltip {
   position: absolute;
   top: 0;
+  left: -50%;
   font-size: 14px;
   background: #fff;
   color: #fff;
   padding: 5px 8px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  width: 86px;
+  text-align: center;
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -784,9 +793,12 @@ body{
 
 .wrapper .icon:hover .tooltip {
   top: -45px;
+  left: -50%;  
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  width: 86px;
+  text-align: center;
 }
 
 .wrapper .icon:hover span,
@@ -1271,5 +1283,172 @@ ul.menu li {
 }
 
 .section-w{
-  margin-top: 100px;
+  margin-top: 120px;
+}
+.breadcrumb {
+    color: var(--color-text);
+    font-size: 14px;
+    margin-bottom: 0;
+    position: absolute;
+    top: 184px;
+    font-weight: 400;
+    z-index: 1;
+    width: auto;
+}
+.breadcrumb a {
+    color: var(--color-text);
+}
+@media (max-width: 575.98px) {
+    .breadcrumb {
+        left: 20px;
+    }
+}
+
+/* quitar titulo y header */
+
+.elementor-element-1fc93b72, .elementor-element-40614a8, .elementor-element-6c0666c5,.elementor-element-408d37f1,.elementor-element-21fa9b8b,.elementor-element-c9f6c03,.elementor-element-6200a4a2,.elementor-element-1015fc37,.elementor-element-1675d986,.elementor-element-2a5bf40f,.elementor-element-6c3b38b7,.elementor-element-11bc4340,.elementor-element-3153800c,.elementor-element-4caacd59,.elementor-element-532c5af,.elementor-element-4e660a9b,.elementor-element-2f800bac,.elementor-element-373cf991,.elementor-element-b1637b0,.elementor-element-4a671208,.elementor-element-475ba3c3,.elementor-element-11f478b,.elementor-element-2e5718ba,.elementor-element-e4a5512,.elementor-element-8631bdc,.elementor-element-2175c52,.elementor-element-4f9d802,.elementor-element-938126e,.elementor-element-34d4ddb7,.elementor-element-dfbd4d8,.elementor-element-25aac4a6,.elementor-element-221f5b3b,.elementor-element-26d001ea,.elementor-element-429c4cf9,.elementor-element-ec0f229,.elementor-element-c2a1593,.elementor-element-73d3b7c8,.elementor-element-2999edcf,.elementor-element-7f6e3f2a{
+  display: none;
+}
+
+/* quitar titulo y header */
+
+.elementor-widget-container{
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  color: var(--color-text);
+  font-weight: 300!important;
+}
+
+/* boleti nem 2025*/
+.nem .share, .nem .share i {
+    color: #7c2c82;
+}
+.share i {
+    padding: 0 10px;
+    font-size: 28px;
+}
+
+.share h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.scale {
+    transition: .85s;
+}
+.scale:hover {
+    transform: scale(.8);
+    transition: .85s;
+}
+header.nem25{
+    background-image: url(https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/03/heaqder-NEM.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+}
+.entry-title-nem{
+    font-size: 40px;
+    font-weight: 600;
+    color: #7D2982;
+    font-family: "Noto Sans", serif!important;
+}
+.text-invitacion{
+    font-size: 26px;
+    font-weight: 500;
+    color: #7D2982;
+    font-family: "Noto Sans", serif;
+}
+.main-nem25, .main-nem25 p, .main-nem25 .elementor-widget-container{
+    font-size: 18px;
+    line-height: 2.2rem;
+    color: #7D2982;
+    font-weight: 400;
+    font-family: "Noto Sans", serif;
+    letter-spacing: .4px;
+}
+.main-nem25 .widget-image-caption, .main-nem25 .wp-caption-text{
+    font-size: 16px!important;
+    font-weight: 400!important;
+    color: #4a274b!important;
+    font-family: "Noto Sans", serif!important;
+}
+
+.main-nem25 .elementor a:hover {
+    color: #f4565b;
+}
+.main-nem25 .elementor a {
+    color: #7C2C82;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+.title-convo25 h1{
+    font-family: "Noto Sans", serif!important;
+}
+
+/* boleti nem 2025*/
+
+/* boletines seccion */
+.card-principal {
+    padding: 1em;
+    border-radius: 3px;
+    background: linear-gradient(180deg, rgb(227 235 224 / .4) 1.78%, rgb(235 235 235 / .4) 101.04%);
+    box-shadow: 0 0 24px rgb(0 0 0 / .25);
+}
+a.zoom {
+    font-size: 18px;
+    color: #3E3F3E;
+    font-weight: 700;
+    text-align: center;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    text-decoration: none;
+}
+a.zoom:hover, .zoom p.url:hover {
+    color: rgb(10 41 52 / .7);
+    font-size: 20px;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+.fecha {
+    font-size: 14px;
+    color: #666;
+    text-align: start;
+    font-weight: 400;
+}
+.card-secundario {
+    padding: 1em 0;
+}
+.card-secundario img {
+    border: 1px solid #4F5237;
+    border-radius: 4px;
+}
+.card-boletin {
+    background-color: rgb(255 255 255 / 40%);
+    box-shadow: 0 4px 8px rgb(0 0 0 / .3);
+    border-radius: 3px;
+    padding: 1em;
+}
+
+.pagination .nav-links>*.current {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+.pagination .nav-links>* {
+    background-color: #fff0;
+    color: #4F5237;
+    border: 1px solid #dee2e6;
+    text-decoration: none;
+    padding: .5rem .75rem .25rem;
+}
+/* boletines seccion */
+
+.menu a{
+  color: var(--color-text);
+  font-size: 24px;
+}
+.menu a:hover{
+  color: var(--color-secondary)!important;
 }

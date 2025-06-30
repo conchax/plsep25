@@ -81,6 +81,19 @@ function shortcode_log_comu($atts)
 }
 add_shortcode("log_comu", "shortcode_log_comu");
 
+
+register_nav_menus( array(
+  'menu-movil' => 'movil',
+  'menu-conoce' => 'DT-conoce',
+  'menu-perfiles' => 'DT-perfiles',
+  'menu-nuestroPro' => 'DT-nuestroPro',
+  'menu-transparencia' => 'DT-transparencia',
+  'menu-contacto' => 'DT-contacto',
+  'menu-des_integral' => 'DT-desintegral',
+  'menu-vinculaciones' => 'DT-vinculaciones',
+  ));
+
+
 //Limitar con la funcion get_the_excerpt
 function excerpt($limit)
 {
