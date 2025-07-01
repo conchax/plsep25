@@ -255,7 +255,7 @@ while (have_posts()) :
 		<section id="branding">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-12 col-md-8">
+					<div class="col-12">
 						<div class="text-brading">
 							<p class="uno">Lleguemos</p>
 							<p class="dos text-center">a la meta</p>
@@ -267,7 +267,7 @@ while (have_posts()) :
 				<div class="row justify-content-center">
 					<div class="col-12 col-md-6">
 						<div class="carousel-identidad">
-							<div id="carousel-identidad-branding" class="carousel slide " data-bs-ride="carousel">
+							<div id="carousel-identidad-branding" class="carousel slide " data-bs-interval="10000" data-bs-ride="carousel" data-bs-pause="false">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/1.png" class="img-fluid" alt="m1">

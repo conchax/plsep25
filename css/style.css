@@ -135,6 +135,7 @@ body{
     font-size: 63px;
     font-weight: 300;
     color: var(--color-text);
+    text-align: center;
     
 }
 .titulou::after{
@@ -673,11 +674,12 @@ body{
     font-size: 160px;
     font-weight: 900;
     color: var(--color-text);
-    line-height: 90px;
+    line-height: 120px;
+    letter-spacing: 1.5rem;
 }
 
 #branding .carousel-inner{
-  overflow: visible;
+  overflow: inherit;
 }
 
 #branding .carousel-identidad{
@@ -686,12 +688,22 @@ body{
 }
 
 #branding .carousel-item{
-    max-width: 630px;
-  transition: transform 1.5s ease-in-out;
+  max-width: 660px;
+  transition: transform .5s ease-in-out; 
 }
-#branding .slow-carousel .carousel-item {
-  transition: transform 2s ease;
+
+
+#branding .carousel-item .carousel-item-start {
+  transition: transform .2s ease-out;
+  opacity: 0;
 }
+
+#branding .carousel-item .carousel-item-next  {
+  transition: transform .2s ease-in;
+  opacity: 0;
+   
+}
+
 @media (max-width: 575.98px) { 
     #branding .carousel-inner{
       overflow:hidden;
@@ -1452,3 +1464,19 @@ a.zoom:hover, .zoom p.url:hover {
 .menu a:hover{
   color: var(--color-secondary)!important;
 }
+
+@media (max-width: 575.98px) { 
+  .titulo{
+    font-size: 30px;
+  }
+  .titulo span{
+    font-size: 36px;
+  }
+  .titulou{
+    font-size: 33px;
+  }
+  .titulou::after{
+    width: 100px;
+    left: 40px;
+  }
+ }
