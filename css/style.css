@@ -461,9 +461,9 @@ body{
 
 
  .banner-colavorativos {
-  padding: 20px;
+  /* padding: 20px;*/
   max-width: 1320px;
-  margin: 0 auto;
+  margin: 0 auto; 
   view-transition-name: banner-colavorativos;
  }
 
@@ -675,7 +675,10 @@ body{
     font-weight: 900;
     color: var(--color-text);
     line-height: 120px;
-    letter-spacing: 1.5rem;
+    /* letter-spacing: 1.5rem; */
+}
+#branding .dos span{
+  padding-left: 12rem;
 }
 
 #branding .carousel-inner{
@@ -689,20 +692,24 @@ body{
 
 #branding .carousel-item{
   max-width: 660px;
-  transition: transform .5s ease-in-out; 
+  transition: transform 0.2s ease-in-out;
 }
 
+/* #branding .carousel-fade .active.carousel-item-end {
+    opacity: 0;
+  transition: opacity 0s 0.1s;
+} */
 
-#branding .carousel-item .carousel-item-start {
-  transition: transform .2s ease-out;
+/* #branding .carousel-item .active .carousel-item-start {
+  transition: transform 12s ease-out;
   opacity: 0;
 }
 
-#branding .carousel-item .carousel-item-next  {
-  transition: transform .2s ease-in;
+#branding .carousel-item .carousel-item-next .carousel-item-start  {
+  transition: transform .1s ease-in;
   opacity: 0;
    
-}
+} */
 
 @media (max-width: 575.98px) { 
     #branding .carousel-inner{
@@ -719,10 +726,13 @@ body{
         line-height: 20px;
     }
     #branding .dos{
-        font-size:56px;
+        font-size:50px;
         font-weight: 900;
         color: var(--color-text);
         line-height: 32px;
+    }
+    #branding .dos span {
+      padding-left: 2.5rem;
     }
  }
 
@@ -860,7 +870,7 @@ background: #d6249f;
 
 @media (max-width: 575.98px) { 
   .wrapper .icon{
-    margin-right: 20px;
+    margin-right: 14px;
   }
   .bor{
     border-top: 8px solid var(--color-secondary);
@@ -949,10 +959,7 @@ background: #d6249f;
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
-  width: 180px;
-  text-align: center;
   color: var(--color-text);
-  margin: 0 auto;
  }
  .titulo-servicios-dos{
   font-size: 18px;
@@ -997,6 +1004,10 @@ background: #d6249f;
     }
     .mtm{
       margin-top: 60px;
+    }
+    .titulo-servicios{
+      width: 250px;
+      margin: 0 auto;
     }
    }
 
@@ -1055,12 +1066,17 @@ nav.movil .nav-link {
     visibility: visible;
     height: 100%
 }
+
 #overlay.overlaym.open #toogle{
     z-index: 1332;
 }
 #overlay.overlaym.open:before {
     left: 0
 }
+#overlay.overlaym.open:after {
+    right: 0
+}
+
 .button_container.active .top {
     transform: translateY(10px) translateX(0) rotate(45deg);
     background: #fff
@@ -1107,7 +1123,7 @@ nav.movil .nav-link {
     margin-top: 40px
 }
 
-#overlay nav .nav-link {
+ nav .nav-link {
     color: #F2F5DB !important;
     font-size: 20px !important;
     font-weight: 500 !important;
@@ -1184,6 +1200,7 @@ nav .nav-link:active,
     border-radius: 0 !important;
     transition: all 0.2s
 }
+
 
 .tab-content>.active {
     border-left: 2px solid #C2D04C;
@@ -1469,6 +1486,7 @@ a.zoom:hover, .zoom p.url:hover {
   .titulo{
     font-size: 30px;
   }
+
   .titulo span{
     font-size: 36px;
   }
@@ -1479,4 +1497,35 @@ a.zoom:hover, .zoom p.url:hover {
     width: 100px;
     left: 40px;
   }
+  
  }
+
+
+
+
+ /* querys tablet */
+
+ @media (min-width: 991.98px) and (max-width: 1199.98px) { 
+    .main__title{
+      font-size: 53px;
+    }
+    .titulo-servicios{
+      font-size: 14px;
+      line-height: 16px;
+    }
+    #branding .dos span{
+      padding-left: 6rem;
+    }
+    #branding .accordion-body{
+      font-size: 16px;
+    }
+/*     #accordion-boletines-home .accordion-body img {
+      display: none;
+    } */
+    .titulo-boletin-home{
+    font-size: 20px;
+    }
+    .accordion-body{
+      font-size: 16px;
+    }
+  }
