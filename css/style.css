@@ -682,7 +682,7 @@ body{
 }
 
 #branding .carousel-inner{
-  overflow: inherit;
+  overflow: hidden;
 }
 
 #branding .carousel-identidad{
@@ -692,24 +692,20 @@ body{
 
 #branding .carousel-item{
   max-width: 660px;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 
-/* #branding .carousel-fade .active.carousel-item-end {
-    opacity: 0;
-  transition: opacity 0s 0.1s;
-} */
 
-/* #branding .carousel-item .active .carousel-item-start {
-  transition: transform 12s ease-out;
-  opacity: 0;
+.carousel-item-next:not(.carousel-item-start),
+.active.carousel-item-end {
+  transform: translateX(10%);
 }
 
-#branding .carousel-item .carousel-item-next .carousel-item-start  {
-  transition: transform .1s ease-in;
-  opacity: 0;
-   
-} */
+.carousel-item-prev:not(.carousel-item-end),
+.active.carousel-item-start {
+  transform: translateX(0%);
+}
+
 
 @media (max-width: 575.98px) { 
     #branding .carousel-inner{
