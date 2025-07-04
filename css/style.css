@@ -361,7 +361,7 @@ body{
 
 
 
-@media (max-width: 575.98px) { 
+@media (max-width: 991.98px) { 
     .accordion {
   display: inline-block; /* O también inline-block, según el diseño */
   flex-direction: row; /* Para colocar los elementos en horizontal */
@@ -678,7 +678,7 @@ body{
     /* letter-spacing: 1.5rem; */
 }
 #branding .dos span{
-  padding-left: 12rem;
+  padding-left: 15rem;
 }
 
 #branding .carousel-inner{
@@ -716,19 +716,19 @@ body{
         margin-top: 10px;
     }
         #branding .uno, #branding .tres{
-        font-size: 28px;
+        font-size: 26px;
         font-weight: 900;   
         color: var(--color-secondary);
         line-height: 20px;
     }
     #branding .dos{
-        font-size:50px;
+        font-size:40px;
         font-weight: 900;
         color: var(--color-text);
         line-height: 32px;
     }
     #branding .dos span {
-      padding-left: 2.3rem;
+      padding-left: 4rem;
     }
  }
 
@@ -1509,15 +1509,21 @@ a.zoom:hover, .zoom p.url:hover {
       font-size: 14px;
       line-height: 16px;
     }
+    #branding .uno, #branding .tres{
+      font-size: 66px;
+      line-height: 66px;
+    }
+    #branding .dos{
+      font-size: 130px;
+      line-height: 130px;
+    }
     #branding .dos span{
-      padding-left: 5rem;
+      padding-left: 10rem;
     }
     #branding .accordion-body{
       font-size: 16px;
     }
-/*     #accordion-boletines-home .accordion-body img {
-      display: none;
-    } */
+
     .titulo-boletin-home{
     font-size: 20px;
     }
@@ -1525,3 +1531,42 @@ a.zoom:hover, .zoom p.url:hover {
       font-size: 16px;
     }
   }
+/* tablet vertical */
+   @media (min-width: 576px) and (max-width: 768px) {
+    /* .titulo-boletin-home{
+      font-size: 20px;
+    }
+    .accordion-body{
+      font-size: 14px;
+    }
+    .fecha-boletin-home{
+      font-size: 13px;
+    } */
+     #branding .dos{
+      font-size: 90px;
+      line-height: 90px;
+     }
+     #branding .dos span{
+      padding-left: 9rem;
+     }
+     #branding .uno, #branding .tres{
+      font-size: 60px;
+      line-height: 60px;
+     }
+     #branding .carousel-item{
+      width: 450px;
+     }
+     .titulo-servicios{
+      width: 250px;
+      margin: 0 auto;
+     }
+     .main__title{
+      font-size: 70px;
+     }
+     .identidad-palabras{
+      height: 335px;
+     }
+      .descripcion-servicios {
+        padding: 1.6rem 0;
+      }
+   }
