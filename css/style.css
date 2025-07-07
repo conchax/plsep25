@@ -25,15 +25,24 @@ body{
 }
 
 .nav-gob a{
-    color: white;
+  
+     padding-left: 10px !important;
+    font-size: 16px!important;
+    color: #fff!important;
+    font-weight: 400!important;
 }
 .nav-gob a:hover{
     background-color: rgba(255, 255, 255, .15);
     color: #d4c19c;
+    font-size: 16px!important;
+    font-weight: 400!important;
 }
-.nav-gob .nav-link {
+/* .nav-gob .nav-link {
     padding-left: 10px !important;
-}
+    font-size: 16px!important;
+    color: #fff!important;
+    font-weight: 400!important;
+} */
 .fixedmenu{
   position: fixed; 
   top: 40px;
@@ -261,6 +270,7 @@ body{
     .main__title, .main__word{
         font-size: 56px;
     }
+    
  }
 
  #boletines{
@@ -712,7 +722,7 @@ body{
       overflow:hidden;
     }
     #branding .carousel-item{
-        width: 270px;
+        width: 220px;
         margin-top: 10px;
     }
         #branding .uno, #branding .tres{
@@ -730,6 +740,7 @@ body{
     #branding .dos span {
       padding-left: 4rem;
     }
+    
  }
 
 
@@ -991,6 +1002,15 @@ background: #d6249f;
     margin: 0 auto;
     z-index: 0; 
   }
+.linesvgt{
+    position: absolute;
+    max-width: 883px;
+    top: -37px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 0; 
+  }
 .mtm{
   margin-top: 56px;
 }
@@ -1004,6 +1024,9 @@ background: #d6249f;
     .titulo-servicios{
       width: 250px;
       margin: 0 auto;
+    }
+    .linesvgt{
+      display: none;
     }
    }
 
@@ -1120,9 +1143,9 @@ nav.movil .nav-link {
 }
 
  nav .nav-link {
-    color: #F2F5DB !important;
-    font-size: 20px !important;
-    font-weight: 500 !important;
+    color: #F2F5DB ;
+    font-size: 20px ;
+    font-weight: 500 ;
     padding: .3em 0;
     text-align: start;
     text-decoration: none;
@@ -1179,8 +1202,8 @@ nav .nav-link:hover,
 nav .nav-link:active,
 .menu-item a:hover,
 .menu-item a:active {
-    color: #fff !important;
-    font-weight: 600 !important;
+    color: #fff;
+    font-weight: 600;
     border-radius: 0;
     transition: all 0.2s
 }
@@ -1505,10 +1528,7 @@ a.zoom:hover, .zoom p.url:hover {
     .main__title{
       font-size: 53px;
     }
-    .titulo-servicios{
-      font-size: 14px;
-      line-height: 16px;
-    }
+    
     #branding .uno, #branding .tres{
       font-size: 66px;
       line-height: 66px;
@@ -1523,7 +1543,9 @@ a.zoom:hover, .zoom p.url:hover {
     #branding .accordion-body{
       font-size: 16px;
     }
-
+    #branding .carousel-item{
+      width: 480px;
+     }
     .titulo-boletin-home{
     font-size: 20px;
     }
@@ -1554,7 +1576,7 @@ a.zoom:hover, .zoom p.url:hover {
       line-height: 60px;
      }
      #branding .carousel-item{
-      width: 450px;
+      width: 400px;
      }
      .titulo-servicios{
       width: 250px;
