@@ -1362,8 +1362,8 @@ ul.menu li {
 
 .elementor-widget-container{
   font-family: "Noto Sans", sans-serif;
-  font-size: 20px;
-  color: var(--color-text);
+ /* font-size: 20px;
+   color: var(--color-text); */
   font-weight: 300!important;
 }
 
@@ -1435,8 +1435,47 @@ header.nem25{
 .title-convo25 h1{
     font-family: "Noto Sans", serif!important;
 }
-
 /* boleti nem 2025*/
+
+/* boleti nem 2024 */
+h1.parrafo-nem {
+    color: #7C2C82 !important;
+    font-size: 64px;
+    line-height: 1em !important;
+}
+.parrafo-nem {
+    line-height: 2.5em !important;
+    letter-spacing: .4px;
+    color: #7C2C82 !important;
+    font-size: 18px;
+}
+.parrafo-nem a, .btn-nem {
+    color: #7C2C82 !important;
+    text-decoration: underline !important;
+    font-weight: 700;
+}
+.parrafo-nem a:hover, .btn-nem:hover {
+    color: #f4565b !important;
+}
+.francesa {
+    text-indent: -30px;
+    padding-left: 40px;
+}
+/* boleti nem 2024 */
+
+/* boletines convo 2023 */
+.postid-27371 .share, .postid-1274 .share, .postid-1039 .share, .postid-22177 .share, .postid-1039 .share i, .postid-1274 .share i, .postid-22177 .share i, .postid-27371 .share i {
+    color: #604fb1;
+}
+.postid-23384 .share, .postid-3405 .share, .postid-1220 .share, .postid-767 .share, .postid-767 .share i, .postid-1220 .share i, .postid-3405 .share i, .postid-23384 .share i {
+    color: #005B7E;
+} 
+.postid-1337 .share, .postid-1122 .share, .postid-22300 .share, .postid-1122 .share i, .postid-1337 .share i, .postid-22300 .share i {
+    color: #ff730e;
+}
+
+/* boletines convo 2023 */
+
 
 /* boletines seccion */
 .card-principal {

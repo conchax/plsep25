@@ -43,15 +43,13 @@ while (have_posts()) :
 					</div>
 				</div>
 			</div>
-
-			
 			<div class="mask">
 				<div class="container cont mt-5">
 					<div class="row justify-content-center pt-2">
 						<div class="col-xl-2 col-lg-3 ">
 							<div class="descripcion-servicios">
 								<svg width="50" height="50">
-									<use xlink:href="./img/prepa-distinta.svg#icono-examen-unico" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-examen-unico" />
 								</svg>
 								<div class="titulo-servicios">
 									Examen <br> único
@@ -61,7 +59,7 @@ while (have_posts()) :
 						<div class="col-xl-2 col-lg-3">
 							<div class="descripcion-servicios">
 								<svg width="50" height="50">
-									<use xlink:href="./img/prepa-distinta.svg#icono-atencion-temprana" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-atencion-temprana" />
 								</svg>
 								<div class="titulo-servicios">
 									Perfil del estudiante<br>para tutoría
@@ -71,7 +69,7 @@ while (have_posts()) :
 						<div class="col-xl-2 col-lg-3 ">
 							<div class="descripcion-servicios">
 								<svg width="50" height="50">
-									<use xlink:href="./img/prepa-distinta.svg#icono-orientacion-vocacional" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-orientacion-vocacional" />
 								</svg>
 								<div class="titulo-servicios">
 									Orientación<br>vocacional
@@ -81,7 +79,7 @@ while (have_posts()) :
 						<div class="col-xl-2 col-lg-3 ">
 							<div class="descripcion-servicios">
 								<svg width="50" height="50">
-									<use xlink:href="./img/prepa-distinta.svg#icono-pase-reglamentario" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-pase-reglamentario" />
 								</svg>
 								<div class="titulo-servicios">
 									Continuo<br>mis estudios
@@ -91,7 +89,7 @@ while (have_posts()) :
 						<div class="col-xl-2 col-lg-3 mt-xl-0 mt-lg-5">
 							<div class="descripcion-servicios">
 								<svg width="50" height="50">
-									<use xlink:href="./img/prepa-distinta.svg#icono-educacion-continua" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-educacion-continua" />
 								</svg>
 								<div class="titulo-servicios">
 									Red de extensión <br> académica y desarrollo <br> integral
@@ -101,7 +99,7 @@ while (have_posts()) :
 						<div class="col-xl-2 col-lg-3 mt-xl-0 mt-lg-5">
 							<div class="descripcion-servicios">
 								<svg width="50" height="50">
-									<use xlink:href="./img/prepa-distinta.svg#icono-bolsa-trabajo" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-bolsa-trabajo" />
 								</svg>
 								<div class="titulo-servicios">
 									Bolsa<br>de trabajo
@@ -114,7 +112,7 @@ while (have_posts()) :
 						<div class="col-lg-3 text-center">
 							<div class="descripcion-servicios d-lg-inline-flex align-self-center">
 								<svg width="50" height="50">
-									<use xlink:href="./img/prepa-distinta.svg#icono-vida-saludable" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-vida-saludable" />
 								</svg>
 								<div class="titulo-servicios align-self-center ps-md-2">
 									Vida saludable
@@ -124,7 +122,7 @@ while (have_posts()) :
 						<div class="col-lg-3 text-center">
 							<div class="descripcion-servicios mt-4 mt-lg-1 d-lg-inline-flex align-self-center">
 								<svg width="50" height="50">
-									<use xlink:href="./img/prepa-distinta.svg#icono-cultura" />
+									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/prepa-distinta.svg#icono-cultura" />
 								</svg>
 								<div class="titulo-servicios align-self-center ps-lg-2">
 									Cultura
@@ -219,9 +217,7 @@ while (have_posts()) :
 					</svg>
 				</div>
 			</div>
-			
-
-		</section>
+		</section>		
 
 		<?php get_template_part('template-parts/boletines-home'); ?>
 
@@ -289,22 +285,22 @@ while (have_posts()) :
 							<div id="carousel-identidad-branding" class="carousel slide " data-bs-interval="10000" data-bs-ride="carousel" data-bs-pause="false">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="img/1.png" class="img-fluid" alt="m1">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/1.png" class="img-fluid" alt="m1">
 									</div>
 									<div class="carousel-item">
-										<img src="img/2.png" class="img-fluid" alt="m1">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/2.png" class="img-fluid" alt="m2">
 									</div>
 									<div class="carousel-item">
-										<img src="img/3.png" class="img-fluid" alt="m1">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/3.png" class="img-fluid" alt="m3">
 									</div>
 									<div class="carousel-item">
-										<img src="img/4.png" class="img-fluid" alt="m1">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/4.png" class="img-fluid" alt="m4">
 									</div>
 									<div class="carousel-item">
-										<img src="img/5.png" class="img-fluid" alt="m1">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/5.png" class="img-fluid" alt="m5">
 									</div>
 									<div class="carousel-item">
-										<img src="img/6.png" class="img-fluid" alt="m1">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/6.png" class="img-fluid" alt="m6">
 									</div>
 
 								</div>
@@ -313,7 +309,7 @@ while (have_posts()) :
 					</div>
 				</div>
 			</div>
-	    </section>
+		</section>
 
 	</main>
 
