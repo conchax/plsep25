@@ -7,7 +7,7 @@ if (!defined('ABSPATH'))
 <footer>
     <div class="container">
         <div class="row justify-content-between align-items-center">
-            <div class=" col-12 col-md-5 order-2 order-md-1 text-center text-md-start">
+            <div class=" col-lg-6 order-2 order-md-1 text-center text-md-start">
                 <div class="bor">
                     Av. Revolución 1425, colonia Campestre, <br>
                     alcaldía Álvaro Obregón, CDMX, 01040.
@@ -15,7 +15,7 @@ if (!defined('ABSPATH'))
                         href="mailto:contacto@prepaenlinea.gob.mx">contacto@prepaenlinea.gob.mx</a>
                 </div>
             </div>
-            <div class=" col-12 col-md-5 text-center text-md-end order-1 order-md-2">
+            <div class=" col-lg-6 text-center text-md-end order-1 order-md-2">
 
                 <ul class="wrapper">
                     <li class="icon facebook"> 

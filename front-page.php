@@ -12,11 +12,10 @@ if (! defined('ABSPATH')) {
 while (have_posts()) :
 	the_post();
 ?>
-	<section class="section-w"></section>
+	<section class="section-h"></section>
 	<main>
-
 		<?php add_revslider('slider-2', 'homepage'); ?>
-
+		
 		<section class="identidad-palabras">
 			<div class="container">
 				<div class="row ">

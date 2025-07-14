@@ -95,16 +95,24 @@ if (!defined('ABSPATH'))
               </a>
             </div>
             <div class="col-4 col-md-8 text-end">
-              <a class="btn-menu d-none d-md-inline-block" href="<?php echo SITE_URL ?>/preguntas-frecuentes/">Preguntas frecuentes</a>
-              <a class="btn-menu d-none d-md-inline-block" data-bs-toggle="modal" data-bs-target="#micomunidad" href="#micomunidad">Mi comunidad</a>
+              <a class="btn-menu d-none d-lg-inline-block" href="<?php echo SITE_URL ?>/preguntas-frecuentes/">Preguntas frecuentes</a>
+              <a class="btn-menu d-none d-lg-inline-block" data-bs-toggle="modal" data-bs-target="#micomunidad" href="#micomunidad">Mi comunidad</a>
               <div class="btn-menu fw-bold" onclick="myFunction()" id="toggle">
                 <div>Menú</div>
               </div>
-            </div>
-
+            </div>          
+          </div> 
+          <div class="row">
+          <div class="col-6">
+            <a class="mt-3 btn-menu d-block d-sm-block d-md-none" href="<?php echo SITE_URL ?>/preguntas-frecuentes/">Preguntas frecuentes</a>    
+          </div>
+          <div class="col-6">
+            <a class="mt-3 btn-menu d-block d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#micomunidad" href="#micomunidad">Mi comunidad</a>
           </div>
         </div>
+        </div>
       </div>
+     
     </div>
 
     <div id="overlay" class="overlaym">
