@@ -26,15 +26,15 @@
 <section>
   <div class="container mt-5">
     <div class="row justify-content-center">
-      <div class="col-8 text-center mb-5 px-4">
+      <div class="col-md-8 text-center mb-5 px-4">
         ¡Bienvenido! En esta sección descubrirás información esencial y relevantede Prepa en Línea-SEP. Explora cada categoría y mantente al día con la información que hemos preparado para ti.
       </div>
     </div>
   </div>
   <div class="container cont mt-5">
     <div class="row justify-content-center">
-      <div class="col-lg-4">
-        <div class="text-center">
+       <div class="col-lg-4">
+        <div class="text-center border-boletin mt-4 mt-lg-0">
           <svg width="50" height="50">
             <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/boletines.svg#icono-boletin-convocatoria" />
           </svg>
@@ -52,8 +52,8 @@
           </a>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="text-center">
+      <div class="col-lg-4 mt-5 mt-lg-0">
+        <div class="text-center border-boletin mt-5 mt-lg-0">
           <svg width="50" height="50">
             <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/boletines.svg#icono-boletin-nem" />
           </svg>
@@ -71,8 +71,8 @@
           </a>          
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="text-center">
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="text-center border-boletin mt-5 mt-lg-0">
           <svg width="50" height="50">
             <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/boletines.svg#icono-boletin-eventos" />
           </svg>
@@ -92,7 +92,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="line-boletines-svg d-none d-lg-inline-block">
+      <div class="line-boletines-svg d-none d-xl-inline-block">
           <div class=" text-center ">
             <svg viewBox="0 0 1324 343" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M662.068 48.4844H661.068V0L662.068 4.37112e-08V48.4844Z" fill="#D9D9D9"/>
@@ -103,14 +103,40 @@
             </svg>
           </div>
       </div>
+      
+      <div class="line-boletines-svg-tb d-none d-lg-block d-xl-none">
+        <div class="text-center">
+          <svg width="940" height="386" viewBox="0 0 940 386" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M470.048 36.5089H469.338V0L470.048 3.29147e-08V36.5089Z" fill="#D9D9D9"/>
+            <path d="M788.101 31.6556V36.5089H787.392V31.6556C787.391 25.6255 782.782 20.7371 777.097 20.7371L162.903 20.7371C157.218 20.7371 152.609 25.6256 152.609 31.6557V36.509H151.899V31.6557C151.899 25.2097 156.825 19.9841 162.903 19.9841L777.097 19.9841C783.175 19.9841 788.101 25.2096 788.101 31.6556Z" fill="#D9D9D9"/>
+            <path d="M279.103 385.247V386H21.2991V385.247H279.103ZM299.692 363.41V59.099C299.692 47.0387 290.474 37.2619 279.103 37.2619H21.2991C9.92804 37.2619 0.70997 47.0387 0.70997 59.099V363.41C0.70997 375.47 9.92804 385.247 21.2991 385.247V386C9.71976 386 0.298556 376.2 0.0069333 363.993L0 363.41V59.099C0 46.8178 9.24022 36.8255 20.7493 36.5163L21.2991 36.5089H279.103C290.866 36.5089 300.402 46.6228 300.402 59.099V363.41C300.402 375.886 290.866 386 279.103 386V385.247C290.474 385.247 299.692 375.47 299.692 363.41Z" fill="#D9D9D9"/>
+            <path d="M598.902 385.247V386H340.072V385.247H598.902ZM619.491 363.41V59.099C619.491 47.0387 610.273 37.2619 598.902 37.2619H340.072C328.701 37.2619 319.483 47.0387 319.483 59.099V363.41C319.483 375.47 328.701 385.247 340.072 385.247V386C328.492 386 319.071 376.2 318.78 363.993L318.773 363.41V59.099C318.773 46.8178 328.013 36.8255 339.522 36.5163L340.072 36.5089H598.902C610.665 36.5089 620.201 46.6228 620.201 59.099V363.41C620.201 375.886 610.665 386 598.902 386V385.247C610.273 385.247 619.491 375.47 619.491 363.41Z" fill="#D9D9D9"/>
+            <path d="M918.701 385.247V386H661.923V385.247H918.701ZM939.29 363.41V59.099C939.29 47.0387 930.072 37.2619 918.701 37.2619H661.923C650.552 37.2619 641.334 47.0387 641.334 59.099V363.41C641.334 375.47 650.552 385.247 661.923 385.247V386C650.344 386 640.923 376.2 640.631 363.993L640.624 363.41V59.099C640.624 46.8178 649.864 36.8255 661.373 36.5163L661.923 36.5089H918.701C930.464 36.5089 940 46.6228 940 59.099V363.41C940 375.886 930.464 386 918.701 386V385.247C930.072 385.247 939.29 375.47 939.29 363.41Z" fill="#D9D9D9"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="line-boletines-svg-mb d-block d-md-block d-lg-none">
+        <div class="text-center">
+          <svg width="353" height="1160" viewBox="0 0 353 1160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M177 50H176V-2L177 -2V50Z" fill="#D9D9D9"/>
+            <path d="M177 435H176V415H177V435Z" fill="#D9D9D9"/>
+            <path d="M177 820H176V800H177V820Z" fill="#D9D9D9"/>
+            <path d="M333 414V415H20V414H333ZM352 395V70C352 59.5066 343.493 51 333 51H20C9.50659 51 1.00001 59.5066 1 70V395C1 405.493 9.50659 414 20 414V415L19.4834 414.993C8.67646 414.719 0 405.873 0 395V70C5.79869e-06 58.9543 8.95431 50 20 50H333C344.046 50 353 58.9543 353 70V395L352.993 395.517C352.724 406.152 344.152 414.724 333.517 414.993L333 415V414C343.493 414 352 405.493 352 395Z" fill="#D9D9D9"/>
+            <path d="M333 799V800H20V799H333ZM352 780V455C352 444.507 343.493 436 333 436H20C9.50659 436 1.00001 444.507 1 455V780C1 790.493 9.50659 799 20 799V800L19.4834 799.993C8.67646 799.719 0 790.873 0 780V455C5.79869e-06 443.954 8.95431 435 20 435H333C344.046 435 353 443.954 353 455V780L352.993 780.517C352.724 791.152 344.152 799.724 333.517 799.993L333 800V799C343.493 799 352 790.493 352 780Z" fill="#D9D9D9"/>
+            <path d="M333 1159V1160H20V1159H333ZM352 1140V840C352 829.507 343.493 821 333 821H20C9.50659 821 1.00001 829.507 1 840V1140C1 1150.49 9.50659 1159 20 1159V1160L19.4834 1159.99C8.67646 1159.72 0 1150.87 0 1140V840C5.79869e-06 828.954 8.95431 820 20 820H333C344.046 820 353 828.954 353 840V1140L352.993 1140.52C352.724 1151.15 344.152 1159.72 333.517 1159.99L333 1160V1159C343.493 1159 352 1150.49 352 1140Z" fill="#D9D9D9"/>
+          </svg>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 <section id="boletines">
   <div class="container">
-    <div class="row my-4">
-      <div class="col-12">
+    <div class="row my-5">
+      <div class="col-12 mb-5">
         <div class="accordion" id="accordion-boletines-home">
           <?php $boletines_home = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'has_password' => false, 'posts_per_page' => 5)); ?>
           <?php while ($boletines_home->have_posts()) : $boletines_home->the_post(); ?>

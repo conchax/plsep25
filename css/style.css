@@ -1090,6 +1090,10 @@ background: #d6249f;
  .parrafo-lineas-boletin{
   font-size: 18px;
  }
+ .border-boletin{
+  padding: 0 10px;
+ }
+
  .line-boletines-svg{
   position: absolute;
   max-width: 1320px;   
@@ -1098,6 +1102,20 @@ background: #d6249f;
   right: 0;
   margin: 0 auto;
   z-index: 0;  
+ }
+ .line-boletines-svg-tb{
+  position: absolute;
+  max-width: 940px;   
+  top: -65px;
+  z-index: 0
+ }
+ .line-boletines-svg-mb{
+  position: absolute;   
+  top: -65px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 0
  }
  .linesvg{
   position: absolute;
@@ -1143,8 +1161,14 @@ background: #d6249f;
     .linesvgt{
       display: none;
     }
+     
    }
-
+@media (max-width: 768px) { 
+  .border-boletin{
+      width: 300px;
+      margin: 0 auto;
+     }
+ }
 /* --------------------------------------------- menu old ---------------------------------------- */
 
 #toggle{
