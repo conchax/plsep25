@@ -24,7 +24,8 @@ if (!defined('ABSPATH'))
   <?php wp_head(); ?>
 
   <?php get_template_part('template-parts/gatm'); ?>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" id="estilos-css" href="<?php echo get_template_directory_uri(); ?>/css/style.css?ver=6.8.1" type="text/css" media="all">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> -->
   <script>
     (function(c, s, q, u, a, r, e) {
       c.hj = c.hj || function() {

@@ -189,13 +189,16 @@ h2{
 .btn-arrow{
   display: block;
   margin:0 auto;
-/*   padding:0 5px;
- */  background: none;
+  padding:0 4px;
+  background: none;
   color: var(--color-secondary);
   border: 2px solid var(--color-secondary);
   border-radius: 30px;
+  transition: .8s ease;
 }
-
+.btn-arrow[aria-expanded="true"]{
+  transform: rotate(180deg);
+}
 
 /* boton collapse */
 
@@ -242,7 +245,10 @@ hr.coll{
 .card{
   border: none;
 }
-
+hr.verde{
+  color:var(--color-secondary);
+  opacity: 1;
+}
 @media (max-width: 575.98px) { 
   .btn-collapse[aria-expanded="true"],.btn-collapse[aria-expanded="false"]{
     width: 100%;
@@ -439,8 +445,8 @@ hr.coll{
   width: 0;
   height: auto;
 }
-.collapsed{
-      border-left: 1px solid #ccc;
+#accordion-boletines-home .collapsed{
+    border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
 }
 
@@ -1781,3 +1787,15 @@ a.zoom:hover, .zoom p.url:hover {
         padding: 1.6rem 0;
       }
    }
+
+   /* collapsess */
+
+.collapse-plsep {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.collapse-plsep.show {
+  min-height: 100px; 
+}

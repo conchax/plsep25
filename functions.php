@@ -5,7 +5,7 @@ define('SITE_TITLE', get_bloginfo('title'));
 
 function plsep_assets()
 {
-  wp_enqueue_style("estilos", get_template_directory_uri() . "/css/style.css");
+ /*  wp_enqueue_style("estilos", get_template_directory_uri() . "/css/style.css"); */
   wp_enqueue_style("fachada", get_template_directory_uri() . "/css/lite-yt-embed.css");
 }
 add_action("wp_enqueue_scripts", "plsep_assets");
