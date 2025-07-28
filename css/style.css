@@ -200,6 +200,24 @@ h2{
   transform: rotate(180deg);
 }
 
+.btn-cal{
+  font-size: 12px!important;
+  color: var(--color-text);
+  font-weight: 700;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  font-family: "Noto Sans", sans-serif!important;
+}
+
+.btn-cal:hover{
+  border: 1px solid #26290f;
+}
+
+.dropdown-item-plsep{
+  color: var(--color-text);
+  font-size: 12px;
+}
+
 /* boton collapse */
 
 .btn-collapse[aria-expanded="true"]{
@@ -1798,4 +1816,7 @@ a.zoom:hover, .zoom p.url:hover {
 
 .collapse-plsep.show {
   min-height: 100px; 
+  max-height: none;
+  transition: max-height 0.3s ease-out;
+  overflow: visible;
 }
