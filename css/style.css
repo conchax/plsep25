@@ -169,7 +169,14 @@ h2{
   color: var(--color-secondary);
   text-align: center;
 }
-
+ a.single{
+  color:var(--color-text);
+  font-weight: 400;
+  text-decoration: underline;
+}
+a.single:hover{
+  color:#999;
+}
 .btn-dos{
   color: #fff;
   background-color: var(--color-secondary);
@@ -1728,6 +1735,9 @@ a.zoom:hover, .zoom p.url:hover {
   .titulou::after{
     width: 100px;
     left: 40px;
+  }
+  h2{
+    font-size: 24px;
   }
   
  }
