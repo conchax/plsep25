@@ -1141,8 +1141,11 @@ background: #d6249f;
  }
  .line-boletines-svg-tb{
   position: absolute;
-  max-width: 940px;   
+  min-width: 940px;   
   top: -65px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: -1;
  }
  .line-boletines-svg-mb{
@@ -1201,7 +1204,7 @@ background: #d6249f;
    }
 @media (max-width: 768px) { 
   .border-boletin{
-      width: 300px;
+      width: 330px;
       margin: 0 auto;
      }
  }
