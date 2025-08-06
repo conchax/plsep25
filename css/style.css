@@ -895,6 +895,7 @@ hr.verde{
   border-left: 10px solid var(--color-secondary);
   padding-left: 10px;
   font-weight: 400;
+  font-size: 15px;
  }
 
  .wrapper {
