@@ -234,7 +234,7 @@ while (have_posts()) :
 							</div>
 
 							<div class="list-item">
-								<a href="https://prepaenlinea.sep.gob.mx/vinculacion/sne/" target="_blank">
+								<a href="#" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/banner-colavorativo-2.webp" alt="banner-campana-vs-fentalino"
 										class="img-fluid">
 								</a>
