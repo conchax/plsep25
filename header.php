@@ -87,29 +87,37 @@ if (!defined('ABSPATH'))
 
       <div class=" bg-h shadow-sm">
         <div class="container">
-          <div class="row">
-            <div class="col-8 col-md-4 text-start">
+          <div class="row align-items-center">
+            <div class="col-7 col-md-4 text-start">
               <a aria-label="home plsep" href="<?php echo SITE_URL ?>">
                 <svg width="193" height="33">
                   <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#logo-plsep" />
                 </svg>
               </a>
             </div>
-            <div class="col-4 col-md-8 text-end">
-              <a class="btn-menu d-none d-lg-inline-block" href="<?php echo SITE_URL ?>/preguntas-frecuentes/">Preguntas frecuentes</a>
-              <a class="btn-menu d-none d-lg-inline-block" data-bs-toggle="modal" data-bs-target="#micomunidad" href="#micomunidad">Mi comunidad</a>
-              <div class="btn-menu fw-bold" onclick="myFunction()" id="toggle">
-                <div>Menú</div>
+            <div class="col-5 col-md-8 text-end">
+              <div class="d-inline-flex gap-3">
+                <a class="btn-menu" href="<?php echo SITE_URL ?>/preguntas-frecuentes/">
+                  <svg width="20" height="20">
+                    <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-faq" />
+                  </svg> <span class="t"> Preguntas frecuentes</span>
+                </a>
+                <a class="btn-menu" data-bs-toggle="modal" data-bs-target="#micomunidad" href="#micomunidad">
+                  <svg width="20" height="20">
+                    <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-micomunidad" />
+                  </svg> <span class="t"> Mi comunidad</span>
+                </a>
+                <div class="btn-menu fw-bold" onclick="myFunction()" id="toggle">
+                  <svg width="20" height="20">
+                    <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-menu" />
+                  </svg> <span class="t"> Menú</span>
+                </div>
               </div>
+              
+            </div>
             </div>          
           </div> 
-          <div class="row">
-          <div class="col-6">
-            <a class="mt-3 btn-menu d-block d-sm-block d-md-none" href="<?php echo SITE_URL ?>/preguntas-frecuentes/">Preguntas frecuentes</a>    
-          </div>
-          <div class="col-6">
-            <a class="mt-3 btn-menu d-block d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#micomunidad" href="#micomunidad">Mi comunidad</a>
-          </div>
+          
         </div>
         </div>
       </div>

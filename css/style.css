@@ -121,12 +121,28 @@ body{
 .btn-menu:active {
   transform: scale(0.9);
 }
-@media (max-width: 575.98px) { 
+
+
+@media (max-width: 768px) { 
+  .btn-menu span.t{
+    display: none;    
+  }
   .fixedmenu .btn-menu{
     font-size: 14px;
-    padding: 2px 10px;
+    padding: 5px 6px;
+    border-radius: 50%;
   }
- }
+  .btn-menu:before{
+    padding: 5px 6px;
+  }
+  .bg-h{
+    padding: 8px 0;
+  }
+ 
+}
+
+ 
+
 #banner{
     margin-top:140px;
     position: relative;
