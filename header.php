@@ -96,32 +96,32 @@ if (!defined('ABSPATH'))
               </a>
             </div>
             <div class="col-5 col-md-8 text-end">
-              <div class="d-inline-flex gap-3">
-                <a class="btn-menu" href="<?php echo SITE_URL ?>/preguntas-frecuentes/">
+              <div class="d-inline-flex gap-2">
+                <a class=" btn-menu" href="<?php echo SITE_URL ?>/preguntas-frecuentes/">
                   <svg width="20" height="20">
                     <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-faq" />
                   </svg> <span class="t"> Preguntas frecuentes</span>
                 </a>
-                <a class="btn-menu" data-bs-toggle="modal" data-bs-target="#micomunidad" href="#micomunidad">
-                  <svg width="20" height="20">
+                <a class=" btn-menu" data-bs-toggle="modal" data-bs-target="#micomunidad" href="#micomunidad">
+                  <svg width="22" height="22">
                     <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-micomunidad" />
                   </svg> <span class="t"> Mi comunidad</span>
                 </a>
-                <div class="btn-menu fw-bold" onclick="myFunction()" id="toggle">
-                  <svg width="20" height="20">
+                <div class=" btn-menu fw-bold" onclick="myFunction()" id="toggle">
+                  <svg style="margin-top: -4px;" width="20" height="20">
                     <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-menu" />
                   </svg> <span class="t"> Menú</span>
                 </div>
               </div>
-              
+
             </div>
-            </div>          
-          </div> 
-          
+          </div>
         </div>
-        </div>
+
       </div>
-     
+    </div>
+    </div>
+
     </div>
 
     <div id="overlay" class="overlaym">
