@@ -1856,3 +1856,34 @@ a.zoom:hover, .zoom p.url:hover {
   transition: max-height 0.3s ease-out;
   overflow: visible;
 }
+
+/* utilityes */
+
+.borde-gris {
+    border: 1px solid var(--color-border);
+    border-radius: 26px;
+    padding: 20px 0;
+}
+
+.link-green{
+  color: var(--color-secondary);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline!important;
+    transition: color 0.3s ease-in-out;
+}
+.link-green:hover{
+  color: var(--color-text);
+}
+.modal-header .btn-close {
+    margin: 0;
+}
+.modal-title{
+  color:var(--color-text);
+  font-weight: 300;
+}
+
+
+.modal-header{
+  border-bottom:1px solid var(--color-secondary)
+}
