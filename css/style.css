@@ -228,6 +228,20 @@ a.single:hover{
   transform: rotate(180deg);
 }
 
+.btn-circle{
+  background-color: transparent;
+  border-radius: 50%;
+  color: var(--color-text);
+  padding: 18px;
+  border: 2px solid var(--color-secondary);
+  transition: .8s ease;
+}
+.btn-circle:hover{
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  border: 2px solid var(--color-secondary);
+}
+
 .btn-cal{
   font-size: 12px!important;
   color: var(--color-text);
@@ -1547,14 +1561,16 @@ ul.menu li {
 @media (max-width: 575.98px) {
     .breadcrumb {
         left: 20px;
-        top:224px
+        top:178px
     }
     #rev_slider_26_1_forcefullwidth{
-      margin-top: -
-      65px!important;
+      margin-top: -65px!important;
+    }
+    .section-w{
+      margin-top: 100px;
     }
     .section-h {
-      margin-top: 140px;
+      margin-top: 160px;
     }
 }
 
