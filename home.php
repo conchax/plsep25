@@ -18,7 +18,7 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="breadcrumb"><?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?></div>
+      <div class="breadcrumb"><nav aria-label="breadcrumbs" class="rank-math-breadcrumb"><p><a href="http://10.3.29.145/">Home</a></p></nav></div>
     </div>
   </div>
 </section>
@@ -27,7 +27,7 @@
   <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-md-8 text-center mb-5 px-4">
-        ¡Bienvenido! En esta sección descubrirás información esencial y relevantede Prepa en Línea-SEP. Explora cada categoría y mantente al día con la información que hemos preparado para ti.
+        ¡Te damos la bienvenida! En esta sección descubrirás información esencial y relevante de Prepa en Línea-SEP. Explora cada categoría y mantente al día con la información que hemos preparado para ti.
       </div>
     </div>
   </div>
@@ -78,7 +78,7 @@
           </svg>
           <p><b>Eventos PL-SEP</b></p>
           <p class="parrafo-lineas-boletin">Aquí encontrarás información sobre noticias y eventos destacados para la comunidad de Prepa en Línea-SEP.</p>
-          <a class="btn-leer-mas mx-auto" href="<?php echo SITE_URL ?>/especiales/">
+          <a class="btn-leer-mas mx-auto" href="<?php echo SITE_URL ?>/eventos-pl-sep/">
             Ver todos
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
               width="15px" class="icon">
@@ -135,6 +135,9 @@
 
 <section id="boletines">
   <div class="container">
+    <div class="row">
+      <div class="col"><h2 class="mt-5">Explora las publicaciones más recientes.</h2></div>
+    </div>
     <div class="row my-5">
       <div class="col-12">
         <div class="accordion" id="accordion-boletines-home">

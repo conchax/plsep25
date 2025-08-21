@@ -955,6 +955,10 @@ hr.verde{
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+.wrapper .icon svg{
+  vertical-align:sub;
+}
+
 .wrapper li.icon:last-child{
   margin-right: 0px;
 }
@@ -1071,6 +1075,7 @@ background: #d6249f;
     text-align: left;
     font-weight: 300;
     width: auto;
+    font-size: 18px;
 }
 .main-footer .list-info {
     line-height: auto;
@@ -1103,8 +1108,11 @@ background: #d6249f;
 }
 .main-footer .list-info a {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
+}
+.main-footer .list-info a:hover {
+ text-decoration: underline;
 }
 .list-inline>li {
     display: inline-block;
@@ -1863,13 +1871,13 @@ a.zoom:hover, .zoom p.url:hover {
 .collapse-plsep {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 1.5s ease-out;
 }
 
 .collapse-plsep.show {
   min-height: 100px; 
   max-height: none;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 1.5s ease-out;
   overflow: visible;
 }
 
