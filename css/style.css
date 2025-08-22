@@ -1871,13 +1871,13 @@ a.zoom:hover, .zoom p.url:hover {
 .collapse-plsep {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1.5s ease-out;
+  transition: max-height 0.5s ease-out;
 }
 
 .collapse-plsep.show {
   min-height: 100px; 
   max-height: none;
-  transition: max-height 1.5s ease-out;
+  transition: max-height 0.5s ease-out;
   overflow: visible;
 }
 
@@ -1890,14 +1890,14 @@ a.zoom:hover, .zoom p.url:hover {
 }
 
 .link-green{
-  color: var(--color-secondary);
+  color: var(--color-text);
     font-weight: bold;
     font-size: 20px;
     text-decoration: underline!important;
     transition: color 0.3s ease-in-out;
 }
 .link-green:hover{
-  color: var(--color-text);
+  color: var(--color-secondary);
 }
 .modal-header .btn-close {
     margin: 0;
