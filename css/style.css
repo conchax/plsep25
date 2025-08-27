@@ -194,7 +194,7 @@ b, strong{
   text-decoration: underline; 
 }
 a.single:hover{
-  color:#999;
+  color:var(--color-secondary);
 }
 .btn-dos{
   color: #fff;
@@ -1871,13 +1871,13 @@ a.zoom:hover, .zoom p.url:hover {
 .collapse-plsep {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-out;
+  transition: max-height .5s ease-out;
 }
 
 .collapse-plsep.show {
   min-height: 100px; 
   max-height: none;
-  transition: max-height 0.5s ease-out;
+  transition: max-height .5s ease-out;
   overflow: visible;
 }
 
