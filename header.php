@@ -102,7 +102,7 @@ if (!defined('ABSPATH'))
                     <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-faq" />
                   </svg> <span class="t"> Preguntas frecuentes</span>
                 </a>
-                <a class=" btn-menu" data-bs-toggle="modal" data-bs-target="#micomunidad" href="#micomunidad">
+                <a class=" btn-menu" href="#">
                   <svg width="22" height="22">
                     <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-micomunidad" />
                   </svg> <span class="t"> Mi comunidad</span>
@@ -117,11 +117,7 @@ if (!defined('ABSPATH'))
             </div>
           </div>
         </div>
-
       </div>
-    </div>
-    </div>
-
     </div>
 
     <div id="overlay" class="overlaym">
