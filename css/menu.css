@@ -1,3 +1,6 @@
+.line-menu-over{
+  color:#fff; border: 1px solid; width: 70%; margin:0 auto; opacity: 1;
+}
 aside.over {
     position: relative;
     z-index: 1060;
@@ -11,7 +14,6 @@ aside.over {
 }
 
 .aside-left {
-
   left: 0;
   background-color: #fff;
   -webkit-transform: translateY(-200%);
@@ -76,14 +78,15 @@ aside.over {
 
 
 .bar {
-  display: block;
-  background-color: #38618c;
+  display: none;
   width: 30px;
   height: 3px;
   border-radius: 5px;
   margin: 5px auto;
   transition: background-color 0.4s ease-in, transform 0.4s ease-in,
     width 0.4s ease-in;
+  position: relative;
+  z-index: 1065;
 }
 
 .button {
@@ -116,7 +119,7 @@ aside.over {
   justify-content: center;
 }
 .container-social a{
-margin: 25px;
+margin:10px 25px;
 color: #fff;
 transition: all 0.8s ease-out;
 }
@@ -184,13 +187,17 @@ transition: all 0.8s ease-out;
    }
 
    .container-social a {
-     margin: 10px;
+     margin: 10px 14px;
    }
 
    input[type="checkbox"]:checked~label {
      left: 0;
-     right: 0;
+     right: 0!important;
+     top: 10px;
    }
+   input[type="checkbox"]:checked~label .bar{
+  background-color: var(--color-secondary);
+}
  }
    
 @media (min-width: 768px) {
@@ -203,9 +210,13 @@ transition: all 0.8s ease-out;
    }
   input[type="checkbox"]:checked~label {
     left: 0;
-    right: 0;
+    right: 0!important;
+    top:22px;
+    
   }
-
+input[type="checkbox"]:checked~label .bar{
+  background-color: var(--color-secondary);
+}
   .aside-left {
     display: flex;
     width: 100%;
@@ -259,9 +270,12 @@ transition: all 0.8s ease-out;
     right: 10px;
     left: auto;
     z-index: 1065;
+
   }
   input[type="checkbox"]:checked ~ label .bar {
   background-color: #fff;
+    right: 30px;
+
 }
   .aside-list{
     margin-top: 0;
@@ -313,16 +327,14 @@ transition: all 0.8s ease-out;
   }
 
   .aside-list li {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 
 }
 
 
 
- input[type="checkbox"] {
-  display: none;
-}
+
 
 input[type="checkbox"]:checked ~ aside .aside-left {
   transform: translateY(0%);
@@ -332,10 +344,13 @@ input[type="checkbox"]:checked ~ aside .aside-right {
   transform: translateX(0%);
 }
 
-/* input[type="checkbox"]:checked ~ label .bar {
-  background-color: #c1d13f;
-} */
-
+ input[type="checkbox"]:checked ~ label .bar {
+  display: block;
+} 
+input[type="checkbox"]:checked ~ label{
+  position: fixed;
+  z-index: 1065;
+}
 input[type="checkbox"]:checked ~ label .top {
   -webkit-transform: translateY(0px) rotateZ(45deg);
   -moz-transform: translateY(0px) rotateZ(45deg);
@@ -361,8 +376,9 @@ input[type="checkbox"]:checked ~ label .middle {
 }
 
 label {
-  top: 10px;
-/*   display: inline-block;
+  cursor: pointer;
+/*top: 10px;
+  display: inline-block;
   background-color: transparent;
   cursor: pointer;
   right: 10px; 
