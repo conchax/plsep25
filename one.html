@@ -79,8 +79,8 @@
                 </a>
 
                 
-                <div class=" btn-menu fw-bold" >                  
-                    <label for="myInput">                      
+                <div class=" btn-menu fw-bold" onclick="menufull()" id="toggle">                  
+                    <label for="p">                      
                       <svg style="margin-top: 0px;" width="20" height="20">
                         <use xlink:href="/img/sprite.svg#icono-menu" />
                       </svg>
@@ -98,14 +98,19 @@
 
     <!-- menu -->
 
-  <input type="checkbox" id="myInput">
+  <!-- <input type="checkbox" id="myInput">
   <label for="myInput">
     <span class="bar top"></span>
     <span class="bar middle"></span>
     <span class="bar bottom"></span>
-  </label>
-  <aside class="over">
-    <div class="aside-section aside-left">
+  </label> -->
+  <aside id="over" class="over">
+    <div class="btn-close-menu" onclick="menufull()" id="close">
+        <span class="bar top"></span>
+        <span class="bar middle"></span>
+        <span class="bar bottom"></span>
+    </div>
+    <div class="aside-section aside-left" >
       <div class="aside-content">
         <a href="<?php echo SITE_URL ?>/convocatorias-2025/">
           <img class="bannerFull" alt="Banner" src="img/banner-registro.png" class="" alt="registro">
@@ -171,7 +176,7 @@
 
   </aside>
 
-    <!-- <div id="overlay" class="overlaym">
+    <div id="overlay" class="overlaym">
       <div class="button_container active" onclick="myFunction()" id="toggle">
         <span class="top"></span><span class="middle"></span><span class="bottom"></span>
         <div class="middle text-m">MENÚ</div>
@@ -998,7 +1003,9 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div> 
+
+
   </header>
 
     <section id="banner">
@@ -1429,28 +1436,34 @@
                         <div class="list-item">
                             <a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/01/carteles-descrimincacion.pdf"
                                 target="_blank">
-                                <img src="img/banner-colavorativo-1.webp" alt="banner-campana-vs-fentalino"
+                                <img src="img/banners-h-1.webp" alt="banner-campana-vs-fentalino"
                                     class="img-fluid">
                             </a>
                         </div>
 
                         <div class="list-item">
                             <a href="https://prepaenlinea.sep.gob.mx/vinculacion/sne/" target="_blank">
-                                <img src="img/banner-colavorativo-2.webp" alt="banner-campana-vs-fentalino"
+                                <img src="img/banners-h-2.webp" alt="banner-campana-vs-fentalino"
                                     class="img-fluid">
                             </a>
                         </div>
 
                         <div class="list-item">
                             <a href="https://educacionmediasuperior.sep.gob.mx/SEMS_en_cifras" target="_blank">
-                                <img src="img/banner-colavorativo-3.webp" alt="banner-campana-vs-fentalino"
+                                <img src="img/banners-h-3.webp" alt="banner-campana-vs-fentalino"
                                     class="img-fluid">
                             </a>
                         </div>
 
                         <div class="list-item">
                             <a href="https://estrategiaenelaula.sep.gob.mx/" target="_blank">
-                                <img src="img/banner-colavorativo-4.webp" alt="banner-campana-vs-fentalino"
+                                <img src="img/banners-h-4.webp" alt="banner-campana-vs-fentalino"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="list-item">
+                            <a href="https://estrategiaenelaula.sep.gob.mx/" target="_blank">
+                                <img src="img/banners-h-5.webp" alt="banner-campana-vs-fentalino"
                                     class="img-fluid">
                             </a>
                         </div>
@@ -1695,7 +1708,16 @@
         });
     </script> -->
     <script src="js/main.js"></script>
-
+    <script>
+      function menufull() {
+      var element = document.getElementById("over");
+      element.classList.toggle("open");
+      var element = document.getElementById("close");
+      element.classList.toggle("active");
+      /* var element = document.getElementById("menu-buttoms");
+      element.classList.toggle("d-none"); */
+    }
+    </script>
 </body>
 
 </html>

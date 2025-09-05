@@ -226,30 +226,36 @@ while (have_posts()) :
 					<div class="col-12">
 						<div class="list">
 							<div class="list-item">
-								<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/01/carteles-descrimincacion.pdf"
+								<a href="https://educacionmediasuperior.sep.gob.mx/SEMS_en_cifras"
 									target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/banner-colavorativo-1.webp" alt="banner-campana-vs-fentalino"
+									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-1.webp" alt="banner SEMS cifras"
 										class="img-fluid">
 								</a>
 							</div>
 
 							<div class="list-item">
-								<a href="#" target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/banner-colavorativo-2.webp" alt="banner-campana-vs-fentalino"
-										class="img-fluid">
-								</a>
-							</div>
-
-							<div class="list-item">
-								<a href="https://educacionmediasuperior.sep.gob.mx/SEMS_en_cifras" target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/banner-colavorativo-3.webp" alt="banner-campana-vs-fentalino"
+								<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/01/carteles-descrimincacion.pdf" target="_blank">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-2.webp" alt="te descriminaron DENUNCIA"
 										class="img-fluid">
 								</a>
 							</div>
 
 							<div class="list-item">
 								<a href="https://estrategiaenelaula.sep.gob.mx/" target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/banner-colavorativo-4.webp" alt="banner-campana-vs-fentalino"
+									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-3.webp" alt="Te drogas te dañas"
+										class="img-fluid">
+								</a>
+							</div>
+
+							<div class="list-item">
+								<a href="http://10.3.29.145/egresados/certificado-electronico/" target="_blank">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-4.webp" alt="Certificación electrónica"
+										class="img-fluid">
+								</a>
+							</div>
+							<div class="list-item">
+								<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/07/09C.05_Banners_certificado_RVOE_Aviso_VF-1.png" target="_blank">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-5.webp" alt="Estudios oficiales RVOE"
 										class="img-fluid">
 								</a>
 							</div>
