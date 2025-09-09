@@ -254,10 +254,12 @@ a.single:hover{
 .btn-cal:hover{
   border: 1px solid #26290f;
 }
-
-.dropdown-item-plsep{
+.btn-icono{
   color: var(--color-text);
-  font-size: 12px;
+  transition: .3s ease-in;
+}
+.btn-icono:hover{
+  color: var(--color-secondary);
 }
 
 /* boton collapse */
