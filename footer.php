@@ -218,7 +218,93 @@ if (!defined('ABSPATH'))
 </div>
 <!-- modal mi comunidad -->
 
+<div class="modal fade" id="mesa-servicio" aria-labelledby="mmesa-servicio" tabindex="-1" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title mx-auto text-center" id="mmesa-servicio">Mesa de servicio</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <p><b>Prepa en Línea-SEP</b></p>
+                    <p>Atendemos tus dudas y solicitudes. <br>
+                        Comienza seleccionando tu perfil.</p>
+                </div>
 
+                <div class="container">
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-3">
+                            <div class="text-center borde-gris">
+                                <a class="btn-icono" href="https://prepaenlinea.sep.gob.mx/mesadeservicio/aspirantes.php" target="_blank">
+                                    <svg width="50" height="50">
+                                    <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/mesa-servicio.svg#aspirantes" />
+                                    </svg>
+                                    <p><b>Aspirantes</b></p>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center borde-gris">
+                                <a class="btn-icono" href="https://prepaenlinea.sep.gob.mx/mesadeservicio/estudiantes.php" target="_blank">
+                                    <svg width="50" height="50">
+                                    <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/mesa-servicio.svg#estudiantes" />
+                                    </svg>
+                                    <p><b>Estudiantes</b></p>
+                                </a>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-3">
+                            <div class="text-center borde-gris">
+                                <a class="btn-icono" href="https://prepaenlinea.sep.gob.mx/mesadeservicio/egresados.php" target="_blank">
+                                    <svg width="50" height="50">
+                                    <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/mesa-servicio.svg#egresados" />
+                                    </svg>
+                                    <p><b>Egresados</b></p>
+                                </a>                                
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center borde-gris">
+                                <a class="btn-icono" href="https://prepaenlinea.sep.gob.mx/mesadeservicio/instituciones.php" target="_blank">
+                                    <svg width="50" height="50">
+                                        <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/mesa-servicio.svg#instituciones" />
+                                    </svg>
+                                    <p><b>Instituciones externas</b></p>
+                                </a>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-6 mb-3">
+                            <div class="text-center borde-gris">  
+                                <a class="btn-icono" href="https://prepaenlinea.sep.gob.mx/mesadeservicio/view.php" target="_blank">
+                                    <b>Estatus de ticket</b>
+                                </a>                                                             
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center borde-gris"> 
+                                <a class="btn-icono" href="https://prepaenlinea.sep.gob.mx/mesadeservicio/ta/temasAyuda.html" target="_blank">
+                                    <b>Formatos por tema</b>
+                                </a>                                                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-md-5">
+                            <a class="btn-dos w-100 btn" href="https://prepaenlinea.sep.gob.mx/mesadeservicio/kb/index.php" target="_blank">Preguntas frecuentes</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <?php wp_footer(); ?>

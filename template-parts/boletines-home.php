@@ -210,8 +210,12 @@
                         <?php endif; ?>
                     <?php endwhile;
                     wp_reset_postdata(); ?>
-                </div>
-                <p class="my-3 text-center"><a class="btn-menu   active" aria-current="page" href="<?php echo SITE_URL ?>/boletines">Ver todos</a>
+                </div>                
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-4">
+                <p class="my-3 text-center"><a class="btn-dos btn-lg btn w-100" aria-current="page" href="<?php echo SITE_URL ?>/boletines">Ver todos</a>
                 </p>
             </div>
         </div>

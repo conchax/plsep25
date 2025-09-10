@@ -257,11 +257,16 @@ a.single:hover{
 .btn-icono{
   color: var(--color-text);
   transition: .3s ease-in;
+  text-decoration: none;
+  display: contents;
 }
 .btn-icono:hover{
-  color: var(--color-secondary);
+  color: var(--color-secondary)!important;
 }
 
+#prepa-distinta .titulo-servicios{
+  color:unset;
+}
 /* boton collapse */
 
 .btn-collapse[aria-expanded="true"]{
@@ -1910,6 +1915,14 @@ a.zoom:hover, .zoom p.url:hover {
 .link-green:hover{
   color: var(--color-secondary);
 }
+
+#mesa-servicio .modal-title{
+  font-size: 30px;
+    font-weight: 700;
+    color: var(--color-secondary);
+    text-align: center;
+}
+
 .modal-header .btn-close {
     margin: 0;
 }

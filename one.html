@@ -1,39 +1,38 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Prepa en Línea - SEP</title>
-    <!-- <link href="css/custom.css" rel="stylesheet"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300,400,700,900;&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/menu.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prepa en Línea - SEP</title>
+  <!-- <link href="css/custom.css" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300,400,700,900;&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
 </head>
 
 <body>
-<header>
+  <header>
     <nav class="navbar navbar-expand-lg nav-gob">
       <div class="container px-md-5">
         <a class="navbar-brand px-md-5" href="https://www.gob.mx/" target="_blank">
-          <img src="https://framework-gb.cdn.gob.mx/gobmx/img/logo_blanco.svg" alt="Logo Gobierno de México"
-            width="80">
+          <img src="https://framework-gb.cdn.gob.mx/gobmx/img/logo_blanco.svg" alt="Logo Gobierno de México" width="80">
         </a>
         <div>
           <div class="navbar-nav ms-auto">
-            <div class="nav-item"><a class="nav-link" href="https://www.gob.mx/tramites"
-                target="_blank">Trámites</a></div>
-            <div class="nav-item"><a class="nav-link" href="https://www.gob.mx/gobierno"
-                target="_blank">Gobierno</a></div>
-            <div class="nav-item"><a class="nav-link" aria-label="Buscar en gob.mx"
-                href="https://www.gob.mx/busqueda" target="_blank">
+            <div class="nav-item"><a class="nav-link" href="https://www.gob.mx/tramites" target="_blank">Trámites</a>
+            </div>
+            <div class="nav-item"><a class="nav-link" href="https://www.gob.mx/gobierno" target="_blank">Gobierno</a>
+            </div>
+            <div class="nav-item"><a class="nav-link" aria-label="Buscar en gob.mx" href="https://www.gob.mx/busqueda"
+                target="_blank">
                 <svg width="24" height="24">
                   <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-lupa" />
                 </svg>
@@ -78,15 +77,15 @@
                   </svg> <span class="t"> Mi comunidad</span>
                 </a>
 
-                
-                <div class=" btn-menu fw-bold" onclick="menufull()" id="toggle">                  
-                    <label for="p">                      
-                      <svg style="margin-top: 0px;" width="20" height="20">
-                        <use xlink:href="/img/sprite.svg#icono-menu" />
-                      </svg>
-                      <span class="t"> Menú</span>
-                    </label>
-                  
+
+                <div class=" btn-menu fw-bold" onclick="menufull()" id="toggle">
+                  <label for="p">
+                    <svg style="margin-top: 0px;" width="20" height="20">
+                      <use xlink:href="/img/sprite.svg#icono-menu" />
+                    </svg>
+                    <span class="t"> Menú</span>
+                  </label>
+
                 </div>
               </div>
 
@@ -98,83 +97,83 @@
 
     <!-- menu -->
 
-  <!-- <input type="checkbox" id="myInput">
+    <!-- <input type="checkbox" id="myInput">
   <label for="myInput">
     <span class="bar top"></span>
     <span class="bar middle"></span>
     <span class="bar bottom"></span>
   </label> -->
-  <aside id="over" class="over">
-    <div class="btn-close-menu" onclick="menufull()" id="close">
+    <aside id="over" class="over">
+      <div class="btn-close-menu" onclick="menufull()" id="close">
         <span class="bar top"></span>
         <span class="bar middle"></span>
         <span class="bar bottom"></span>
-    </div>
-    <div class="aside-section aside-left" >
-      <div class="aside-content">
-        <a href="<?php echo SITE_URL ?>/convocatorias-2025/">
-          <img class="bannerFull" alt="Banner" src="img/banner-registro.png" class="" alt="registro">
-          <img class="bannerFullR" alt="Banner" src="img/banner-m-registro.png" class="" alt="registro">
-        </a>
       </div>
-    </div>
-    <div class="aside-section aside-right">
-  
-      <ul class="aside-list">
-        <li><a href="<?php echo SITE_URL ?>/quienes-somos/" class="aside-anchor">¿Quiénes somos?</a></li>
-        <li><a href="<?php echo SITE_URL ?>/modelo-educativo/" class="aside-anchor">Modelo educativo</a></li>
-        <li><a href="<?php echo SITE_URL ?>/plan-de-estudios/" class="aside-anchor">Plan de estudios</a></li>
-        <li><a href="<?php echo SITE_URL ?>/boletines/" class="aside-anchor">Boletines</a></li>
-        <li><a href="<?php echo SITE_URL ?>/egresados/" class="aside-anchor">Egresados</a></li>
-        <li><a href="#" class="aside-anchor">Examen único</a></li>
-      </ul>
-  
-      <div class="menu-footer">
-        <div class="container-links">
-          <a class="aside-anchor" href="#">Mapa de sitio</a> <a class="aside-anchor"
-            href="https://prepaenlinea.sep.gob.mx/mesadeservicio" target="_blank">Mesa de servicio</a> <a
-            class="aside-anchor" href="<?php echo SITE_URL ?>/transparencia/">Transparencia</a>
-        </div>
-        <hr class="line-menu-over">
-        <div class="container-social">
-          <a href="https://www.facebook.com/PrepaEnLineadelaSEP/" target="_blank" title="Facebbok">
-            <svg width="40" height="40">
-              <use xlink:href="img/sociales.svg#facebook" />
-            </svg>
-          </a>
-          <a href="https://x.com/PrepaLineaSEP/" target="_blank" title="X">
-            <svg width="40" height="40">
-              <use xlink:href="img/sociales.svg#x" />
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/prepaenlineasep/" target="_blank" title="instagram">
-            <svg width="40" height="40">
-              <use xlink:href="img/sociales.svg#instagram" />
-            </svg>
-          </a>
-          <a href="https://www.youtube.com/@PrepaenLinea-SEP/" target="_blank" title="YouTube">
-            <svg width="40" height="40">
-              <use xlink:href="img/sociales.svg#youtube" />
-            </svg>
-          </a>
-          <a href="https://www.tiktok.com/@prepaenlinea_sep/" target="_blank" title="TikTok">
-            <svg width="40" height="40">
-              <use xlink:href="img/sociales.svg#tiktok" />
-            </svg>
-          </a>
-          <a href="https://open.spotify.com/show/5GH1mXSrMx6AMchq1EAsHc?si=f407167b9a89491a&nd=1" target="_blank"
-            title="Spotify">
-            <svg width="40" height="40">
-              <use xlink:href="img/sociales.svg#spotify" />
-            </svg>
+      <div class="aside-section aside-left">
+        <div class="aside-content">
+          <a href="<?php echo SITE_URL ?>/convocatorias-2025/">
+            <img class="bannerFull" alt="Banner" src="img/banner-registro.png" class="" alt="registro">
+            <img class="bannerFullR" alt="Banner" src="img/banner-m-registro.png" class="" alt="registro">
           </a>
         </div>
       </div>
+      <div class="aside-section aside-right">
 
-      
-    </div>
+        <ul class="aside-list">
+          <li><a href="<?php echo SITE_URL ?>/quienes-somos/" class="aside-anchor">¿Quiénes somos?</a></li>
+          <li><a href="<?php echo SITE_URL ?>/modelo-educativo/" class="aside-anchor">Modelo educativo</a></li>
+          <li><a href="<?php echo SITE_URL ?>/plan-de-estudios/" class="aside-anchor">Plan de estudios</a></li>
+          <li><a href="<?php echo SITE_URL ?>/boletines/" class="aside-anchor">Boletines</a></li>
+          <li><a href="<?php echo SITE_URL ?>/egresados/" class="aside-anchor">Egresados</a></li>
+          <li><a href="#" class="aside-anchor">Examen único</a></li>
+        </ul>
 
-  </aside>
+        <div class="menu-footer">
+          <div class="container-links">
+            <a class="aside-anchor" href="#">Mapa de sitio</a> <a class="aside-anchor"
+              href="https://prepaenlinea.sep.gob.mx/mesadeservicio" target="_blank">Mesa de servicio</a> <a
+              class="aside-anchor" href="<?php echo SITE_URL ?>/transparencia/">Transparencia</a>
+          </div>
+          <hr class="line-menu-over">
+          <div class="container-social">
+            <a href="https://www.facebook.com/PrepaEnLineadelaSEP/" target="_blank" title="Facebbok">
+              <svg width="40" height="40">
+                <use xlink:href="img/sociales.svg#facebook" />
+              </svg>
+            </a>
+            <a href="https://x.com/PrepaLineaSEP/" target="_blank" title="X">
+              <svg width="40" height="40">
+                <use xlink:href="img/sociales.svg#x" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/prepaenlineasep/" target="_blank" title="instagram">
+              <svg width="40" height="40">
+                <use xlink:href="img/sociales.svg#instagram" />
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@PrepaenLinea-SEP/" target="_blank" title="YouTube">
+              <svg width="40" height="40">
+                <use xlink:href="img/sociales.svg#youtube" />
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@prepaenlinea_sep/" target="_blank" title="TikTok">
+              <svg width="40" height="40">
+                <use xlink:href="img/sociales.svg#tiktok" />
+              </svg>
+            </a>
+            <a href="https://open.spotify.com/show/5GH1mXSrMx6AMchq1EAsHc?si=f407167b9a89491a&nd=1" target="_blank"
+              title="Spotify">
+              <svg width="40" height="40">
+                <use xlink:href="img/sociales.svg#spotify" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+
+    </aside>
 
     <div id="overlay" class="overlaym">
       <div class="button_container active" onclick="myFunction()" id="toggle">
@@ -184,39 +183,33 @@
       <nav class="dt d-none d-md-inline-block">
         <div class="menu-dt container">
           <div class="d-flex align-items-start">
-            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-              aria-orientation="vertical"><button class="nav-link" id="v-pills-conocenos-tab"
-                data-bs-toggle="pill" data-bs-target="#v-pills-conocenos" type="button" role="tab"
-                aria-controls="v-pills-conocenos" aria-selected="true">Conócenos <i
-                  class="fa-solid fa-sort-down"></i></button><button class="nav-link"
-                id="v-pills-perfiles-tab" data-bs-toggle="pill" data-bs-target="#v-pills-perfiles"
-                type="button" role="tab" aria-controls="v-pills-perfiles" aria-selected="false">Perfiles
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link" id="v-pills-conocenos-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-conocenos" type="button" role="tab" aria-controls="v-pills-conocenos"
+                aria-selected="true">Conócenos <i class="fa-solid fa-sort-down"></i></button><button class="nav-link"
+                id="v-pills-perfiles-tab" data-bs-toggle="pill" data-bs-target="#v-pills-perfiles" type="button"
+                role="tab" aria-controls="v-pills-perfiles" aria-selected="false">Perfiles
                 de la comunidad <i class="fa-solid fa-sort-down"></i></button><button class="nav-link"
-                id="v-pills-programa-tab" data-bs-toggle="pill" data-bs-target="#v-pills-programa"
-                type="button" role="tab" aria-controls="v-pills-programa" aria-selected="false">Nuestro
+                id="v-pills-programa-tab" data-bs-toggle="pill" data-bs-target="#v-pills-programa" type="button"
+                role="tab" aria-controls="v-pills-programa" aria-selected="false">Nuestro
                 programa <i class="fa-solid fa-sort-down"></i></button><button class="nav-link"
-                id="v-pills-desintegral-tab" data-bs-toggle="pill" data-bs-target="#v-pills-desintegral"
-                type="button" role="tab" aria-controls="v-pills-desintegral"
-                aria-selected="false">Desarrollo integral del estudiante <i
-                  class="fa-solid fa-sort-down"></i></button><a
-                href="https://prepaenlinea.sep.gob.mx/boletines" class="nav-link">Boletines</a><button
-                class="nav-link" id="v-pills-transparencia-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-transparencia" type="button" role="tab"
+                id="v-pills-desintegral-tab" data-bs-toggle="pill" data-bs-target="#v-pills-desintegral" type="button"
+                role="tab" aria-controls="v-pills-desintegral" aria-selected="false">Desarrollo integral del estudiante
+                <i class="fa-solid fa-sort-down"></i></button><a href="https://prepaenlinea.sep.gob.mx/boletines"
+                class="nav-link">Boletines</a><button class="nav-link" id="v-pills-transparencia-tab"
+                data-bs-toggle="pill" data-bs-target="#v-pills-transparencia" type="button" role="tab"
                 aria-controls="v-pills-transparencia" aria-selected="false">Transparencia <i
-                  class="fa-solid fa-sort-down"></i></button><button class="nav-link"
-                id="v-pills-vinculaciones-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-vinculaciones" type="button" role="tab"
+                  class="fa-solid fa-sort-down"></i></button><button class="nav-link" id="v-pills-vinculaciones-tab"
+                data-bs-toggle="pill" data-bs-target="#v-pills-vinculaciones" type="button" role="tab"
                 aria-controls="v-pills-vinculaciones" aria-selected="false">Vinculación <i
-                  class="fa-solid fa-sort-down"></i></button><button class="nav-link"
-                id="v-pills-contacto-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contacto"
-                type="button" role="tab" aria-controls="v-pills-contacto" aria-selected="false">Contacto
+                  class="fa-solid fa-sort-down"></i></button><button class="nav-link" id="v-pills-contacto-tab"
+                data-bs-toggle="pill" data-bs-target="#v-pills-contacto" type="button" role="tab"
+                aria-controls="v-pills-contacto" aria-selected="false">Contacto
                 <i class="fa-solid fa-sort-down"></i></button>
-              <hr class="menu"><a class="nav-link"
-                href="https://prepaenlinea.sep.gob.mx/convocatorias-2025/">
+              <hr class="menu"><a class="nav-link" href="https://prepaenlinea.sep.gob.mx/convocatorias-2025/">
                 <svg class="iconos-m" width="30" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px" y="0px"
-                  viewBox="0 0 100 100" style="enable-background:new 0 0 100 100"
-                  xml:space="preserve">
+                  xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px" y="0px" viewBox="0 0 100 100"
+                  style="enable-background:new 0 0 100 100" xml:space="preserve">
                   <style>
                     .mst0 {
                       fill: none;
@@ -247,9 +240,8 @@
                       d="M31.8,47.6l-3.7,0c-8.3,0-15,6.7-15,15l0,6c0,0.8,0.7,1.5,1.5,1.5L45.4,70c0.8,0,1.5-0.7,1.5-1.5v-5.9  C46.9,54.3,40.1,47.5,31.8,47.6z">
                     </path>
                   </g>
-                </svg> Registro</a><a href="https://prepaenlinea.sep.gob.mx/mesadeservicio"
-                class="nav-link"><svg class="iconos-m" width="23" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 95 95">
+                </svg> Registro</a><a href="https://prepaenlinea.sep.gob.mx/mesadeservicio" class="nav-link"><svg
+                  class="iconos-m" width="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95 95">
                   <defs>
                     <style>
                       .icono-m-1 {
@@ -270,8 +262,7 @@
                     </style>
                   </defs>
                   <g data-name="Capa 1">
-                    <path class="icono-m-1"
-                      d="M7.5,57.5H87.5c2.76,0,5,2.24,5,5v30H2.5v-30c0-2.76,2.24-5,5-5Z"></path>
+                    <path class="icono-m-1" d="M7.5,57.5H87.5c2.76,0,5,2.24,5,5v30H2.5v-30c0-2.76,2.24-5,5-5Z"></path>
                     <g>
                       <circle class="icono-m-2" cx="47.49" cy="15.84" r="13.34"></circle>
                       <path class="icono-m-2"
@@ -279,9 +270,9 @@
                       </path>
                     </g>
                   </g>
-                </svg> Mesa de servicio</a><a data-bs-toggle="modal" data-bs-target="#micomunidad"
-                href="#micomunidad" class="nav-link"><svg class="iconos-m" width="23"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.28 82.12">
+                </svg> Mesa de servicio</a><a data-bs-toggle="modal" data-bs-target="#micomunidad" href="#micomunidad"
+                class="nav-link"><svg class="iconos-m" width="23" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 82.28 82.12">
                   <defs>
                     <style>
                       .icono-m-1 {
@@ -324,8 +315,8 @@
                 </svg> Mi comunidad</a>
             </div>
             <div class="tab-content" id="v-pills-tabContent">
-              <div class="tab-pane fade" id="v-pills-conocenos" role="tabpanel"
-                aria-labelledby="v-pills-conocenos-tab" tabindex="0">
+              <div class="tab-pane fade" id="v-pills-conocenos" role="tabpanel" aria-labelledby="v-pills-conocenos-tab"
+                tabindex="0">
                 <ul id="menu-dt-conoce" class="menu">
                   <li id="menu-item-2604"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2604">
@@ -340,40 +331,34 @@
                   </li>
                   <li id="menu-item-2606"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2606">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/conocenos/requerimientos-tecnologicos/">Requerimientos
+                    <a href="https://prepaenlinea.sep.gob.mx/conocenos/requerimientos-tecnologicos/">Requerimientos
                       tecnológicos</a>
                   </li>
                 </ul>
               </div>
-              <div class="tab-pane fade" id="v-pills-perfiles" role="tabpanel"
-                aria-labelledby="v-pills-perfiles-tab" tabindex="0">
+              <div class="tab-pane fade" id="v-pills-perfiles" role="tabpanel" aria-labelledby="v-pills-perfiles-tab"
+                tabindex="0">
                 <ul id="menu-dt-perfiles" class="menu">
                   <li id="menu-item-3155"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3155">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/aspirantes/">Aspirantes</a>
+                    <a href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/aspirantes/">Aspirantes</a>
                   </li>
                   <li id="menu-item-5533"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5533">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/estudiantes/">Estudiantes</a>
+                    <a href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/estudiantes/">Estudiantes</a>
                   </li>
                   <li id="menu-item-3835"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3835">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/egresados/">Egresados</a>
+                    <a href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/egresados/">Egresados</a>
                   </li>
                   <li id="menu-item-3154"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3154">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/asesores-virtuales/">Asesores
+                    <a href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/asesores-virtuales/">Asesores
                       virtuales</a>
                   </li>
                   <li id="menu-item-5666"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5666">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/asesores-tecnologicos/">Asesores
+                    <a href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/asesores-tecnologicos/">Asesores
                       tecnológicos</a>
                   </li>
                   <li id="menu-item-23685"
@@ -390,8 +375,7 @@
                   </li>
                   <li id="menu-item-3833"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3833">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/tutores-escolares/">Tutores
+                    <a href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/tutores-escolares/">Tutores
                       escolares</a>
                   </li>
                   <li id="menu-item-23230"
@@ -408,8 +392,7 @@
                   </li>
                   <li id="menu-item-3151"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3151">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/responsables-de-control-escolar/">Responsables
+                    <a href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/responsables-de-control-escolar/">Responsables
                       de control escolar</a>
                   </li>
                   <li id="menu-item-3152"
@@ -420,8 +403,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="tab-pane fade" id="v-pills-programa" role="tabpanel"
-                aria-labelledby="v-pills-programa-tab" tabindex="0">
+              <div class="tab-pane fade" id="v-pills-programa" role="tabpanel" aria-labelledby="v-pills-programa-tab"
+                tabindex="0">
                 <ul id="menu-dt-nuestropro" class="menu">
                   <li id="menu-item-2610"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2610">
@@ -430,8 +413,7 @@
                   </li>
                   <li id="menu-item-2607"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2607">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/nuestro-programa/certificado-electronico/">Certificado
+                    <a href="https://prepaenlinea.sep.gob.mx/nuestro-programa/certificado-electronico/">Certificado
                       electrónico</a>
                   </li>
                   <li id="menu-item-2609"
@@ -441,13 +423,11 @@
                   </li>
                   <li id="menu-item-2611"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2611">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/nuestro-programa/regularizacion/">Regularización</a>
+                    <a href="https://prepaenlinea.sep.gob.mx/nuestro-programa/regularizacion/">Regularización</a>
                   </li>
                   <li id="menu-item-2612"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2612">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/nuestro-programa/revalidacion-y-equivalencia-de-estudios/">Revalidación
+                    <a href="https://prepaenlinea.sep.gob.mx/nuestro-programa/revalidacion-y-equivalencia-de-estudios/">Revalidación
                       y equivalencia de estudios</a>
                   </li>
                 </ul>
@@ -457,8 +437,7 @@
                 <ul id="menu-dt-desintegral" class="menu">
                   <li id="menu-item-21751"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21751">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/desarrollo-integral-del-estudiante/difusion-cultural/">Difusión
+                    <a href="https://prepaenlinea.sep.gob.mx/desarrollo-integral-del-estudiante/difusion-cultural/">Difusión
                       cultural</a>
                   </li>
                   <li id="menu-item-217500"
@@ -496,13 +475,11 @@
                   </li>
                   <li id="menu-item-23721"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23721">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/transparencia/estadisticas/">Estadísticas</a>
+                    <a href="https://prepaenlinea.sep.gob.mx/transparencia/estadisticas/">Estadísticas</a>
                   </li>
                   <li id="menu-item-2627"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2627">
-                    <a
-                      href="https://prepaenlinea.sep.gob.mx/transparencia/circulares/">Circulares</a>
+                    <a href="https://prepaenlinea.sep.gob.mx/transparencia/circulares/">Circulares</a>
                   </li>
                   <li id="menu-item-2628"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2628">
@@ -513,15 +490,14 @@
               <div class="tab-pane fade" id="v-pills-vinculaciones" role="tabpanel"
                 aria-labelledby="v-pills-vinculaciones" tabindex="0">
                 <ul id="menu-dt-vinculacion" class="menu">
-                  <li id="menu-item-sne"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sne">
+                  <li id="menu-item-sne" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sne">
                     <a href="https://prepaenlinea.sep.gob.mx/vinculacion/sne/">Servicio Nacional de
                       Empleo</a>
                   </li>
                 </ul>
               </div>
-              <div class="tab-pane fade" id="v-pills-contacto" role="tabpanel"
-                aria-labelledby="v-pills-contacto-tab" tabindex="0">
+              <div class="tab-pane fade" id="v-pills-contacto" role="tabpanel" aria-labelledby="v-pills-contacto-tab"
+                tabindex="0">
                 <ul id="menu-dt-contacto" class="menu">
                   <li id="menu-item-2629"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2629">
@@ -548,9 +524,8 @@
               class="form-only-controls">
               <div class="input-group"><input type="text" name="s" placeholder="Busca en PL-SEP" value=""
                   class="form-control text-left autocomplete"><button type="submit"
-                  class="btn btn-default link-menu"><span class="text-hide sr-only">Buscar</span><svg
-                    class="iconos-m" width="20" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 54.99 54.96">
+                  class="btn btn-default link-menu"><span class="text-hide sr-only">Buscar</span><svg class="iconos-m"
+                    width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.99 54.96">
                     <defs>
                       <style>
                         .icono-m-1 {
@@ -582,22 +557,17 @@
               <ul class="submenu collapse">
                 <div class="menu-dt-conoce-container">
                   <ul id="menu-dt-conoce-1" class="menu">
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2604">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/conocenos/conoce-prepa-en-linea-sep/">Conoce
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2604">
+                      <a href="https://prepaenlinea.sep.gob.mx/conocenos/conoce-prepa-en-linea-sep/">Conoce
                         Prepa en
                         Línea-SEP</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2605">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2605">
                       <a href="https://prepaenlinea.sep.gob.mx/conocenos/modelo-educativo/">Modelo
                         educativo</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2606">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/conocenos/requerimientos-tecnologicos/">Requerimientos
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2606">
+                      <a href="https://prepaenlinea.sep.gob.mx/conocenos/requerimientos-tecnologicos/">Requerimientos
                         tecnológicos</a>
                     </li>
                   </ul>
@@ -609,71 +579,53 @@
               <ul class="submenu collapse">
                 <div class="menu-dt-perfiles-container">
                   <ul id="menu-dt-perfiles-1" class="menu">
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3155">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/aspirantes/">Aspirantes</a>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3155">
+                      <a href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/aspirantes/">Aspirantes</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5533">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/estudiantes/">Estudiantes</a>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5533">
+                      <a href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/estudiantes/">Estudiantes</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3835">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/egresados/">Egresados</a>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3835">
+                      <a href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/egresados/">Egresados</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3154">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/asesores-virtuales/">Asesores
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3154">
+                      <a href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/asesores-virtuales/">Asesores
                         virtuales</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5666">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/asesores-tecnologicos/">Asesores
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5666">
+                      <a href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/asesores-tecnologicos/">Asesores
                         tecnológicos</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23685">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23685">
                       <a
                         href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/asesores-de-talleres-extraescolares/">Asesores
                         de talleres extraescolares</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23686">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23686">
                       <a
                         href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/asesores-en-la-didactica-del-conocimiento/">Asesores
                         en la didáctica del conocimiento</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3833">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/tutores-escolares/">Tutores
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3833">
+                      <a href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/tutores-escolares/">Tutores
                         escolares</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23230">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23230">
                       <a
                         href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/tutores-escolares-de-regularizacion/">Tutores
                         escolares de regularización</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28875">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28875">
                       <a
                         href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/monitores-de-la-practica-tutorial/">Monitores
                         de la práctica tutorial</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3151">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3151">
                       <a
                         href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/responsables-de-control-escolar/">Responsables
                         de control escolar</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3152">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3152">
                       <a
                         href="https://prepaenlinea.sep.gob.mx/perfiles-de-la-comunidad/supervisores-para-el-acompanamiento-y-la-mejora-educativa/">Supervisores
                         para el acompañamiento y la mejora educativa</a>
@@ -687,31 +639,22 @@
               <ul class="submenu collapse">
                 <div class="menu-dt-nuestropro-container">
                   <ul id="menu-dt-nuestropro-1" class="menu">
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2610">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/nuestro-programa/plan-de-estudios/">Plan
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2610">
+                      <a href="https://prepaenlinea.sep.gob.mx/nuestro-programa/plan-de-estudios/">Plan
                         de estudios</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2607">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/nuestro-programa/certificado-electronico/">Certificado
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2607">
+                      <a href="https://prepaenlinea.sep.gob.mx/nuestro-programa/certificado-electronico/">Certificado
                         electrónico</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2609">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/nuestro-programa/perfil-de-ingreso/">Perfil
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2609">
+                      <a href="https://prepaenlinea.sep.gob.mx/nuestro-programa/perfil-de-ingreso/">Perfil
                         de ingreso</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2611">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/nuestro-programa/regularizacion/">Regularización</a>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2611">
+                      <a href="https://prepaenlinea.sep.gob.mx/nuestro-programa/regularizacion/">Regularización</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2612">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2612">
                       <a
                         href="https://prepaenlinea.sep.gob.mx/nuestro-programa/revalidacion-y-equivalencia-de-estudios/">Revalidación
                         y equivalencia de estudios</a>
@@ -725,26 +668,21 @@
               <ul class="submenu collapse">
                 <div class="menu-dt-desintegral-container">
                   <ul id="menu-dt-desintegral-1" class="menu">
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21751">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/desarrollo-integral-del-estudiante/difusion-cultural/">Difusión
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21751">
+                      <a href="https://prepaenlinea.sep.gob.mx/desarrollo-integral-del-estudiante/difusion-cultural/">Difusión
                         cultural</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217500">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217500">
                       <a
                         href="https://prepaenlinea.sep.gob.mx/desarrollo-integral-del-estudiante/feria-vocacional-decidiendo-mi-futuro/">Feria
                         vocacional: decidiendo mi futuro</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21750">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21750">
                       <a
                         href="https://prepaenlinea.sep.gob.mx/desarrollo-integral-del-estudiante/talleres-extraescolares/">Talleres
                         extraescolares</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21749">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21749">
                       <a
                         href="https://prepaenlinea.sep.gob.mx/desarrollo-integral-del-estudiante/ceremonia-virtual-de-graduacion/">Ceremonia
                         virtual de graduación</a>
@@ -753,38 +691,28 @@
                 </div>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link"
-                href="https://prepaenlinea.sep.gob.mx/boletines">Boletines</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://prepaenlinea.sep.gob.mx/boletines">Boletines</a></li>
             <li class="nav-item has-submenu"><a class="nav-link" href="#">Transparencia <i
                   class="fa-solid fa-sort-down"></i></a>
               <ul class="submenu collapse">
                 <div class="menu-dt-transparencia-container">
                   <ul id="menu-dt-transparencia-1" class="menu">
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2625">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2625">
                       <a href="https://prepaenlinea.sep.gob.mx/transparencia/acuerdos-y-normas/">Acuerdos
                         y normas</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2626">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/transparencia/aviso-de-privacidad/">Aviso
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2626">
+                      <a href="https://prepaenlinea.sep.gob.mx/transparencia/aviso-de-privacidad/">Aviso
                         de privacidad</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23721">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/transparencia/estadisticas/">Estadísticas</a>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23721">
+                      <a href="https://prepaenlinea.sep.gob.mx/transparencia/estadisticas/">Estadísticas</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2627">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/transparencia/circulares/">Circulares</a>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2627">
+                      <a href="https://prepaenlinea.sep.gob.mx/transparencia/circulares/">Circulares</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2628">
-                      <a
-                        href="https://prepaenlinea.sep.gob.mx/transparencia/numeralia/">Numeralia</a>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2628">
+                      <a href="https://prepaenlinea.sep.gob.mx/transparencia/numeralia/">Numeralia</a>
                     </li>
                   </ul>
                 </div>
@@ -795,8 +723,7 @@
               <ul class="submenu collapse">
                 <div class="menu-dt-vinculacion-container">
                   <ul id="menu-dt-vinculacion-1" class="menu">
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sne">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sne">
                       <a href="https://prepaenlinea.sep.gob.mx/vinculacion/sne/">Servicio Nacional
                         de Empleo</a>
                     </li>
@@ -809,13 +736,11 @@
               <ul class="submenu collapse">
                 <div class="menu-dt-contacto-container">
                   <ul id="menu-dt-contacto-1" class="menu">
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2629">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2629">
                       <a href="https://prepaenlinea.sep.gob.mx/contacto/mapa-del-sitio/">Mapa del
                         sitio</a>
                     </li>
-                    <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2630">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2630">
                       <a href="https://prepaenlinea.sep.gob.mx/contacto/preguntas-frecuentes/">Preguntas
                         frecuentes</a>
                     </li>
@@ -824,12 +749,10 @@
               </ul>
             </li>
             <hr class="menu">
-            <li class="nav-item"><a class="nav-link"
-                href="https://prepaenlinea.sep.gob.mx/convocatorias-2025/"><svg class="iconos-m"
-                  width="30" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px" y="0px"
-                  viewBox="0 0 100 100" style="enable-background:new 0 0 100 100"
-                  xml:space="preserve">
+            <li class="nav-item"><a class="nav-link" href="https://prepaenlinea.sep.gob.mx/convocatorias-2025/"><svg
+                  class="iconos-m" width="30" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px" y="0px" viewBox="0 0 100 100"
+                  style="enable-background:new 0 0 100 100" xml:space="preserve">
                   <style>
                     .mst0 {
                       fill: none;
@@ -861,9 +784,8 @@
                     </path>
                   </g>
                 </svg> Registro</a></li>
-            <li class="nav-item"><a class="nav-link"
-                href="https://prepaenlinea.sep.gob.mx/mesadeservicio"><svg class="iconos-m" width="20"
-                  xmlns="http://www.w3.org/2000/svg" data-name="Capa 2" viewBox="0 0 95 95">
+            <li class="nav-item"><a class="nav-link" href="https://prepaenlinea.sep.gob.mx/mesadeservicio"><svg
+                  class="iconos-m" width="20" xmlns="http://www.w3.org/2000/svg" data-name="Capa 2" viewBox="0 0 95 95">
                   <defs>
                     <style>
                       .cls-1 {
@@ -884,8 +806,7 @@
                     </style>
                   </defs>
                   <g id="Capa_1-2" data-name="Capa 1">
-                    <path class="cls-1"
-                      d="M7.5,57.5H87.5c2.76,0,5,2.24,5,5v30H2.5v-30c0-2.76,2.24-5,5-5Z"></path>
+                    <path class="cls-1" d="M7.5,57.5H87.5c2.76,0,5,2.24,5,5v30H2.5v-30c0-2.76,2.24-5,5-5Z"></path>
                     <g>
                       <circle class="cls-2" cx="47.49" cy="15.84" r="13.34"></circle>
                       <path class="cls-2"
@@ -942,11 +863,10 @@
             <div class="col-12">
               <form action="https://prepaenlinea.sep.gob.mx/" method="get" enctype="multipart/form-data"
                 class="form-only-controls">
-                <div class="input-group"><input type="text" name="s" placeholder="Busca en PL-SEP"
-                    value="" class="form-control text-left autocomplete"><button type="submit"
-                    class="btn btn-default link-menu"><span
-                      class="text-hide sr-only">Buscar</span><svg class="iconos-m" width="20"
-                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.99 54.96">
+                <div class="input-group"><input type="text" name="s" placeholder="Busca en PL-SEP" value=""
+                    class="form-control text-left autocomplete"><button type="submit"
+                    class="btn btn-default link-menu"><span class="text-hide sr-only">Buscar</span><svg class="iconos-m"
+                      width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.99 54.96">
                       <defs>
                         <style>
                           .icono-m-1 {
@@ -981,87 +901,234 @@
               <hr class="social-line">
             </div>
             <div class="col d-flex justify-content-center"><a title="Facebook"
-                href="https://www.facebook.com/PrepaEnLineadelaSEP/" target="_blank"
-                rel="noopener noreferrer" class="social-icon"><i
-                  class="fa-brands fa-facebook-f"></i></a><a title="X"
+                href="https://www.facebook.com/PrepaEnLineadelaSEP/" target="_blank" rel="noopener noreferrer"
+                class="social-icon"><i class="fa-brands fa-facebook-f"></i></a><a title="X"
                 href="https://twitter.com/PrepaLineaSEP" target="_blank" rel="noopener noreferrer"
                 class="social-icon"><i class="fa-brands fa-x-twitter"></i></a><a title="Instagram"
-                href="https://www.instagram.com/prepaenlineasep/" target="_blank"
-                rel="noopener noreferrer" class="social-icon"><i
-                  class="fa-brands fa-instagram"></i></a><a title="Youtube"
-                href="https://www.youtube.com/@PrepaenLinea-SEP" target="_blank"
-                rel="noopener noreferrer" class="social-icon"><i class="fa-brands fa-youtube"></i></a><a
-                title="Tik tok" href="https://www.tiktok.com/@prepaenlinea_sep" target="_blank"
-                rel="noopener noreferrer" class="social-icon"><i class="fa-brands fa-tiktok"></i></a><a
-                title="Spotify"
-                href="https://open.spotify.com/show/5GH1mXSrMx6AMchq1EAsHc?si=f407167b9a89491a&amp;nd=1"
-                target="_blank" rel="noopener noreferrer" class="social-icon"><i
-                  class="fa-brands fa-spotify"></i></a></div>
+                href="https://www.instagram.com/prepaenlineasep/" target="_blank" rel="noopener noreferrer"
+                class="social-icon"><i class="fa-brands fa-instagram"></i></a><a title="Youtube"
+                href="https://www.youtube.com/@PrepaenLinea-SEP" target="_blank" rel="noopener noreferrer"
+                class="social-icon"><i class="fa-brands fa-youtube"></i></a><a title="Tik tok"
+                href="https://www.tiktok.com/@prepaenlinea_sep" target="_blank" rel="noopener noreferrer"
+                class="social-icon"><i class="fa-brands fa-tiktok"></i></a><a title="Spotify"
+                href="https://open.spotify.com/show/5GH1mXSrMx6AMchq1EAsHc?si=f407167b9a89491a&amp;nd=1" target="_blank"
+                rel="noopener noreferrer" class="social-icon"><i class="fa-brands fa-spotify"></i></a></div>
             <div class="col d-none d-md-inline-block">
               <hr class="social-line">
             </div>
           </div>
         </div>
       </div>
-    </div> 
+    </div>
 
 
   </header>
 
-    <section id="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <img src="img/Banner_2.png" class="img-fluid" alt="Banner">
-                </div>
-            </div>
+  <section id="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <img src="img/Banner_2.png" class="img-fluid" alt="Banner">
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="identidad-palabras">
-        <div class="container">
-            <div class="row ">
-                <div class="col-12 text-center ">
-                    <div class="main__title" aria-label="Prepa en Línea-SEP es">
-                        Prepa en Línea-SEP es&nbsp;<span class="typewriter nocaret"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="prepa-distinta">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <h2 class="titulo">Una prepa <span>distinta</span> </h2>
-                </div>
-            </div>
-
-            <div class="row justify-content-center text-center">
-                <div class="col-12 text-center">
-                    <h2 class="ns mt-5">Nuestros servicios</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6">
-              <div class="text-center border-boletin ">
-                <svg width="50" height="50">
-                  <use xlink:href="http://10.3.29.145/wp-content/themes/plsep25/img/servicios.svg#sidat"></use>
-                </svg>
-                <p class="parrafo-lineas-boletin">Te presentamos información de nuestras convocatorias, una guía para estar al tanto de fechas importantes, requisitos y particularidades del servicio.</p>
-                
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6"></div>
-            <div class="col-lg-3 col-md-6"></div>
-            <div class="col-lg-3 col-md-6"></div>
+  <section class="identidad-palabras">
+    <div class="container">
+      <div class="row ">
+        <div class="col-12 text-center ">
+          <div class="main__title" aria-label="Prepa en Línea-SEP es">
+            Prepa en Línea-SEP es&nbsp;<span class="typewriter nocaret"></span>
           </div>
         </div>
-        <!-- <div class="mask">
+      </div>
+    </div>
+  </section>
+
+  <section id="prepa-distinta">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="titulo">Una prepa <span>distinta</span> </h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center">
+        <div class="col-12 text-center mb-5">
+          <h2 class="ns mt-5">Nuestros servicios</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container cont mt-5">
+      <div class="row justify-content-center">
+        <div class="col-xl-3 col-lg-6">
+          <div class="text-center border-boletin ">
+            <a class="btn-icono" href="#" target="_blank">
+            <svg width="139" height="50">
+              <use xlink:href="img/servicios.svg#sidat"></use>
+            </svg>
+            <p>Inspira e Integra, apoyo para seguir aprendiendo sin detenerte.</p>  
+            </a>            
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 mt-5 m-lg-0">
+          <div class="text-center border-boletin ">
+            <a class="btn-icono" href="#" target="_blank">
+              <svg width="226" height="29">
+              <use xlink:href="img/servicios.svg#proyecta"></use>
+            </svg>
+            <p>¿Ya pensaste en tu futuro? Descubre universidades, modalidades y guías para avanzar.</p>
+            </a>            
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 mt-xl-0 mt-5">
+          <div class="text-center border-boletin ">
+            <a class="btn-icono" href="#" target="_blank">
+              <svg width="162" height="50">
+              <use xlink:href="img/servicios.svg#readi"></use>
+            </svg>
+            <p>Cursos, talleres y conferencias para fortalecer tu aprendizaje a tu ritmo.</p>
+            </a>            
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 mt-xl-0 mt-lg-5 mt-4">
+          <div class="text-center border-boletin ">
+            <a class="btn-icono" href="#" target="_blank">
+              <svg width="108" height="50">
+              <use xlink:href="img/servicios.svg#difusion"></use>
+            </svg>
+            <p>Vive experiencias culturales con actividades nuevas y creativas.</p>
+            </a>            
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center align-items-center mt-5 mt-md-5 mt-lg-5 mt-xl-3 ">
+        <div class="col-lg-3 text-center">
+          <div class="descripcion-servicios d-lg-inline-flex align-self-center">
+            <a class="btn-icono" href="#" target="_blank">
+              <svg width="50" height="50">
+                <use xlink:href="./img/servicios.svg#vida-saludable" />
+              </svg>
+                <div class="titulo-servicios align-self-center ps-md-2">
+                  Vida saludable
+                </div>
+            </a>            
+          </div>         
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="descripcion-servicios mt-5 mt-lg-1 d-lg-inline-flex align-self-center">
+            <a class="btn-icono" href="#" target="_blank">
+              <svg width="50" height="50">
+                  <use xlink:href="./img/servicios.svg#bolsa-trabajo" />
+                </svg>
+                <div class="titulo-servicios align-self-center ps-md-2">
+                  Bolsa de trabajo
+                </div>
+            </a>								
+					</div>          
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-lg-5 mt-5">
+        <div class="col-lg-4 text-center mt-5 mt-md-5 mt-lg-4">
+          <p class="titulo-servicios-dos">Modelo educativo</p>
+          <p class="parrafo-servicios">
+            No escolarizado <br>
+            Horarios flexibles <br>
+            Centrado en el estudiante <br>
+            Aprendizaje social y significativo
+          </p>
+          <a class="btn-leer-mas mx-auto" href="http://10.3.29.145/modelo-educativo/">
+            Más información
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px" width="15px"
+              class="icon">
+              <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"
+                stroke="#292D32"
+                d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <div class="col-lg-4 text-center mt-3 mt-md-3 mt-lg-4">
+          <p class="titulo-servicios-dos">Plan de estudios</p>
+          <p class="parrafo-servicios">
+            2 años 6 meses <br>
+            23 módulos <br>
+            5 áreas disciplinares<br>
+            Formación para el trabajo
+          </p>
+          <a class="btn-leer-mas mx-auto" href="http://10.3.29.145/plan-de-estudios/">
+            Más información
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px" width="15px"
+              class="icon">
+              <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"
+                stroke="#292D32"
+                d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="line-boletines-svg d-none d-xl-inline-block">
+          <div class=" text-center ">
+            <svg width="1324" height="672" viewBox="0 0 1324 672" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M660.932 -0.000488194L662.932 -0.000488281V42.8901H660.932V-0.000488194Z" fill="#D9D9D9"/>
+            <path d="M660.932 231.749H662.932V248.789H660.932V231.749Z" fill="#D9D9D9"/>
+            <path d="M0 201.749V71.0002C0 54.4316 13.4315 41.0002 30 41.0002H328V231.749H30V230.749H327V42.0002H30C13.9837 42.0002 1 54.9839 1 71.0002V201.749C1 217.765 13.9837 230.749 30 230.749V231.749L29.2256 231.739C13.0149 231.329 0 218.059 0 201.749Z" fill="#D9D9D9"/>
+            <path d="M662 41.0002V231.749H328V41.0002H662ZM329 230.749H661V42.0002H329V230.749Z" fill="#D9D9D9"/>
+            <path d="M997 41.0002V231.749H662V41.0002H997ZM663 230.749H996V42.0002H663V230.749Z" fill="#D9D9D9"/>
+            <path d="M336 304.78V279C336 262.431 349.431 249 366 249H662.338V334.78H366V333.78H661.338V250H366C349.984 250 337 262.984 337 279V304.78C337 320.796 349.984 333.78 366 333.78V334.78C349.431 334.78 336 321.349 336 304.78Z" fill="#D9D9D9"/>
+            <path d="M987.338 304.569V278.788C987.338 262.772 974.354 249.788 958.338 249.788H663V333.569H958.338V334.569H662V248.788H958.338C974.907 248.788 988.338 262.22 988.338 278.788V304.569C988.338 321.137 974.907 334.569 958.338 334.569V333.569C974.354 333.569 987.338 320.585 987.338 304.569Z" fill="#D9D9D9"/>
+            <path d="M660.932 334.569L662.932 334.569V396.363L660.932 396.363V334.569Z" fill="#D9D9D9"/>
+            <path d="M660.932 606.152H662.932V671.419H660.932V606.152Z" fill="#D9D9D9"/>
+            <path d="M223.775 576.152V426.363C223.775 409.794 237.206 396.363 253.775 396.363H662V606.152H253.775V605.152H661V397.363H253.775C237.758 397.363 224.775 410.347 224.775 426.363V576.152C224.775 592.168 237.759 605.152 253.775 605.152V606.152L253 606.142C237.047 605.738 224.189 592.88 223.784 576.926L223.775 576.152Z" fill="#D9D9D9"/>
+            <path d="M1099.23 576.152V426.363C1099.23 410.347 1086.24 397.363 1070.23 397.363H663V605.152H1070.23V606.152H662V396.363H1070.23L1071 396.373C1087.21 396.784 1100.23 410.053 1100.23 426.363V576.152L1100.22 576.926C1099.81 592.879 1086.95 605.738 1071 606.142L1070.23 606.152V605.152C1086.24 605.152 1099.23 592.168 1099.23 576.152Z" fill="#D9D9D9"/>
+            <path d="M1323 201.749V71.0002C1323 54.9839 1310.02 42.0002 1294 42.0002H998V230.749H1294V231.749H997V41.0002H1294L1294.77 41.0099C1310.99 41.4207 1324 54.6906 1324 71.0002V201.749L1323.99 202.524C1323.59 218.477 1310.73 231.335 1294.77 231.739L1294 231.749V230.749C1310.02 230.749 1323 217.765 1323 201.749Z" fill="#D9D9D9"/>
+            </svg>
+
+          </div>
+        </div>
+
+        <div class="line-boletines-svg-tb d-none d-lg-block d-xl-none">
+          <div class="text-center">
+            <svg width="935" height="843" viewBox="0 0 935 843" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M466.932 -0.000488194L468.932 -0.000488281V42.8901H466.932V-0.000488194Z" fill="#D9D9D9"/>
+            <path d="M466.932 201.749H468.932V228.788H466.932V201.749Z" fill="#D9D9D9"/>
+            <path d="M466.932 389.749H468.932V416.788H466.932V389.749Z" fill="#D9D9D9"/>
+            <path d="M0 171.749V70.9998C0 54.4313 13.4315 40.9998 30 40.9998H468V201.749H30V200.749H467V41.9998H30C13.9837 41.9998 1 54.9836 1 70.9998V171.749C1 187.765 13.9837 200.749 30 200.749V201.749L29.2256 201.739C13.0149 201.328 0 188.058 0 171.749Z" fill="#D9D9D9"/>
+            <path d="M141.662 472.569V446.788C141.662 430.22 155.094 416.788 171.662 416.788H468V502.569H171.662V501.569H467V417.788H171.662C155.646 417.788 142.662 430.772 142.662 446.788V472.569C142.662 488.585 155.646 501.569 171.662 501.569V502.569C155.094 502.569 141.662 489.137 141.662 472.569Z" fill="#D9D9D9"/>
+            <path d="M793.338 472.569V446.788C793.338 430.772 780.354 417.788 764.338 417.788H469V501.569H764.338V502.569H468V416.788H764.338C780.907 416.788 794.338 430.22 794.338 446.788V472.569C794.338 489.137 780.907 502.569 764.338 502.569V501.569C780.354 501.569 793.338 488.585 793.338 472.569Z" fill="#D9D9D9"/>
+            <path d="M466.932 501.569H468.932V573.363H466.932V501.569Z" fill="#D9D9D9"/>
+            <path d="M466.932 777.152H468.932V842.419H466.932V777.152Z" fill="#D9D9D9"/>
+            <path d="M136.775 748.152V603.363C136.775 586.794 150.206 573.363 166.775 573.363H468V778.152H166.775V777.152H467V574.363H166.775C150.758 574.363 137.775 587.346 137.775 603.363V748.152C137.775 764.168 150.759 777.152 166.775 777.152V778.152L166 778.142C150.047 777.738 137.189 764.879 136.784 748.926L136.775 748.152Z" fill="#D9D9D9"/>
+            <path d="M797.226 748.152V603.363C797.226 587.346 784.242 574.363 768.226 574.363H469V777.152H768.226V778.152H468V573.363H768.226L769 573.372C785.211 573.783 798.226 587.053 798.226 603.363V748.152L798.216 748.926C797.811 764.879 784.953 777.738 769 778.142L768.226 778.152V777.152C784.242 777.152 797.225 764.168 797.226 748.152Z" fill="#D9D9D9"/>
+            <path d="M934 171.749V71.0003C934 54.9841 921.016 42.0003 905 42.0003H469V200.749H905V201.749L468 201.749V40.9998L905 41.0003L905.774 41.0101C921.985 41.4209 935 54.6907 935 71.0003V171.749L934.99 172.524C934.586 188.477 921.728 201.335 905.774 201.74L905 201.749V200.749C921.016 200.749 934 187.766 934 171.749Z" fill="#D9D9D9"/>
+            <path d="M0 359.749V259C0 242.431 13.4315 229 30 229H468V389.749H30V388.749H467V230H30C13.9837 230 1 242.984 1 259V359.749C1 375.765 13.9837 388.749 30 388.749V389.749L29.2256 389.739C13.0149 389.328 0 376.058 0 359.749Z" fill="#D9D9D9"/>
+            <path d="M934 359.749V259C934 242.984 921.016 230 905 230H469V388.749H905V389.749L468 389.749V229L905 229L905.774 229.01C921.985 229.421 935 242.691 935 259V359.749L934.99 360.524C934.586 376.477 921.728 389.335 905.774 389.74L905 389.749V388.749C921.016 388.749 934 375.766 934 359.749Z" fill="#D9D9D9"/>
+            </svg>
+
+
+          </div>
+        </div>
+
+        <div class="line-boletines-svg-mb d-block d-md-block d-lg-none" style="top:-75px">
+          <div class="text-center">
+            <svg width="353" height="1580" viewBox="0 0 353 1580" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1179C6.04109e-09 1178.74 0.00324488 1178.48 0.00976562 1178.23C0.420519 1162.01 13.6904 1149 30 1149V1150C13.9837 1150 1 1162.98 1 1179V1364H352V1179C352 1162.98 339.016 1150 323 1150H30V1149H176V1113H30C13.6904 1113 0.420519 1099.99 0.00976562 1083.77L0 1083V72C3.02054e-08 71.7411 0.00324486 71.4829 0.00976562 71.2256C0.42052 55.015 13.6904 42 30 42V43C13.9837 43 1 55.9837 1 72V221H352V72C352 55.9837 339.016 43 323 43H30V42H176V0H178V42H323L323.774 42.0098C339.985 42.4205 353 55.6904 353 72V1083L352.99 1083.77C352.586 1099.73 339.728 1112.59 323.774 1112.99L323 1113H178V1149H323L323.774 1149.01C339.985 1149.42 353 1162.69 353 1179V1550L352.99 1550.77C352.586 1566.73 339.728 1579.59 323.774 1579.99L323 1580H30C13.6904 1580 0.420519 1566.99 0.00976562 1550.77L0 1550V1179ZM1 1550C1 1566.02 13.9837 1579 30 1579H323C339.016 1579 352 1566.02 352 1550V1365H1V1550ZM1 1083C1 1099.02 13.9837 1112 30 1112H323C339.016 1112 352 1099.02 352 1083V934H1V1083ZM1 933H352V756H1V933ZM1 755H352V401H1V755ZM1 400H352V222H1V400Z" fill="#D9D9D9"/>
+            <path d="M353.006 578L353 579L1 577L1.00568 576L353.006 578Z" fill="#D9D9D9"/>
+            </svg>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- <div class="mask">
             <div class="container cont mt-5">
                 <div class="row justify-content-center pt-2">
                     
@@ -1196,486 +1263,472 @@
                 </svg>
             </div>
         </div> -->
-        
 
-    </section>
 
-    <section id="boletines">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="titulou">Boletines</h2>
-                </div>
-            </div>
-            <div class="row my-4">
-                <div class="col-12">
-                    <div class="accordion" id="accordion-boletines-home">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Mujer y educación: ....
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                data-bs-parent="#accordion-boletines-home">
-                                <div class="accordion-body">
-                                    <h3 class="titulo-boletin-home mt-4">Mujer y educación: Historias de la comunidad
-                                        PL-SEP</h3>
-                                    <div class="container">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-4">
-                                                <img src="img/Portada-boletin1.jpg" class="img-fluid" alt="boletin #1">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <p>El Día Internacional de la Mujer tiene sus raíces a principios del
-                                                    siglo XX, en las luchas laborales y sociales de las mujeres. En
-                                                    1975, la Asamblea General de las Naciones Unidas formalizó esta
-                                                    fecha para recordar los avances alcanzados en derechos, señalar las
-                                                    desigualdades...</p>
-                                                <p class="fecha-boletin-home">Prepa en Línea-SEP, 7 de marzo de 2025.
-                                                </p>
-                                                <a class="btn-leer-mas" href="#">
-                                                    Leer completo
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                        viewBox="0 0 24 24" height="15px" width="15px" class="icon">
-                                                        <path stroke-linejoin="round" stroke-linecap="round"
-                                                            stroke-miterlimit="10" stroke-width="1.5" stroke="#292D32"
-                                                            d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                                                        </path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Tu vida depende de ...
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordion-boletines-home">
-                                <div class="accordion-body">
-                                    <h3 class="titulo-boletin-home mt-4">Mujer y educación: Historias de la comunidad
-                                        PL-SEP</h3>
-                                    <div class="container">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-4">
-                                                <img src="img/Portada-boletin1.jpg" class="img-fluid" alt="boletin #1">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <p>El Día Internacional de la Mujer tiene sus raíces a principios del
-                                                    siglo XX, en las luchas laborales y sociales de las mujeres. En
-                                                    1975, la Asamblea General de las Naciones Unidas formalizó esta
-                                                    fecha para recordar los avances alcanzados en derechos, señalar las
-                                                    desigualdades...</p>
-                                                <p class="fecha-boletin-home">Prepa en Línea-SEP, 7 de marzo de 2025.
-                                                </p>
-                                                <a class="btn-leer-mas" href="#">
-                                                    Leer completo
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                        viewBox="0 0 24 24" height="15px" width="15px" class="icon">
-                                                        <path stroke-linejoin="round" stroke-linecap="round"
-                                                            stroke-miterlimit="10" stroke-width="1.5" stroke="#292D32"
-                                                            d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                                                        </path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Prepa en Línea-SEP: ...
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordion-boletines-home">
-                                <div class="accordion-body">
-                                    <h3 class="titulo-boletin-home mt-4">Mujer y educación: Historias de la comunidad
-                                        PL-SEP</h3>
-                                    <div class="container">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-4">
-                                                <img src="img/Portada-boletin1.jpg" class="img-fluid" alt="boletin #1">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <p>El Día Internacional de la Mujer tiene sus raíces a principios del
-                                                    siglo XX, en las luchas laborales y sociales de las mujeres. En
-                                                    1975, la Asamblea General de las Naciones Unidas formalizó esta
-                                                    fecha para recordar los avances alcanzados en derechos, señalar las
-                                                    desigualdades...</p>
-                                                <p class="fecha-boletin-home">Prepa en Línea-SEP, 7 de marzo de 2025.
-                                                </p>
-                                                <a class="btn-leer-mas" href="#">
-                                                    Leer completo
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                        viewBox="0 0 24 24" height="15px" width="15px" class="icon">
-                                                        <path stroke-linejoin="round" stroke-linecap="round"
-                                                            stroke-miterlimit="10" stroke-width="1.5" stroke="#292D32"
-                                                            d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                                                        </path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Tu vida depende de ...
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse"
-                                data-bs-parent="#accordion-boletines-home">
-                                <div class="accordion-body">
-                                    <h3 class="titulo-boletin-home mt-4">Mujer y educación: Historias de la comunidad
-                                        PL-SEP</h3>
-                                    <div class="container">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-md">
-                                                <img src="img/Portada-boletin1.jpg" class="img-fluid" alt="boletin #1">
-                                            </div>
-                                            <div class="col-12 col-md-7">
-                                                <p>El Día Internacional de la Mujer tiene sus raíces a principios del
-                                                    siglo XX, en las luchas laborales y sociales de las mujeres. En
-                                                    1975, la Asamblea General de las Naciones Unidas formalizó esta
-                                                    fecha para recordar los avances alcanzados en derechos, señalar las
-                                                    desigualdades...</p>
-                                                <p class="fecha-boletin-home">Prepa en Línea-SEP, 7 de marzo de 2025.
-                                                </p>
-                                                <a class="btn-leer-mas" href="#">
-                                                    Leer completo
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                        viewBox="0 0 24 24" height="15px" width="15px" class="icon">
-                                                        <path stroke-linejoin="round" stroke-linecap="round"
-                                                            stroke-miterlimit="10" stroke-width="1.5" stroke="#292D32"
-                                                            d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                                                        </path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Prepa en Línea-SEP: ...
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse"
-                                data-bs-parent="#accordion-boletines-home">
-                                <div class="accordion-body">
-                                    <h3 class="titulo-boletin-home mt-4">Mujer y educación: Historias de la comunidad
-                                        PL-SEP</h3>
-                                    <div class="container">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-md">
-                                                <img src="img/Portada-boletin1.jpg" class="img-fluid" alt="boletin #1">
-                                            </div>
-                                            <div class="col-12 col-md-7">
-                                                <p>El Día Internacional de la Mujer tiene sus raíces a principios del
-                                                    siglo XX, en las luchas laborales y sociales de las mujeres. En
-                                                    1975, la Asamblea General de las Naciones Unidas formalizó esta
-                                                    fecha para recordar los avances alcanzados en derechos, señalar las
-                                                    desigualdades...</p>
-                                                <p class="fecha-boletin-home">Prepa en Línea-SEP, 7 de marzo de 2025.
-                                                </p>
-                                                <a class="btn-leer-mas" href="#">
-                                                    Leer completo
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                        viewBox="0 0 24 24" height="15px" width="15px" class="icon">
-                                                        <path stroke-linejoin="round" stroke-linecap="round"
-                                                            stroke-miterlimit="10" stroke-width="1.5" stroke="#292D32"
-                                                            d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                                                        </path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="my-3 text-center"><a class="btn-menu   active" aria-current="page" href="#">Ver todos</a>
-                    </p>
-                </div>
-            </div>
+  </section>
+
+  <section id="boletines">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="titulou">Boletines</h2>
         </div>
-    </section>
-
-    <section class="banner-colavorativos">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <div class="list">
-                        <div class="list-item">
-                            <a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/01/carteles-descrimincacion.pdf"
-                                target="_blank">
-                                <img src="img/banners-h-1.webp" alt="banner-campana-vs-fentalino"
-                                    class="img-fluid">
-                            </a>
-                        </div>
-
-                        <div class="list-item">
-                            <a href="https://prepaenlinea.sep.gob.mx/vinculacion/sne/" target="_blank">
-                                <img src="img/banners-h-2.webp" alt="banner-campana-vs-fentalino"
-                                    class="img-fluid">
-                            </a>
-                        </div>
-
-                        <div class="list-item">
-                            <a href="https://educacionmediasuperior.sep.gob.mx/SEMS_en_cifras" target="_blank">
-                                <img src="img/banners-h-3.webp" alt="banner-campana-vs-fentalino"
-                                    class="img-fluid">
-                            </a>
-                        </div>
-
-                        <div class="list-item">
-                            <a href="https://estrategiaenelaula.sep.gob.mx/" target="_blank">
-                                <img src="img/banners-h-4.webp" alt="banner-campana-vs-fentalino"
-                                    class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="list-item">
-                            <a href="https://estrategiaenelaula.sep.gob.mx/" target="_blank">
-                                <img src="img/banners-h-5.webp" alt="banner-campana-vs-fentalino"
-                                    class="img-fluid">
-                            </a>
-                        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-12">
+          <div class="accordion" id="accordion-boletines-home">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Mujer y educación: ....
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-boletines-home">
+                <div class="accordion-body">
+                  <h3 class="titulo-boletin-home mt-4">Mujer y educación: Historias de la comunidad
+                    PL-SEP</h3>
+                  <div class="container">
+                    <div class="row align-items-center">
+                      <div class="col-md-4">
+                        <img src="img/Portada-boletin1.jpg" class="img-fluid" alt="boletin #1">
+                      </div>
+                      <div class="col-md-8">
+                        <p>El Día Internacional de la Mujer tiene sus raíces a principios del
+                          siglo XX, en las luchas laborales y sociales de las mujeres. En
+                          1975, la Asamblea General de las Naciones Unidas formalizó esta
+                          fecha para recordar los avances alcanzados en derechos, señalar las
+                          desigualdades...</p>
+                        <p class="fecha-boletin-home">Prepa en Línea-SEP, 7 de marzo de 2025.
+                        </p>
+                        <a class="btn-leer-mas" href="#">
+                          Leer completo
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
+                            width="15px" class="icon">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
+                              stroke-width="1.5" stroke="#292D32"
+                              d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
+                            </path>
+                          </svg>
+                        </a>
+                      </div>
                     </div>
-
-                    <button class="show-hide-btn">
-                        <svg width="40" height="40">
-                            <use xlink:href="./img/sprite.svg#show-hide-btn" />
-                        </svg>
-
-                    </button>
+                  </div>
                 </div>
+              </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Tu vida depende de ...
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-boletines-home">
+                <div class="accordion-body">
+                  <h3 class="titulo-boletin-home mt-4">Mujer y educación: Historias de la comunidad
+                    PL-SEP</h3>
+                  <div class="container">
+                    <div class="row align-items-center">
+                      <div class="col-md-4">
+                        <img src="img/Portada-boletin1.jpg" class="img-fluid" alt="boletin #1">
+                      </div>
+                      <div class="col-md-8">
+                        <p>El Día Internacional de la Mujer tiene sus raíces a principios del
+                          siglo XX, en las luchas laborales y sociales de las mujeres. En
+                          1975, la Asamblea General de las Naciones Unidas formalizó esta
+                          fecha para recordar los avances alcanzados en derechos, señalar las
+                          desigualdades...</p>
+                        <p class="fecha-boletin-home">Prepa en Línea-SEP, 7 de marzo de 2025.
+                        </p>
+                        <a class="btn-leer-mas" href="#">
+                          Leer completo
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
+                            width="15px" class="icon">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
+                              stroke-width="1.5" stroke="#292D32"
+                              d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
+                            </path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Prepa en Línea-SEP: ...
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-boletines-home">
+                <div class="accordion-body">
+                  <h3 class="titulo-boletin-home mt-4">Mujer y educación: Historias de la comunidad
+                    PL-SEP</h3>
+                  <div class="container">
+                    <div class="row align-items-center">
+                      <div class="col-md-4">
+                        <img src="img/Portada-boletin1.jpg" class="img-fluid" alt="boletin #1">
+                      </div>
+                      <div class="col-md-8">
+                        <p>El Día Internacional de la Mujer tiene sus raíces a principios del
+                          siglo XX, en las luchas laborales y sociales de las mujeres. En
+                          1975, la Asamblea General de las Naciones Unidas formalizó esta
+                          fecha para recordar los avances alcanzados en derechos, señalar las
+                          desigualdades...</p>
+                        <p class="fecha-boletin-home">Prepa en Línea-SEP, 7 de marzo de 2025.
+                        </p>
+                        <a class="btn-leer-mas" href="#">
+                          Leer completo
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
+                            width="15px" class="icon">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
+                              stroke-width="1.5" stroke="#292D32"
+                              d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
+                            </path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Tu vida depende de ...
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-boletines-home">
+                <div class="accordion-body">
+                  <h3 class="titulo-boletin-home mt-4">Mujer y educación: Historias de la comunidad
+                    PL-SEP</h3>
+                  <div class="container">
+                    <div class="row align-items-center">
+                      <div class="col-12 col-md">
+                        <img src="img/Portada-boletin1.jpg" class="img-fluid" alt="boletin #1">
+                      </div>
+                      <div class="col-12 col-md-7">
+                        <p>El Día Internacional de la Mujer tiene sus raíces a principios del
+                          siglo XX, en las luchas laborales y sociales de las mujeres. En
+                          1975, la Asamblea General de las Naciones Unidas formalizó esta
+                          fecha para recordar los avances alcanzados en derechos, señalar las
+                          desigualdades...</p>
+                        <p class="fecha-boletin-home">Prepa en Línea-SEP, 7 de marzo de 2025.
+                        </p>
+                        <a class="btn-leer-mas" href="#">
+                          Leer completo
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
+                            width="15px" class="icon">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
+                              stroke-width="1.5" stroke="#292D32"
+                              d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
+                            </path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Prepa en Línea-SEP: ...
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordion-boletines-home">
+                <div class="accordion-body">
+                  <h3 class="titulo-boletin-home mt-4">Mujer y educación: Historias de la comunidad
+                    PL-SEP</h3>
+                  <div class="container">
+                    <div class="row align-items-center">
+                      <div class="col-12 col-md">
+                        <img src="img/Portada-boletin1.jpg" class="img-fluid" alt="boletin #1">
+                      </div>
+                      <div class="col-12 col-md-7">
+                        <p>El Día Internacional de la Mujer tiene sus raíces a principios del
+                          siglo XX, en las luchas laborales y sociales de las mujeres. En
+                          1975, la Asamblea General de las Naciones Unidas formalizó esta
+                          fecha para recordar los avances alcanzados en derechos, señalar las
+                          desigualdades...</p>
+                        <p class="fecha-boletin-home">Prepa en Línea-SEP, 7 de marzo de 2025.
+                        </p>
+                        <a class="btn-leer-mas" href="#">
+                          Leer completo
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
+                            width="15px" class="icon">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
+                              stroke-width="1.5" stroke="#292D32"
+                              d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
+                            </path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="my-3 text-center"><a class="btn-menu   active" aria-current="page" href="#">Ver todos</a>
+          </p>
         </div>
-    </section>
-
-    <section id="branding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 ">
-                    <div class="text-brading">
-                        <p class="uno">Lleguemos</p>
-                        <p class="dos text-center">a la <span>meta</span></p>
-                        <p class="tres text-end">juntos</p>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="row justify-content-center">
-                <div class="col-md-10 col-xl-7">
-                    <div class="carousel-identidad">   
-                        <div id="carousel-identidad-branding" class="carousel slide " data-bs-interval="10000" data-bs-ride="carousel" data-bs-pause="false">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/1.png" class="img-fluid" alt="m1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/2.png" class="img-fluid" alt="m1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/3.png" class="img-fluid" alt="m1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/4.png" class="img-fluid" alt="m1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/5.png" class="img-fluid" alt="m1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/6.png" class="img-fluid" alt="m1">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-6 order-2 order-md-1 text-center text-md-start">
-                    <div class="bor">
-                        Av. Revolución 1425, colonia Campestre, <br>
-                        alcaldía Álvaro Obregón, CDMX, 01040.
-                        <br><b>Información y dudas</b>: <a
-                            href="mailto:contacto@prepaenlinea.gob.mx">contacto@prepaenlinea.gob.mx</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center text-md-end order-1 order-md-2">
-
-                    <ul class="wrapper">
-                        <li class="icon facebook">
-                            <span class="tooltip">Facebook</span>
-                            <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
-                                </path>
-                            </svg>
-                        </li>
-                        <li class="icon twitter">
-                            <span class="tooltip">X</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor"
-                                class="bi bi-twitter" viewBox="0 0 16 16">
-                                <path
-                                    d="M2.18511 1.88157H4.23738L13.326 13.8836H11.2737L2.18511 1.88157ZM0.244518 0.929688L6.05232 8.61377L0.202637 14.8631H1.51498L6.63868 9.40011L10.7711 14.8631H15.2526L9.10979 6.75138L14.5546 0.943483H13.2423L8.52342 5.97883L4.71206 0.943483H0.230565L0.244518 0.929688Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </li>
-                        <li class="icon instagram">
-                            <span class="tooltip">Instagram</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor"
-                                class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
-                                </path>
-                            </svg>
-                        </li>
-                        <li class="icon youtube">
-                            <span class="tooltip">Youtube</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor"
-                                class="bi bi-youtube" viewBox="0 0 16 11">
-                                <path
-                                    d="M6.75716 7.65871V3.33046L10.601 5.49459L6.75716 7.65871ZM15.3164 1.97235C15.1488 1.34299 14.646 0.846122 14.0091 0.6805C12.8582 0.371339 8.25447 0.371338 8.25447 0.371338C8.25447 0.371338 3.65079 0.371339 2.49986 0.6805C1.86295 0.846122 1.37129 1.34299 1.19251 1.97235C0.879637 3.10963 0.879639 5.49459 0.879639 5.49459C0.879639 5.49459 0.879637 7.87955 1.19251 9.01682C1.36012 9.64618 1.86295 10.143 2.49986 10.3087C3.65079 10.6178 8.25447 10.6178 8.25447 10.6178C8.25447 10.6178 12.8582 10.6178 14.0091 10.3087C14.646 10.143 15.1377 9.64618 15.3164 9.01682C15.6181 7.87955 15.6181 5.49459 15.6181 5.49459C15.6181 5.49459 15.6181 3.10963 15.3164 1.97235Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </li>
-                        <li class="icon tiktok">
-                            <span class="tooltip">Tiktok</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor"
-                                class="bi bi-tiktok" viewBox="0 0 15 17">
-                                <path
-                                    d="M14.9037 4.33176C14.9037 4.25447 14.9037 4.25447 14.8255 4.25447C14.6355 4.25447 14.4568 4.23239 14.2668 4.2103C13.5964 4.11093 11.4398 2.9847 11.071 1.15181C11.071 1.11869 10.9816 0.654945 10.9816 0.46724C10.9816 0.378908 10.9816 0.378908 10.8922 0.378908C10.8699 0.378908 10.8476 0.378908 10.8364 0.378908C9.98715 0.378908 9.14912 0.378908 8.29989 0.378908C8.13228 0.378908 8.15463 0.356826 8.15463 0.522448C8.15463 4.14405 8.15463 7.7767 8.15463 11.3983C8.15463 11.5308 8.15463 11.6743 8.1211 11.8068C7.99819 12.5135 7.62943 13.0545 7.01486 13.4299C6.4785 13.7501 5.90865 13.8495 5.29408 13.7281C5.10413 13.6949 4.91417 13.6176 4.73538 13.5514C4.72421 13.5404 4.70185 13.5293 4.69068 13.5072C4.63481 13.452 4.56775 13.4189 4.50071 13.3747C3.71853 12.8337 3.34979 12.0939 3.46153 11.1664C3.57327 10.2169 4.12079 9.57646 5.02589 9.24522C5.29406 9.14584 5.58459 9.10168 5.86394 9.12376C6.05389 9.12376 6.2327 9.15689 6.41148 9.21209C6.47853 9.23417 6.51205 9.21209 6.51205 9.14584C6.51205 9.12376 6.51205 9.10168 6.51205 9.0796C6.51205 8.42815 6.48971 7.0038 6.48971 7.0038C6.48971 6.81609 6.48971 6.62839 6.48971 6.44068C6.48971 6.38547 6.46733 6.37443 6.42264 6.37443C6.08742 6.33027 5.74104 6.33027 5.39465 6.35235C4.91416 6.38547 4.45604 6.48485 4.00908 6.63943C3.29395 6.89338 2.66818 7.27983 2.13182 7.80982C1.66252 8.26253 1.30497 8.78148 1.03679 9.36667C0.779792 9.92979 0.634503 10.515 0.589807 11.1223C0.567459 11.3873 0.578633 11.6523 0.589807 11.9173C0.623329 12.2816 0.690376 12.646 0.802116 12.9993C1.12616 14.0151 1.71839 14.8432 2.55644 15.4947C2.64583 15.5609 2.72404 15.6382 2.82461 15.6824C2.8693 15.7155 2.91403 15.7597 2.95872 15.7928C3.09281 15.8922 3.23806 15.9805 3.39449 16.0578C4.33311 16.5216 5.3276 16.6982 6.36678 16.5768C7.71883 16.4111 8.84739 15.8149 9.74131 14.7991C10.5794 13.8385 10.9817 12.7122 10.9928 11.4425C10.9928 9.64271 10.9928 7.83191 10.9928 6.02111C10.9928 5.97694 10.9705 5.92173 11.0152 5.89965C11.0487 5.87757 11.0934 5.93277 11.1269 5.95486C11.8085 6.39652 12.5348 6.71672 13.3393 6.89338C13.7975 6.99276 14.2668 7.059 14.7473 7.059C14.8925 7.059 14.9149 7.059 14.9149 6.90442C14.9149 6.26402 14.8814 4.50842 14.8814 4.3428"
-                                    fill="#currentColor" />
-                            </svg>
-                        </li>
-
-                        <li class="icon spotify">
-                            <span class="tooltip">Spotify</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor"
-                                class="bi bi-tiktok" viewBox="0 0 15 16">
-                                <path
-                                    d="M12.675 6.68847C10.2949 5.2862 6.30582 5.14266 4.0375 5.83827C3.66876 5.94869 3.28885 5.72786 3.17711 5.39661C3.06537 5.03225 3.28885 4.65683 3.62407 4.54642C6.2723 3.77352 10.6302 3.91706 13.379 5.54015C13.7142 5.72786 13.8259 6.16952 13.636 6.50076C13.446 6.75472 12.999 6.86513 12.6638 6.68847M12.608 8.75322C12.418 9.00718 12.0828 9.11759 11.8258 8.94093C9.81446 7.72637 6.76395 7.362 4.41741 8.09074C4.11571 8.16803 3.78049 8.01344 3.71344 7.72637C3.63522 7.42825 3.79168 7.097 4.0822 7.03075C6.79749 6.22473 10.1497 6.62222 12.4627 8.02449C12.6862 8.1349 12.7979 8.49927 12.608 8.76427M11.714 10.7738C11.5688 10.9946 11.3006 11.0719 11.0771 10.9174C9.32282 9.84633 7.13269 9.6255 4.51797 10.2217C4.26097 10.299 4.03749 10.1113 3.95927 9.8905C3.88105 9.63654 4.07103 9.41571 4.29451 9.33842C7.12153 8.70906 9.57981 8.97405 11.5241 10.1445C11.7811 10.2549 11.8258 10.553 11.714 10.7738ZM8.28364 0.140869C4.17161 0.140869 0.830566 3.43123 0.830566 7.50554C0.830566 11.5798 4.16043 14.8702 8.28364 14.8702C12.4068 14.8702 15.7367 11.5798 15.7367 7.50554C15.7367 3.43123 12.4068 0.140869 8.28364 0.140869Z"
-                                    fill="#currentColor" />
-                            </svg>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="main-footer">
-        <div class="list-info">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3"><img data-v-9e928f9a=""
-                            src="https://framework-gb.cdn.gob.mx/gobmx/img/logo_blanco.svg" href="/"
-                            alt="logo gobierno de méxico" class="logo_footer" style="max-width: 90%;"></div>
-                    <div class="col-sm-3" style="padding-left: 0px;">
-                        <h5>Enlaces</h5>
-                        <ul>
-                            <li><a href="https://participa.gob.mx" target="_blank" rel="noopener"
-                                    title="Enlace abre en ventana nueva">Participa</a></li>
-                            <li><a href="http://www.ordenjuridico.gob.mx" target="_blank" rel="noopener"
-                                    title="Enlace abre en ventana nueva">Marco Jurídico</a></li>
-                            <li><a href="https://consultapublicamx.inai.org.mx/vut-web/" target="_blank" rel="noopener"
-                                    title="Enlace abre en ventana nueva">Plataforma Nacional de Transparencia</a></li>
-                            <li><a href="https://alertadores.funcionpublica.gob.mx/" target="_blank" rel="noopener"
-                                    title="Enlace abre en ventana nueva">Alerta</a></li>
-                            <li><a href="https://sidec.funcionpublica.gob.mx" target="_blank" rel="noopener"
-                                    title="Enlace abre en ventana nueva">Denuncia</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3">
-                        <h5>¿Qué es gob.mx?</h5>
-                        <p>Es el portal único de trámites, información y participación ciudadana. <a
-                                href="https://www.gob.mx/que-es-gobmx">Leer más</a></p>
-                        <ul>
-                            <li><a href="https://datos.gob.mx" target="_blank">Portal de datos abiertos</a></li>
-                            <li><a href="https://www.gob.mx/accesibilidad" target="_blank">Declaración de
-                                    accesibilidad</a></li>
-                            <li><a href="https://www.gob.mx/terminos" target="_blank">Términos y Condiciones</a></li>
-                            <li><a href="https://www.gob.mx/terminos#medidas-seguridad-informacion"
-                                    target="_blank">Política de seguridad</a></li>
-                            <li><a href="https://www.gob.mx/sitemap" target="_blank">Mapa de sitio</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3" style="padding-left: 0px;">
-                        <h5><a href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54"
-                                target="_blank">Denuncia contra servidores públicos</a></h5>
-                        <h5>Síguenos en</h5>
-                        <ul class="list-inline">
-                            <li><a data-v-6b1f797a="" id="Facebook" href="https://www.facebook.com/gobmexico"
-                                    target="_blank" rel="noopener" title="enlace a facebook abre en una nueva ventana"
-                                    class="sendEst share-info footer"><img alt="Facebook"
-                                        src="https://framework-gb.cdn.gob.mx/landing/img/facebook.png"></a></li>
-                            <li style="margin-left: 5px; margin-right: 5px;"><a data-v-6b1f797a="" id="Twitter"
-                                    href="https://twitter.com/GobiernoMX" target="_blank" rel="noopener"
-                                    title="Enlace a twitter abre en una nueva ventana"
-                                    class="sendEst share-info footer"><img alt="Twitter"
-                                        src="https://framework-gb.cdn.gob.mx/landing/img/twitter.png"></a></li>
-                            <li style="margin-left: 5px; margin-right: 5px;"><a data-v-6b1f797a="" id="Instagram"
-                                    href="https://www.instagram.com/gobmexico/" target="_blank" rel="noopener"
-                                    title="Enlace a instagram abre en una nueva ventana"
-                                    class="sendEst share-info footer"><img alt="Instagram"
-                                        src="https://framework-gb.cdn.gob.mx/landing/img/instagram.png"></a></li>
-                            <li style="margin-left: 5px; margin-right: 5px;"><a data-v-6b1f797a="" id="Youtube"
-                                    href="https://www.youtube.com/@gobiernodemexico" target="_blank" rel="noopener"
-                                    title="Enlace a youtube abre en una nueva ventana"
-                                    class="sendEst share-info footer"><img alt="Youtube"
-                                        src="https://framework-gb.cdn.gob.mx/landing/img/youtube.png"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid footer-pleca">
-            <div class="row">
-                <div class="col"><br><br></div>
-            </div>
-        </div>
+      </div>
     </div>
+  </section>
 
-    
+  <section class="banner-colavorativos">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <div class="list">
+            <div class="list-item">
+              <a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/01/carteles-descrimincacion.pdf"
+                target="_blank">
+                <img src="img/banners-h-1.webp" alt="banner-campana-vs-fentalino" class="img-fluid">
+              </a>
+            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+            <div class="list-item">
+              <a href="https://prepaenlinea.sep.gob.mx/vinculacion/sne/" target="_blank">
+                <img src="img/banners-h-2.webp" alt="banner-campana-vs-fentalino" class="img-fluid">
+              </a>
+            </div>
 
-<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> -->
+            <div class="list-item">
+              <a href="https://educacionmediasuperior.sep.gob.mx/SEMS_en_cifras" target="_blank">
+                <img src="img/banners-h-3.webp" alt="banner-campana-vs-fentalino" class="img-fluid">
+              </a>
+            </div>
 
-   <!-- SVG stroke -->
-    <!-- <script>
+            <div class="list-item">
+              <a href="https://estrategiaenelaula.sep.gob.mx/" target="_blank">
+                <img src="img/banners-h-4.webp" alt="banner-campana-vs-fentalino" class="img-fluid">
+              </a>
+            </div>
+            <div class="list-item">
+              <a href="https://estrategiaenelaula.sep.gob.mx/" target="_blank">
+                <img src="img/banners-h-5.webp" alt="banner-campana-vs-fentalino" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <button class="show-hide-btn">
+            <svg width="40" height="40">
+              <use xlink:href="./img/sprite.svg#show-hide-btn" />
+            </svg>
+
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="branding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 ">
+          <div class="text-brading">
+            <p class="uno">Lleguemos</p>
+            <p class="dos text-center">a la <span>meta</span></p>
+            <p class="tres text-end">juntos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-xl-7">
+          <div class="carousel-identidad">
+            <div id="carousel-identidad-branding" class="carousel slide " data-bs-interval="10000"
+              data-bs-ride="carousel" data-bs-pause="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/1.png" class="img-fluid" alt="m1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/2.png" class="img-fluid" alt="m1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/3.png" class="img-fluid" alt="m1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/4.png" class="img-fluid" alt="m1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/5.png" class="img-fluid" alt="m1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/6.png" class="img-fluid" alt="m1">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-6 order-2 order-md-1 text-center text-md-start">
+          <div class="bor">
+            Av. Revolución 1425, colonia Campestre, <br>
+            alcaldía Álvaro Obregón, CDMX, 01040.
+            <br><b>Información y dudas</b>: <a
+              href="mailto:contacto@prepaenlinea.gob.mx">contacto@prepaenlinea.gob.mx</a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center text-md-end order-1 order-md-2">
+
+          <ul class="wrapper">
+            <li class="icon facebook">
+              <span class="tooltip">Facebook</span>
+              <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                </path>
+              </svg>
+            </li>
+            <li class="icon twitter">
+              <span class="tooltip">X</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-twitter"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.18511 1.88157H4.23738L13.326 13.8836H11.2737L2.18511 1.88157ZM0.244518 0.929688L6.05232 8.61377L0.202637 14.8631H1.51498L6.63868 9.40011L10.7711 14.8631H15.2526L9.10979 6.75138L14.5546 0.943483H13.2423L8.52342 5.97883L4.71206 0.943483H0.230565L0.244518 0.929688Z"
+                  fill="currentColor" />
+              </svg>
+            </li>
+            <li class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                </path>
+              </svg>
+            </li>
+            <li class="icon youtube">
+              <span class="tooltip">Youtube</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" class="bi bi-youtube"
+                viewBox="0 0 16 11">
+                <path
+                  d="M6.75716 7.65871V3.33046L10.601 5.49459L6.75716 7.65871ZM15.3164 1.97235C15.1488 1.34299 14.646 0.846122 14.0091 0.6805C12.8582 0.371339 8.25447 0.371338 8.25447 0.371338C8.25447 0.371338 3.65079 0.371339 2.49986 0.6805C1.86295 0.846122 1.37129 1.34299 1.19251 1.97235C0.879637 3.10963 0.879639 5.49459 0.879639 5.49459C0.879639 5.49459 0.879637 7.87955 1.19251 9.01682C1.36012 9.64618 1.86295 10.143 2.49986 10.3087C3.65079 10.6178 8.25447 10.6178 8.25447 10.6178C8.25447 10.6178 12.8582 10.6178 14.0091 10.3087C14.646 10.143 15.1377 9.64618 15.3164 9.01682C15.6181 7.87955 15.6181 5.49459 15.6181 5.49459C15.6181 5.49459 15.6181 3.10963 15.3164 1.97235Z"
+                  fill="currentColor" />
+              </svg>
+            </li>
+            <li class="icon tiktok">
+              <span class="tooltip">Tiktok</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-tiktok"
+                viewBox="0 0 15 17">
+                <path
+                  d="M14.9037 4.33176C14.9037 4.25447 14.9037 4.25447 14.8255 4.25447C14.6355 4.25447 14.4568 4.23239 14.2668 4.2103C13.5964 4.11093 11.4398 2.9847 11.071 1.15181C11.071 1.11869 10.9816 0.654945 10.9816 0.46724C10.9816 0.378908 10.9816 0.378908 10.8922 0.378908C10.8699 0.378908 10.8476 0.378908 10.8364 0.378908C9.98715 0.378908 9.14912 0.378908 8.29989 0.378908C8.13228 0.378908 8.15463 0.356826 8.15463 0.522448C8.15463 4.14405 8.15463 7.7767 8.15463 11.3983C8.15463 11.5308 8.15463 11.6743 8.1211 11.8068C7.99819 12.5135 7.62943 13.0545 7.01486 13.4299C6.4785 13.7501 5.90865 13.8495 5.29408 13.7281C5.10413 13.6949 4.91417 13.6176 4.73538 13.5514C4.72421 13.5404 4.70185 13.5293 4.69068 13.5072C4.63481 13.452 4.56775 13.4189 4.50071 13.3747C3.71853 12.8337 3.34979 12.0939 3.46153 11.1664C3.57327 10.2169 4.12079 9.57646 5.02589 9.24522C5.29406 9.14584 5.58459 9.10168 5.86394 9.12376C6.05389 9.12376 6.2327 9.15689 6.41148 9.21209C6.47853 9.23417 6.51205 9.21209 6.51205 9.14584C6.51205 9.12376 6.51205 9.10168 6.51205 9.0796C6.51205 8.42815 6.48971 7.0038 6.48971 7.0038C6.48971 6.81609 6.48971 6.62839 6.48971 6.44068C6.48971 6.38547 6.46733 6.37443 6.42264 6.37443C6.08742 6.33027 5.74104 6.33027 5.39465 6.35235C4.91416 6.38547 4.45604 6.48485 4.00908 6.63943C3.29395 6.89338 2.66818 7.27983 2.13182 7.80982C1.66252 8.26253 1.30497 8.78148 1.03679 9.36667C0.779792 9.92979 0.634503 10.515 0.589807 11.1223C0.567459 11.3873 0.578633 11.6523 0.589807 11.9173C0.623329 12.2816 0.690376 12.646 0.802116 12.9993C1.12616 14.0151 1.71839 14.8432 2.55644 15.4947C2.64583 15.5609 2.72404 15.6382 2.82461 15.6824C2.8693 15.7155 2.91403 15.7597 2.95872 15.7928C3.09281 15.8922 3.23806 15.9805 3.39449 16.0578C4.33311 16.5216 5.3276 16.6982 6.36678 16.5768C7.71883 16.4111 8.84739 15.8149 9.74131 14.7991C10.5794 13.8385 10.9817 12.7122 10.9928 11.4425C10.9928 9.64271 10.9928 7.83191 10.9928 6.02111C10.9928 5.97694 10.9705 5.92173 11.0152 5.89965C11.0487 5.87757 11.0934 5.93277 11.1269 5.95486C11.8085 6.39652 12.5348 6.71672 13.3393 6.89338C13.7975 6.99276 14.2668 7.059 14.7473 7.059C14.8925 7.059 14.9149 7.059 14.9149 6.90442C14.9149 6.26402 14.8814 4.50842 14.8814 4.3428"
+                  fill="#currentColor" />
+              </svg>
+            </li>
+
+            <li class="icon spotify">
+              <span class="tooltip">Spotify</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-tiktok"
+                viewBox="0 0 15 16">
+                <path
+                  d="M12.675 6.68847C10.2949 5.2862 6.30582 5.14266 4.0375 5.83827C3.66876 5.94869 3.28885 5.72786 3.17711 5.39661C3.06537 5.03225 3.28885 4.65683 3.62407 4.54642C6.2723 3.77352 10.6302 3.91706 13.379 5.54015C13.7142 5.72786 13.8259 6.16952 13.636 6.50076C13.446 6.75472 12.999 6.86513 12.6638 6.68847M12.608 8.75322C12.418 9.00718 12.0828 9.11759 11.8258 8.94093C9.81446 7.72637 6.76395 7.362 4.41741 8.09074C4.11571 8.16803 3.78049 8.01344 3.71344 7.72637C3.63522 7.42825 3.79168 7.097 4.0822 7.03075C6.79749 6.22473 10.1497 6.62222 12.4627 8.02449C12.6862 8.1349 12.7979 8.49927 12.608 8.76427M11.714 10.7738C11.5688 10.9946 11.3006 11.0719 11.0771 10.9174C9.32282 9.84633 7.13269 9.6255 4.51797 10.2217C4.26097 10.299 4.03749 10.1113 3.95927 9.8905C3.88105 9.63654 4.07103 9.41571 4.29451 9.33842C7.12153 8.70906 9.57981 8.97405 11.5241 10.1445C11.7811 10.2549 11.8258 10.553 11.714 10.7738ZM8.28364 0.140869C4.17161 0.140869 0.830566 3.43123 0.830566 7.50554C0.830566 11.5798 4.16043 14.8702 8.28364 14.8702C12.4068 14.8702 15.7367 11.5798 15.7367 7.50554C15.7367 3.43123 12.4068 0.140869 8.28364 0.140869Z"
+                  fill="#currentColor" />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="main-footer">
+    <div class="list-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3"><img data-v-9e928f9a="" src="https://framework-gb.cdn.gob.mx/gobmx/img/logo_blanco.svg"
+              href="/" alt="logo gobierno de méxico" class="logo_footer" style="max-width: 90%;"></div>
+          <div class="col-sm-3" style="padding-left: 0px;">
+            <h5>Enlaces</h5>
+            <ul>
+              <li><a href="https://participa.gob.mx" target="_blank" rel="noopener"
+                  title="Enlace abre en ventana nueva">Participa</a></li>
+              <li><a href="http://www.ordenjuridico.gob.mx" target="_blank" rel="noopener"
+                  title="Enlace abre en ventana nueva">Marco Jurídico</a></li>
+              <li><a href="https://consultapublicamx.inai.org.mx/vut-web/" target="_blank" rel="noopener"
+                  title="Enlace abre en ventana nueva">Plataforma Nacional de Transparencia</a></li>
+              <li><a href="https://alertadores.funcionpublica.gob.mx/" target="_blank" rel="noopener"
+                  title="Enlace abre en ventana nueva">Alerta</a></li>
+              <li><a href="https://sidec.funcionpublica.gob.mx" target="_blank" rel="noopener"
+                  title="Enlace abre en ventana nueva">Denuncia</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5>¿Qué es gob.mx?</h5>
+            <p>Es el portal único de trámites, información y participación ciudadana. <a
+                href="https://www.gob.mx/que-es-gobmx">Leer más</a></p>
+            <ul>
+              <li><a href="https://datos.gob.mx" target="_blank">Portal de datos abiertos</a></li>
+              <li><a href="https://www.gob.mx/accesibilidad" target="_blank">Declaración de
+                  accesibilidad</a></li>
+              <li><a href="https://www.gob.mx/terminos" target="_blank">Términos y Condiciones</a></li>
+              <li><a href="https://www.gob.mx/terminos#medidas-seguridad-informacion" target="_blank">Política de
+                  seguridad</a></li>
+              <li><a href="https://www.gob.mx/sitemap" target="_blank">Mapa de sitio</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3" style="padding-left: 0px;">
+            <h5><a href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54"
+                target="_blank">Denuncia contra servidores públicos</a></h5>
+            <h5>Síguenos en</h5>
+            <ul class="list-inline">
+              <li><a data-v-6b1f797a="" id="Facebook" href="https://www.facebook.com/gobmexico" target="_blank"
+                  rel="noopener" title="enlace a facebook abre en una nueva ventana"
+                  class="sendEst share-info footer"><img alt="Facebook"
+                    src="https://framework-gb.cdn.gob.mx/landing/img/facebook.png"></a></li>
+              <li style="margin-left: 5px; margin-right: 5px;"><a data-v-6b1f797a="" id="Twitter"
+                  href="https://twitter.com/GobiernoMX" target="_blank" rel="noopener"
+                  title="Enlace a twitter abre en una nueva ventana" class="sendEst share-info footer"><img
+                    alt="Twitter" src="https://framework-gb.cdn.gob.mx/landing/img/twitter.png"></a></li>
+              <li style="margin-left: 5px; margin-right: 5px;"><a data-v-6b1f797a="" id="Instagram"
+                  href="https://www.instagram.com/gobmexico/" target="_blank" rel="noopener"
+                  title="Enlace a instagram abre en una nueva ventana" class="sendEst share-info footer"><img
+                    alt="Instagram" src="https://framework-gb.cdn.gob.mx/landing/img/instagram.png"></a></li>
+              <li style="margin-left: 5px; margin-right: 5px;"><a data-v-6b1f797a="" id="Youtube"
+                  href="https://www.youtube.com/@gobiernodemexico" target="_blank" rel="noopener"
+                  title="Enlace a youtube abre en una nueva ventana" class="sendEst share-info footer"><img
+                    alt="Youtube" src="https://framework-gb.cdn.gob.mx/landing/img/youtube.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer-pleca">
+      <div class="row">
+        <div class="col"><br><br></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+  <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> -->
+
+  <!-- SVG stroke -->
+  <!-- <script>
         $(document).ready(function () {
             $(window).scroll(function () {
                 if ($(this).scrollTop() == 600) {
@@ -1696,15 +1749,15 @@
             }
         });        
     </script> -->
-    <!-- <script>
+  <!-- <script>
         window.addEventListener("scroll", (event) => {
             let scroll = this.scrollY;
             console.log(scroll)
         });
     </script> -->
-    <script src="js/main.js"></script>
-    <script>
-      function menufull() {
+  <script src="js/main.js"></script>
+  <script>
+    function menufull() {
       var element = document.getElementById("over");
       element.classList.toggle("open");
       var element = document.getElementById("close");
@@ -1712,7 +1765,7 @@
       /* var element = document.getElementById("menu-buttoms");
       element.classList.toggle("d-none"); */
     }
-    </script>
+  </script>
 </body>
 
 </html>

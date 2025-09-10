@@ -88,7 +88,7 @@ if (!defined('ABSPATH'))
                     <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-faq" />
                   </svg> <span class="t"> Preguntas frecuentes</span>
                 </a>
-                <a class=" btn-menu" href="#">
+                <a class=" btn-menu" href="<?php echo SITE_URL ?>/mi-comunidad/">
                   <svg width="22" height="22">
                     <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-micomunidad" />
                   </svg> <span class="t"> Mi comunidad</span>
@@ -128,15 +128,14 @@ if (!defined('ABSPATH'))
         <li><a href="<?php echo SITE_URL ?>/quienes-somos/" class="aside-anchor">¿Quiénes somos?</a></li>
         <li><a href="<?php echo SITE_URL ?>/modelo-educativo/" class="aside-anchor">Modelo educativo</a></li>
         <li><a href="<?php echo SITE_URL ?>/plan-de-estudios/" class="aside-anchor">Plan de estudios</a></li>
-        <li><a href="<?php echo SITE_URL ?>/boletines/" class="aside-anchor">Boletines</a></li>
+        <li><a href="<?php echo SITE_URL ?>/egresados/certificado-electronico/" class="aside-anchor">Certificado electrónico</a></li>
         <li><a href="<?php echo SITE_URL ?>/egresados/" class="aside-anchor">Egresados</a></li>
-        <li><a href="#" class="aside-anchor">Examen único</a></li>
       </ul>
   
       <div class="menu-footer">
         <div class="container-links">
           <a class="aside-anchor" href="#">Mapa de sitio</a> <a class="aside-anchor"
-            href="https://prepaenlinea.sep.gob.mx/mesadeservicio" target="_blank">Mesa de servicio</a> <a
+            type="button" data-bs-toggle="modal" data-bs-target="#mesa-servicio">Mesa de servicio</a> <a
             class="aside-anchor" href="<?php echo SITE_URL ?>/transparencia/">Transparencia</a>
         </div>
         <hr class="line-menu-over">
