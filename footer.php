@@ -296,7 +296,7 @@ if (!defined('ABSPATH'))
                     </div>
                     <div class="row justify-content-center mb-3">
                         <div class="col-md-5">
-                            <a class="btn-dos w-100 btn" href="https://prepaenlinea.sep.gob.mx/mesadeservicio/kb/index.php" target="_blank">Preguntas frecuentes</a>
+                            <a class="btn-dos w-100 btn" href="<?php echo SITE_URL ?>/preguntas-frecuentes/" target="_blank">Preguntas frecuentes</a>
                         </div>
                     </div>
                 </div>

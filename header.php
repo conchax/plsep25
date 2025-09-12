@@ -24,8 +24,8 @@ if (!defined('ABSPATH'))
   <?php wp_head(); ?>
 
   <?php get_template_part('template-parts/gatm'); ?>
-  <link rel="stylesheet" id="estilos-css" href="<?php echo get_template_directory_uri(); ?>/css/style.css?ver=6.8.1" type="text/css" media="all">
-  <link rel="stylesheet" id="estilos-css" href="<?php echo get_template_directory_uri(); ?>/css/menu.css?ver=6.8.1" type="text/css" media="all">
+  <link rel="stylesheet" id="estilos-css" href="<?php echo get_template_directory_uri(); ?>/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" id="estilos-css" href="<?php echo get_template_directory_uri(); ?>/css/pls.min.css" type="text/css" media="all">
   
 </head>
 
@@ -93,12 +93,11 @@ if (!defined('ABSPATH'))
                     <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-micomunidad" />
                   </svg> <span class="t"> Mi comunidad</span>
                 </a>
-                <a type="button" class=" btn-menu fw-bold" >
-                  <label for="myInput">
-                    <svg style="margin-top: -4px;" width="20" height="20">
-                      <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-menu" />
-                    </svg> <span class="t"> Menú</span>
-                  </label>
+                <a type="button" class=" btn-menu fw-bold" onclick="menufull()" id="toggle">                  
+                  <svg style="margin-top: -4px;" width="20" height="20">
+                    <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/sprite.svg#icono-menu" />
+                  </svg>
+                  <span class="t"> Menú</span>
                 </a>
               </div>
             </div>
@@ -107,13 +106,14 @@ if (!defined('ABSPATH'))
       </div>
     </div>
 <!-- MENU over -->
-  <input type="checkbox" id="myInput">
-  <label for="myInput">
-    <span class="bar top"></span>
-    <span class="bar middle"></span>
-    <span class="bar bottom"></span>
-  </label>
-  <aside class="over">
+
+  <aside id="over" class="over">
+    <a class="btn-close-menu" onclick="menufull()" id="close">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 0C6.64286 0 0 6.64286 0 15C0 23.3571 6.64286 30 15 30C23.3571 30 30 23.3571 30 15C30 6.64286 23.3571 0 15 0ZM15 27.8571C7.92857 27.8571 2.14286 22.0714 2.14286 15C2.14286 7.92857 7.92857 2.14286 15 2.14286C22.0714 2.14286 27.8571 7.92857 27.8571 15C27.8571 22.0714 22.0714 27.8571 15 27.8571Z" fill="CurrentColor"/>
+      <path d="M20.7857 22.5L15 16.7143L9.21429 22.5L7.5 20.7857L13.2857 15L7.5 9.21429L9.21429 7.5L15 13.2857L20.7857 7.5L22.5 9.21429L16.7143 15L22.5 20.7857L20.7857 22.5Z" fill="currentColor"/>
+      </svg>
+    </a>
     <div class="aside-section aside-left">
       <div class="aside-content">
         <a href="https://prepaenlinea.sep.gob.mx/convocatorias-2025/">
@@ -134,7 +134,7 @@ if (!defined('ABSPATH'))
   
       <div class="menu-footer">
         <div class="container-links">
-          <a class="aside-anchor" href="#">Mapa de sitio</a> <a class="aside-anchor"
+          <a class="aside-anchor" href="<?php echo SITE_URL ?>/mapa-del-sitio/">Mapa de sitio</a> <a class="aside-anchor"
             type="button" data-bs-toggle="modal" data-bs-target="#mesa-servicio">Mesa de servicio</a> <a
             class="aside-anchor" href="<?php echo SITE_URL ?>/transparencia/">Transparencia</a>
         </div>
