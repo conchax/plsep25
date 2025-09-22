@@ -15,8 +15,57 @@
     <style>
         
         
+.home-link{
+    text-decoration: none;
+    color: #5C5B5B;
+}
+.titulo{
+    font-size: 63px;
+    font-weight: 300;
+    color: var(--color-text);
+    text-align: center;
+}
 
+.titulo span{
+    font-size: 63px;
+    font-weight: 700;
+    color: var(--color-secondary);
+    border-bottom: 8px solid var(--color-secondary);
+}
 
+@media (max-width: 575.98px) {
+  .titulo{
+    font-size: 33px;
+  }
+
+  .titulo span{
+    font-size: 33px;
+  }
+}
+.rectangle {
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+}
+.btn-tres{
+    color: #5C5B5B;
+    background-color: transparent;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 10px;
+    transition: .5s ease-in;
+    font-size: 18px;
+}
+.btn-tres:hover{
+    color: #fff;
+    background-color: #C1D13F;
+    border: 2px solid #C1D13F;  
+}
+
+.for-tabla input, .for-tabla select, input[name="q"] {
+    border-bottom: 2px solid #C1D13F !important;
+}
     </style>
 </head>
 
@@ -113,12 +162,14 @@ utilities
             <div class="col-12">
                 <h1 class="titulo">h1 mas de una palabra <span>titulo</span></h1>
                 <h1 class="titulou">TítuloH1</h1>
-                <h2>H2 titulo</h2>
+                <h2>Aspirante</h2>
                 <p class="text-center">Al terminar tu bachillerato en Prepa en Línea-SEP se emitirá un certificado de
                     terminación de estudios con validez oficial ante la Secretaría de Educación Pública. Si deseas
                     verificar tu certificado,
                     haz clic en el siguiente botón:</p>
-                <p class="text-center"><a class="btn-dos" href="#">Boton obción 2</a></p>
+                <p class="text-center"><a class="btn-dos" href="#">Boton obción 2</a></p><br><br>
+                <p class="text-center"><a class="btn-tres" href="#">Boton obción 3</a></p>
+                <p><a class="home-link" href="#"><h1 class="titulo">Mesa de <span>servicio</span></h1></a></p>
                 <p>
                     <a class="btn-leer-mas mx-auto" href="#">
                         Más información
@@ -951,7 +1002,7 @@ calendario
 link
     <div class="container">
         <div class="row main">
-            <a href="#" class="single">Hola que hace?</a>
+            <a href="#" class="single">Infografía</a>
 
         </div>
     </div>
