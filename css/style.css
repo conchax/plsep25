@@ -13,7 +13,9 @@ body{
     font-size: 20px;
     font-weight: 300!important;
 }
- 
+ .elementor-widget-text-editor{
+  color: var(--color-text);
+ }
 
 #banner{
     margin-top:140px;
