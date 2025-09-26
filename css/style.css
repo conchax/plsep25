@@ -180,6 +180,36 @@ a.single:hover{
   background-color: transparent;
   border: 1px solid var(--color-border);
 }
+
+.btn-play{
+  
+  transition: width 1s, height 1s, transform 1s;
+   width: 85px;
+  height: 85px;
+  display:inline-block;
+}
+.btn-play:hover{
+  transform: rotate(360deg);
+}
+#videofull .modal-content{
+    background-color: transparent;
+    border: none;
+}
+#videofull .modal-header{
+    padding: 0px;
+}
+#videofull iframe{
+    border-radius: 8px;
+}
+#videofull button.btn-close {
+    position: absolute;
+    right: 0px;
+    z-index: 5;
+    --bs-btn-close-bg: unset;
+}
+#videofull .modal-header{
+  border-bottom: 0px;
+}
 hr.coll{
   margin: 1rem 0;
     color: inherit;
@@ -811,7 +841,7 @@ hr.verde{
 
 
 #prepa-distinta{
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
  .ns{
   font-size: 20px;

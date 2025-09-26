@@ -222,13 +222,12 @@ if (!defined('ABSPATH'))
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title mx-auto text-center" id="mmesa-servicio">Mesa de servicio</h2>
+                <h1 class="titulo mx-auto text-center" id="mmesa-servicio">Mesa de <span>servicio</span></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="text-center">
-                    <p><b>Prepa en Línea-SEP</b></p>
-                    <p>Atendemos tus dudas y solicitudes. <br>
+                    <p><b>Atendemos tus dudas y solicitudes.</b> <br>
                         Comienza seleccionando tu perfil.</p>
                 </div>
 
@@ -256,7 +255,7 @@ if (!defined('ABSPATH'))
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-3">
+                    <div class="row">
                         <div class="col-md-6 mb-3">
                             <div class="text-center borde-gris">
                                 <a class="btn-icono" href="https://prepaenlinea.sep.gob.mx/mesadeservicio/egresados.php" target="_blank">
@@ -278,7 +277,8 @@ if (!defined('ABSPATH'))
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-5">
+                    <hr class="my-4">
+                    <div class="row mt-3">
                         <div class="col-md-6 mb-3">
                             <div class="text-center borde-gris">  
                                 <a class="btn-icono" href="https://prepaenlinea.sep.gob.mx/mesadeservicio/view.php" target="_blank">

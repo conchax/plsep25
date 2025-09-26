@@ -142,7 +142,7 @@ body{
 /* ////////////////////////////////////////////////////////////////////////////////////////// */
 
 .line-menu-over{
-  color:#fff; border: 1px solid; width: 70%; margin:0 auto; opacity: 1;
+  color:#fff; border: 1px solid; width: 100%; margin:20px auto; opacity: 1;
 }
 aside.over {
     position: relative;
