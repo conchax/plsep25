@@ -38,7 +38,7 @@
           <svg width="50" height="50">
             <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/boletines.svg#icono-boletin-convocatoria" />
           </svg>
-          <p><b>Boletines de convocatoria</b></p>
+          <p><b>Convocatorias</b></p>
           <p class="parrafo-lineas-boletin">Te presentamos información de nuestras convocatorias, una guía para estar al tanto de fechas importantes, requisitos y particularidades del servicio.</p>
           <a class="btn-leer-mas mx-auto" href="<?php echo SITE_URL ?>/convocatorias/">
             Ver todos
@@ -57,7 +57,7 @@
           <svg width="50" height="50">
             <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/boletines.svg#icono-boletin-nem" />
           </svg>
-          <p><b>Boletines de la NEM</b></p>
+          <p><b>Nueva Escuela Mexicana</b></p>
           <p class="parrafo-lineas-boletin">Descubre temas relevantes de la Nueva Escuela Mexicana (NEM). Mantente informado sobre los pilares de la educación para la transformación educativa en México.</p>
           <a class="btn-leer-mas mx-auto" href="<?php echo SITE_URL ?>/nem/">
             Ver todos
