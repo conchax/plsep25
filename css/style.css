@@ -182,7 +182,6 @@ a.single:hover{
   background-color: transparent;
   border: 1px solid var(--color-border);
 }
-
 .btn-play{
   
   transition: width 1s, height 1s, transform 1s;
@@ -359,12 +358,12 @@ hr.verde{
  }
 
 .accordion {
-  display: flex; /* O también inline-block, según el diseño */
+  display: flex; /* O tambiÃ©n inline-block, segÃºn el diseÃ±o */
   flex-direction: row; /* Para colocar los elementos en horizontal */
   border-width: 0px;
   border: none;
   --bs-accordion-bg: transparent;
-  /* Otras propiedades según sea necesario */
+  /* Otras propiedades segun sea necesario */
 }
 
  .accordion-button {
@@ -461,9 +460,9 @@ hr.verde{
 
 @media (max-width: 991.98px) { 
     .accordion {
-  display: inline-block; /* O también inline-block, según el diseño */
+  display: inline-block; /* O tambiÃ©n inline-block, segun el diseÃ±o */
   flex-direction: row; /* Para colocar los elementos en horizontal */
-  /* Otras propiedades según sea necesario */
+  /* Otras propiedades segun sea necesario */
     }
     .accordion-button{
         writing-mode:horizontal-tb;
@@ -888,7 +887,7 @@ hr.verde{
 
  .line-boletines-svg{
   position: absolute;
-  max-width: 1320px;   
+  max-width: 1310px;   
   top: -65px;
   left: 0;
   right: 0;
@@ -914,7 +913,7 @@ hr.verde{
  }
  .linesvg{
   position: absolute;
-  max-width: 1320px;
+  max-width: 1310px;
   top: -37px;
   left: 0;
   right: 0;
