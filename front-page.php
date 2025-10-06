@@ -62,7 +62,7 @@ while (have_posts()) :
 
 
 			<div class="container cont mt-5">
-				<div class="row justify-content-center">
+				<div class="row justify-content-center align-items-start">
 					<div class="col-xl-3 col-lg-6">
 						<div class="text-center border-boletin ">
 							<a class="btn-icono" href="#" target="_blank">
@@ -79,7 +79,7 @@ while (have_posts()) :
 								<svg width="226" height="29">
 									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/servicios.svg#proyecta"></use>
 								</svg>
-								<p class="mt-2">Descubre universidades, modalidades y guías para avanzar.</p>
+								<p style="margin-top:28px;">Descubre universidades, modalidades y guías para avanzar.</p>
 							</a>
 						</div>
 					</div>
@@ -95,7 +95,7 @@ while (have_posts()) :
 					</div>
 					<div class="col-xl-3 col-lg-6 mt-xl-0 mt-lg-5 mt-4">
 						<div class="text-center border-boletin ">
-							<a class="btn-icono" href="#" target="_blank">
+							<a class="btn-icono" href="http://10.3.29.145/difusion-cultural/">
 								<svg width="108" height="50">
 									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/servicios.svg#difusion"></use>
 								</svg>
@@ -133,7 +133,7 @@ while (have_posts()) :
 				</div>
 
 				<div class="row justify-content-center mt-lg-5 mt-4">
-					<div class="col-lg-4 text-center mt-5 mt-md-5 mt-lg-3">
+					<div class="col-lg-4 text-center mt-5 mt-md-5 mt-lg-2">
 						<p class="titulo-servicios-dos">Modelo educativo</p>
 						<p class="parrafo-servicios">
 							No escolarizado <br>
@@ -152,7 +152,7 @@ while (have_posts()) :
 							</svg>
 						</a>
 					</div>
-					<div class="col-lg-4 text-center mt-3 mt-md-3 mt-lg-3">
+					<div class="col-lg-4 text-center mt-3 mt-md-3 mt-lg-2">
 						<p class="titulo-servicios-dos">Plan de estudios</p>
 						<p class="parrafo-servicios">
 							2 años 6 meses <br>
@@ -176,7 +176,7 @@ while (have_posts()) :
 				<div class="row">
 					<div class="line-boletines-svg d-none d-xl-inline-block">
 						<div class=" text-center ">
-							<svg width="1324" height="702" viewBox="0 0 1324 702" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg viewBox="0 0 1324 702" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M660.932 -0.000488194L662.932 -0.000488281V42.8901H660.932V-0.000488194Z" fill="#D9D9D9"/>
 							<path d="M660.932 231.749H662.932V248.789H660.932V231.749Z" fill="#D9D9D9"/>
 							<path d="M0 201.749V71.0002C0 54.4316 13.4315 41.0002 30 41.0002H328V231.749H30V230.749H327V42.0002H30C13.9837 42.0002 1 54.9839 1 71.0002V201.749C1 217.765 13.9837 230.749 30 230.749V231.749L29.2256 231.739C13.0149 231.329 0 218.059 0 201.749Z" fill="#D9D9D9"/>

@@ -32,25 +32,33 @@ while (have_posts()) :
           <a title="Haz clic para compartir en Facebook"
             href="https://www.facebook.com/sharer.php?u=<?php the_permalink() ?>"
             target="_blank" rel="nofollow noopener noreferrer">
-            <i class="fab fa-facebook-f scale "></i>
+            <svg class="scale" width="38" height="38">
+              <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/iconos-share.svg#facebook"></use>
+            </svg>            
           </a>
 
 
           <a title="Haz clic para compartir en X"
             href="https://twitter.com/intent/tweet?url=<?php the_permalink() ?>&amp;text=<?php echo urlencode(get_the_title()) ?>"
             target="_blank" rel="nofollow noopener noreferrer">
-            <i class="fa-brands fa-x-twitter scale"></i>
+            <svg class="scale" width="38" height="38">
+              <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/iconos-share.svg#x"></use>
+            </svg>            
           </a>
 
           <a title="Haz clic para compartir en whatsapp"
             href="https://api.whatsapp.com/send?text=<?php the_permalink() ?>"
             target="_blank" rel="nofollow noopener noreferrer">
-            <i class="fab fa-whatsapp scale "></i>
+            <svg class="scale" width="38" height="38">
+              <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/iconos-share.svg#whatsapp"></use>
+            </svg>            
           </a>
 
           <a title="Haz clic para copiar la URL"
             href="javascript:getlink();">
-            <i class="fa-solid fa-link scale"></i>
+            <svg class="scale" width="38" height="38">
+              <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/iconos-share.svg#copy"></use>
+            </svg> 
           </a>
         </div>
       </div>

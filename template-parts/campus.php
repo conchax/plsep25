@@ -23,8 +23,8 @@
                 echo '<p>'.$obj['estatus'].'</p>';
             }
         } else {
-            /* echo "<script>window.location='".esc_url( home_url( '/acceso-mi-comunidad' ) )."'</script>"; */
-            echo '<p>Usuario incorrecto</p>'
+            echo "<script>window.location='".esc_url( home_url( '/acceso-mi-comunidad' ) )."'</script>";
+            echo '<p>Usuario incorrecto</p>';
         }
     ?> 
 </div>

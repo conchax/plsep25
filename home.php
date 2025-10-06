@@ -18,7 +18,11 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="breadcrumb"><nav aria-label="breadcrumbs" class="rank-math-breadcrumb"><p><a href="http://10.3.29.145/">Home</a></p></nav></div>
+      <div class="breadcrumb">
+        <nav aria-label="breadcrumbs" class="rank-math-breadcrumb">
+          <p><a href="http://10.3.29.145/">Home</a></p>
+        </nav>
+      </div>
     </div>
   </div>
 </section>
@@ -77,7 +81,7 @@
             <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/boletines.svg#icono-boletin-eventos" />
           </svg>
           <p><b>Eventos PL-SEP</b></p>
-          <p class="parrafo-lineas-boletin">Aquí encontrarás información sobre noticias y eventos destacados para la comunidad de Prepa en Línea-SEP.</p>
+          <p class="parrafo-lineas-boletin">Aquí encontrarás información sobre noticias y eventos destacados para la comunidad de Prepa en Línea-SEP.<br><br></p>
           <a class="btn-leer-mas mx-auto" href="<?php echo SITE_URL ?>/eventos-pl-sep/">
             Ver todos
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
@@ -91,7 +95,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row g-0">
       <div class="line-boletines-svg d-none d-xl-inline-block">
         <div class=" text-center ">
           <svg viewBox="0 0 1324 343" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +140,9 @@
 <section id="boletines">
   <div class="container">
     <div class="row">
-      <div class="col"><h2 class="mt-5">Explora las publicaciones más recientes.</h2></div>
+      <div class="col">
+        <h2 class="mt-5">Explora las publicaciones más recientes.</h2>
+      </div>
     </div>
     <div class="row my-5">
       <div class="col-12">
