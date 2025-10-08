@@ -92,6 +92,23 @@ a.single:hover{
   border: 2px solid var(--color-secondary);
   transition: .5s ease-in;
 }
+.btn-tres{
+    color: #5C5B5B;
+    background-color: transparent;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 10px;
+    transition: .5s ease-in;
+    font-size: 18px;
+    font-family: "Noto Sans", sans-serif!important;
+}
+.btn-tres:hover{
+    color: #fff;
+    background-color: #C1D13F;
+    border: 2px solid #C1D13F;  
+}
 
 .btn-arrow{
   display: block;
@@ -141,6 +158,11 @@ a.single:hover{
 }
 .btn-icono:hover{
   color: var(--color-secondary)!important;
+}
+.carga {
+    background-color: #EDEFE0;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 #prepa-distinta .titulo-servicios{
