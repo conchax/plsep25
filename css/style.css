@@ -58,6 +58,7 @@ h2{
   font-weight: 700;
   color: var(--color-secondary);
   text-align: center;
+  font-family: "Noto Sans", sans-serif!important;
 }
 b, strong{
   font-weight: 700;
