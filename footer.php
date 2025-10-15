@@ -11,12 +11,15 @@ if (!defined('ABSPATH'))
                 <div class="bor">
                     Av. Revolución 1425, colonia Campestre, <br>
                     alcaldía Álvaro Obregón, CDMX, 01040.
-                    <br> <a
+                    <br> <a class="contac"
                         href="<?php echo SITE_URL ?>/contacto">
-                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 1.875C15.3438 1.875 15.625 2.15625 15.625 2.5V17.5C15.625 17.8438 15.3438 18.125 15 18.125H3.75C3.40625 18.125 3.125 17.8438 3.125 17.5V2.5C3.125 2.15625 3.40625 1.875 3.75 1.875H15ZM3.75 0C2.37109 0 1.25 1.12109 1.25 2.5V17.5C1.25 18.8789 2.37109 20 3.75 20H15C16.3789 20 17.5 18.8789 17.5 17.5V2.5C17.5 1.12109 16.3789 0 15 0H3.75ZM9.375 9.6875C9.66227 9.6875 9.94672 9.63092 10.2121 9.52099C10.4775 9.41105 10.7187 9.24992 10.9218 9.0468C11.1249 8.84367 11.2861 8.60252 11.396 8.33712C11.5059 8.07172 11.5625 7.78727 11.5625 7.5C11.5625 7.21273 11.5059 6.92828 11.396 6.66288C11.2861 6.39748 11.1249 6.15633 10.9218 5.9532C10.7187 5.75008 10.4775 5.58895 10.2121 5.47901C9.94672 5.36908 9.66227 5.3125 9.375 5.3125C9.08773 5.3125 8.80328 5.36908 8.53788 5.47901C8.27248 5.58895 8.03133 5.75008 7.8282 5.9532C7.62508 6.15633 7.46395 6.39748 7.35401 6.66288C7.24408 6.92828 7.1875 7.21273 7.1875 7.5C7.1875 7.78727 7.24408 8.07172 7.35401 8.33712C7.46395 8.60252 7.62508 8.84367 7.8282 9.0468C8.03133 9.24992 8.27248 9.41105 8.53788 9.52099C8.80328 9.63092 9.08773 9.6875 9.375 9.6875ZM8.125 11.25C6.39844 11.25 5 12.6484 5 14.375C5 14.7188 5.28125 15 5.625 15H13.125C13.4688 15 13.75 14.7188 13.75 14.375C13.75 12.6484 12.3516 11.25 10.625 11.25H8.125ZM20 3.125C20 2.78125 19.7188 2.5 19.375 2.5C19.0312 2.5 18.75 2.78125 18.75 3.125V5.625C18.75 5.96875 19.0312 6.25 19.375 6.25C19.7188 6.25 20 5.96875 20 5.625V3.125ZM19.375 7.5C19.0312 7.5 18.75 7.78125 18.75 8.125V10.625C18.75 10.9688 19.0312 11.25 19.375 11.25C19.7188 11.25 20 10.9688 20 10.625V8.125C20 7.78125 19.7188 7.5 19.375 7.5ZM20 13.125C20 12.7812 19.7188 12.5 19.375 12.5C19.0312 12.5 18.75 12.7812 18.75 13.125V15.625C18.75 15.9688 19.0312 16.25 19.375 16.25C19.7188 16.25 20 15.9688 20 15.625V13.125Z" fill="currentColor"/>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5 2H8C5.79086 2 4 3.79086 4 6V18C4 20.2091 5.79086 22 8 22H17.5C19.7091 22 21.5 20.2091 21.5 18V6C21.5 3.79086 19.7091 2 17.5 2Z" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M10.59 13.74C9.96099 14.162 8.31299 15.022 9.31699 16.098C9.80699 16.624 10.354 17 11.04 17H14.96C15.646 17 16.193 16.624 16.683 16.098C17.687 15.022 16.039 14.162 15.41 13.741C14.699 13.2582 13.8594 13.0001 13 13.0001C12.1406 13.0001 11.301 13.2582 10.59 13.741V13.74ZM15 9C15 9.53043 14.7893 10.0391 14.4142 10.4142C14.0391 10.7893 13.5304 11 13 11C12.4696 11 11.9609 10.7893 11.5858 10.4142C11.2107 10.0391 11 9.53043 11 9C11 8.46957 11.2107 7.96086 11.5858 7.58579C11.9609 7.21071 12.4696 7 13 7C13.5304 7 14.0391 7.21071 14.4142 7.58579C14.7893 7.96086 15 8.46957 15 9Z" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M5 6H2.5M5 12H2.5M5 18H2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                         Contacto</a>
+                        <span> Contacto</span>
+                         </a>
                 </div>
             </div>
             <div class=" col-lg-6 text-center text-md-end order-1 order-md-2">
@@ -165,62 +168,7 @@ if (!defined('ABSPATH'))
     </div>
 </div>
 
-<!-- modal mi comunidad -->
-<div class="modal fade" id="micomunidad" tabindex="-1" aria-labelledby="micomunidad" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title text-center" id="exampleModalLabel">Mi comunidad<br>
-                    <svg class="iconos-m" width="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.28 82.12">
-                        <defs>
-                            <style>
-                                .icono-mm-1 {
-                                    fill: none;
-                                    stroke: #3e3f3e;
-                                    stroke-linecap: round;
-                                    stroke-linejoin: round;
-                                    stroke-width: 5px
-                                }
-                            </style>
-                        </defs>
-                        <g data-name="Capa 1">
-                            <g>
-                                <g>
-                                    <circle class="icono-mm-1" cx="20.14" cy="19.64" r="10.02"></circle>
-                                    <path class="icono-mm-1" d="M28.34,13.89c1.32-.62,2.69-1.14,4.1-1.57,2.14-.64,3.62-2.57,3.62-4.8h0c0-3.31-3.17-5.76-6.35-4.82C16.75,6.53,6.53,16.75,2.7,29.71c-.94,3.17,1.51,6.35,4.82,6.35h0c2.23,0,4.16-1.49,4.8-3.62,.49-1.64,1.12-3.22,1.87-4.73"></path>
-                                </g>
-                                <g>
-                                    <circle class="icono-mm-1" cx="62.64" cy="20.14" r="10.02"></circle>
-                                    <path class="icono-mm-1" d="M68.39,28.34c.62,1.32,1.14,2.69,1.57,4.1,.64,2.14,2.57,3.62,4.8,3.62h0c3.31,0,5.76-3.17,4.82-6.35-3.83-12.96-14.04-23.18-27.01-27.01-3.17-.94-6.35,1.51-6.35,4.82h0c0,2.23,1.49,4.16,3.62,4.8,1.64,.49,3.22,1.12,4.73,1.87"></path>
-                                </g>
-                                <g>
-                                    <circle class="icono-mm-1" cx="62.14" cy="62.48" r="10.02"></circle>
-                                    <path class="icono-mm-1" d="M53.94,68.23c-1.32,.62-2.69,1.14-4.1,1.57-2.14,.64-3.62,2.57-3.62,4.8h0c0,3.31,3.17,5.76,6.35,4.82,12.96-3.83,23.18-14.04,27.01-27.01,.94-3.17-1.51-6.35-4.82-6.35h0c-2.23,0-4.16,1.49-4.8,3.62-.49,1.64-1.12,3.22-1.87,4.73"></path>
-                                </g>
-                                <g>
-                                    <circle class="icono-mm-1" cx="19.64" cy="61.99" r="10.02"></circle>
-                                    <path class="icono-mm-1" d="M13.89,53.78c-.62-1.32-1.14-2.69-1.57-4.1-.64-2.14-2.57-3.62-4.8-3.62h0c-3.31,0-5.76,3.17-4.82,6.35,3.83,12.96,14.04,23.18,27.01,27.01,3.17,.94,6.35-1.51,6.35-4.82h0c0-2.23-1.49-4.16-3.62-4.8-1.64-.49-3.22-1.12-4.73-1.87"></path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </h1>
-            </div>
-            <div class="modal-body">
-                <form method="post" action="<?php echo SITE_URL ?>/mi-comunidad">
-                    <div class="form-group">
-                        <div class="text-center"><label class="poplog" for="userlog">Ingresa tu usuario o correo institucional:</label><input id="userlog" type="text" name="usuario" class="modal-input form-control" required="required" maxlength="60" placeholder="Usuario o correo institucional"></div><br>
-                        <div class="text-center"><button class="btn-homep btn-fluid btn-lg" type="submit" value="Ingresa">Ingresar</button></div>
-                    </div>
-                </form>
-                <div class="text-center mt-4">
-                    <hr><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- modal mi comunidad -->
+
 
 <div class="modal fade" id="mesa-servicio" aria-labelledby="mmesa-servicio" tabindex="-1" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">

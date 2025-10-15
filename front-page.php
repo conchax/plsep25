@@ -83,7 +83,7 @@ while (have_posts()) :
 							</a>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-6 mt-xl-0 mt-5">
+					<div class="col-xl-3 col-lg-6 mt-xl-0 mt-lg-5 mt-4">
 						<div class="text-center border-boletin ">
 							<a class="btn-icono" href="#" target="_blank">
 								<svg width="162" height="50">
