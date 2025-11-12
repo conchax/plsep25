@@ -26,7 +26,7 @@ $query = new WP_Query($args);  */ ?>
 <section>
   <div class="container">
     <div class="row">
-      <div class="breadcrumb"><nav aria-label="breadcrumbs" class="rank-math-breadcrumb"><p><a href="http://10.3.29.145/">Home</a><span class="separator"> / </span><a href="http://10.3.29.145/boletines">Boletines</a></p></nav></div>
+      <div class="breadcrumb"><nav aria-label="breadcrumbs" class="rank-math-breadcrumb"><p><a href="http://10.3.29.145/">Inicio</a><span class="separator"> / </span><a href="http://10.3.29.145/boletines">Boletines</a></p></nav></div>
     </div>
   </div>
 </section>
