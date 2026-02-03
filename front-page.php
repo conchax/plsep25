@@ -33,7 +33,7 @@ while (have_posts()) :
 				<div class="row justify-content-center mt-5">
 					<div class="col-6 text-center">
 						<p><b>Dale play a otra mirada</b></p>
-						<a class="btn-play" href="https://www.youtube.com/embed/CeuJolL3FyQ?si=p23UtZpK1xPoNTq4" data-bs-toggle="modal" data-bs-target="#videofull" data-url="https://www.youtube.com/embed/CeuJolL3FyQ?si=p23UtZpK1xPoNTq4" rel="noopener" tabindex="0">
+						<a class="btn-play" href="https://www.youtube.com/embed/JpsmHruSL48?si=GW_sNASnYs929A-F" data-bs-toggle="modal" data-bs-target="#videofull" data-url="https://www.youtube.com/embed/JpsmHruSL48?si=GW_sNASnYs929A-F" rel="noopener" tabindex="0">
 							<svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M33.9868 22.397C35.3783 22.2006 36.4096 22.8881 37.5882 23.4774L68.6258 40.6659C69.1987 41.1079 70.2791 42.2375 70.4101 42.9414C70.8193 45.2659 68.7731 46.0353 67.1361 46.9684L36.4096 62.9619C34.2979 64.206 31.5641 63.1256 31.2694 60.6046L31.0075 26.2603C31.0402 24.4269 32.0879 22.6753 34.0032 22.397H33.9868Z" fill="#5B5A5A"/>
 							<path d="M23.1173 30.4838C25.8183 29.9927 27.2752 31.8262 27.488 34.3308L27.4553 52.4851C27.2916 53.9584 26.8824 55.3826 25.4418 56.021C22.8717 57.1833 20.6454 55.4644 20.3998 52.7797L20.4326 33.3486C20.629 31.9571 21.7094 30.7294 23.1173 30.4838Z" fill="#C1D13F"/>

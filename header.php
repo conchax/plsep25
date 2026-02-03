@@ -117,8 +117,8 @@ if (!defined('ABSPATH'))
     <div class="aside-section aside-left">
       <div class="aside-content">
         <a href="https://prepaenlinea.sep.gob.mx/convocatorias-2025/">
-          <img class="bannerFull" alt="Banner" src="<?php echo get_template_directory_uri(); ?>/img/banner-registro.png" class="" alt="registro">
-          <img class="bannerFullR" alt="Banner" src="<?php echo get_template_directory_uri(); ?>/img/banner-m-registro.png" class="" alt="registro">
+          <img class="bannerFull" alt="Banner" src="<?php echo get_template_directory_uri(); ?>/img/banner-registro85.png" class="" alt="registro">
+          <img class="bannerFullR" alt="Banner" src="<?php echo get_template_directory_uri(); ?>/img/banner-m-registro85.png" class="" alt="registro">
         </a>
       </div>
     </div>
