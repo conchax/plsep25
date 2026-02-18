@@ -97,40 +97,49 @@ while (have_posts()) :
     <main class="main-nem26">
         <?php the_content(); ?>
     </main>
+   
     <div class="container share pb-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-4">
-                <h4 class="text-center">Compartir boletín:</h4>
-                <div class="col d-flex justify-content-center">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4">
+        <h4 class="text-center">Compartir boletín:</h4>
+        <div class="col d-flex justify-content-center">
 
-                    <a title="Haz clic para compartir en Facebook"
-                        href="https://www.facebook.com/sharer.php?u=<?php the_permalink() ?>"
-                        target="_blank" rel="nofollow noopener noreferrer">
-                        <i class="fab fa-facebook-f scale "></i>
-                    </a>
+          <a title="Haz clic para compartir en Facebook"
+            href="https://www.facebook.com/sharer.php?u=<?php the_permalink() ?>"
+            target="_blank" rel="nofollow noopener noreferrer">
+            <svg class="scale" width="38" height="38">
+              <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/iconos-share.svg#facebook"></use>
+            </svg>
+          </a>
 
-                    <a title="Haz clic para compartir en X"
-                        href="https://twitter.com/intent/tweet?url=<?php the_permalink() ?>&amp;text=<?php echo urlencode(get_the_title()) ?>"
-                        target="_blank" rel="nofollow noopener noreferrer">
-                        <i class="fa-brands fa-x-twitter scale"></i>
-                    </a>
+          <a title="Haz clic para compartir en X"
+            href="https://twitter.com/intent/tweet?url=<?php the_permalink() ?>&amp;text=<?php echo urlencode(get_the_title()) ?>"
+            target="_blank" rel="nofollow noopener noreferrer">
+            <svg class="scale" width="38" height="38">
+              <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/iconos-share.svg#x"></use>
+            </svg>
+          </a>
 
-                    <a title="Haz clic para compartir en whatsapp"
-                        href="https://api.whatsapp.com/send?text=<?php the_permalink() ?>"
-                        target="_blank" rel="nofollow noopener noreferrer">
-                        <i class="fab fa-whatsapp scale "></i>
-                    </a>
+          <a title="Haz clic para compartir en whatsapp"
+            href="https://api.whatsapp.com/send?text=<?php the_permalink() ?>"
+            target="_blank" rel="nofollow noopener noreferrer">
+            <svg class="scale" width="38" height="38">
+              <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/iconos-share.svg#whatsapp"></use>
+            </svg>
+          </a>
 
-                    <a title="Haz clic para copiar la URL"
-                        href="javascript:getlink();">
-                        <i class="fa-solid fa-link scale"></i>
-                    </a>
-                </div>
-            </div>
+          <a title="Haz clic para copiar la URL"
+            href="javascript:getlink();">
+            <svg class="scale" width="38" height="38">
+              <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/iconos-share.svg#copy"></use>
+            </svg>
+          </a>
         </div>
+      </div>
     </div>
-
-    <!-- <div class="container">
+  </div>
+    
+  <div class="container formulario d-none">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 text-center">
                 <p class="text-invitacion">
@@ -140,7 +149,7 @@ participando en alguna grabación de video para los boletines de la NEM?
                 <p><a href="https://forms.gle/hDzebAzq5bijaL8HA" target="_blank"><img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/02/btn-formulario.png" class="img-fluid scale" alt="btn-formulario"></a></p>
             </div>
         </div>
-    </div> -->
+    </div>
 <?php endwhile;
 
 get_footer();
