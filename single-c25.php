@@ -1,10 +1,10 @@
 <style>
-  .c25{
+ main .c25{
      font-family: "Noto Sans", serif!important;
         color:#474747;
         font-size: 18px;
         line-height: 2.2rem;
-        font-weight: 400;
+        font-weight: 400!important;
         letter-spacing: .4px;
   } 
     ul {
@@ -12,11 +12,13 @@
       margin-top: 20px; 
   }
   .elementor a {
-      color: #6353C6;
-      text-decoration: underline;
+      color: #0d6efd;
+      font-weight: 500!important;
+      text-decoration: underline!important;
+      color: #67ab44
   }
   .elementor a:hover{
-    color:#5C5B5B;
+    color: #5C5B5B;
   }
   .caja{
       position: relative;
@@ -43,7 +45,7 @@
 <?php get_header();
 /**
  *
- * Template Name:boleines  convo 2025
+ * Template Name:boletines  convos 2025
  * Template Post Type: post
  *
  */
