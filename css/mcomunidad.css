@@ -103,8 +103,35 @@ b, strong {
 }
  .border-boletin{
   padding: 0 10px;
+  position: relative;
  }
-
+.borde-gris {
+    border: 1px solid var(--color-border);
+    border-radius: 26px;
+    padding: 20px 0;
+}
+ .card {
+    border: none;
+}
+.modal-header {
+    border-bottom: 1px solid var(--color-secondary);
+}
+.modal-title {
+    color: var(--color-text);
+    font-weight: 300;
+}
+.modal-header .btn-close {
+    margin: 0;
+}
+.pro {
+    position: absolute;
+    height: 80px;
+    top:-20px;
+  
+}
+.pro img{
+  height: 180px;
+}
 @media (max-width: 768px) { 
   .border-boletin{
       width: 330px;
