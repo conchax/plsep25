@@ -5,6 +5,7 @@
 ?>
 <?php get_header(); ?>
 
+
 <section class="section-w">
   <div class="container">
     <div class="row align-items-center">
@@ -20,7 +21,7 @@
     <div class="row">
       <div class="breadcrumb">
         <nav aria-label="breadcrumbs" class="rank-math-breadcrumb">
-          <p><a href="http://10.3.29.145/">Home</a></p>
+          <p><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></p>
         </nav>
       </div>
     </div>
@@ -42,9 +43,28 @@
           <svg width="50" height="50">
             <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/boletines.svg#icono-boletin-convocatoria" />
           </svg>
-          <p><b>Convocatorias</b></p>
+          <p><b><?php single_cat_title(4); ?></b></p>
           <p class="parrafo-lineas-boletin">Te presentamos información de nuestras convocatorias, una guía para estar al tanto de fechas importantes, requisitos y particularidades del servicio.</p>
-          <a class="btn-leer-mas mx-auto" href="<?php echo SITE_URL ?>/convocatorias/">
+          <a class="btn-leer-mas mx-auto" href="<?php echo esc_url(get_category_link(4)); ?>">
+            Ver todos
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
+              width="15px" class="icon">
+              <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
+                stroke-width="1.5" stroke="#292D32"
+                d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-5 mt-lg-0">
+        <div class="text-center border-boletin mt-5 mt-lg-0">
+          <svg class="mt-3 mt-lg-0" width="50" height="50">
+            <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/boletines.svg#icono-boletin-nem" />
+          </svg>
+          <p><b>Nueva Escuela Mexicana</b></p>
+          <p class="parrafo-lineas-boletin">Descubre temas relevantes de la Nueva Escuela Mexicana (NEM). Mantente informado sobre los pilares de la educación para la transformación educativa en México.</p>
+          <a class="btn-leer-mas mx-auto" href="<?php echo esc_url(get_category_link(5)); ?>">
             Ver todos
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
               width="15px" class="icon">
@@ -59,30 +79,11 @@
       <div class="col-lg-4 mt-5 mt-lg-0">
         <div class="text-center border-boletin mt-5 mt-lg-0">
           <svg width="50" height="50">
-            <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/boletines.svg#icono-boletin-nem" />
-          </svg>
-          <p><b>Nueva Escuela Mexicana</b></p>
-          <p class="parrafo-lineas-boletin">Descubre temas relevantes de la Nueva Escuela Mexicana (NEM). Mantente informado sobre los pilares de la educación para la transformación educativa en México.</p>
-          <a class="btn-leer-mas mx-auto" href="<?php echo SITE_URL ?>/nem/">
-            Ver todos
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
-              width="15px" class="icon">
-              <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
-                stroke-width="1.5" stroke="#292D32"
-                d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-              </path>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-4 mt-4 mt-lg-0">
-        <div class="text-center border-boletin mt-5 mt-lg-0">
-          <svg width="50" height="50">
             <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/boletines.svg#icono-boletin-eventos" />
           </svg>
           <p><b>Eventos PL-SEP</b></p>
           <p class="parrafo-lineas-boletin">Aquí encontrarás información sobre noticias y eventos destacados para la comunidad de Prepa en Línea-SEP.<br><br></p>
-          <a class="btn-leer-mas mx-auto" href="<?php echo SITE_URL ?>/eventos-pl-sep/">
+          <a class="btn-leer-mas mx-auto" href="<?php echo esc_url(get_category_link(144)); ?>">
             Ver todos
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
               width="15px" class="icon">
@@ -160,7 +161,7 @@
                 <div id="collapseOne" class="accordion-collapse collapse show"
                   data-bs-parent="#accordion-boletines-home">
                   <div class="accordion-body">
-                    <h3 class="titulo-boletin-home mt-6"><?php the_title(); ?></h3>
+                    <h3 class="titulo-boletin-home"><?php the_title(); ?></h3>
                     <div class="container">
                       <div class="row align-items-center">
                         <div class="col-lg-6 text-center">
@@ -197,7 +198,7 @@
                 <div id="collapseTwo" class="accordion-collapse collapse"
                   data-bs-parent="#accordion-boletines-home">
                   <div class="accordion-body">
-                    <h3 class="titulo-boletin-home mt-6"><?php the_title(); ?></h3>
+                    <h3 class="titulo-boletin-home"><?php the_title(); ?></h3>
                     <div class="container">
                       <div class="row align-items-center">
                         <div class="col-lg-6 text-center">
@@ -234,7 +235,7 @@
                 <div id="collapseThree" class="accordion-collapse collapse"
                   data-bs-parent="#accordion-boletines-home">
                   <div class="accordion-body">
-                    <h3 class="titulo-boletin-home mt-6"><?php the_title(); ?></h3>
+                    <h3 class="titulo-boletin-home"><?php the_title(); ?></h3>
                     <div class="container">
                       <div class="row align-items-center">
                         <div class="col-lg-6 text-center">
@@ -271,7 +272,7 @@
                 <div id="collapseFour" class="accordion-collapse collapse"
                   data-bs-parent="#accordion-boletines-home">
                   <div class="accordion-body">
-                    <h3 class="titulo-boletin-home mt-4"><?php the_title(); ?></h3>
+                    <h3 class="titulo-boletin-home"><?php the_title(); ?></h3>
                     <div class="container">
                       <div class="row align-items-center">
                         <div class="col-lg-6 text-center">
@@ -308,7 +309,7 @@
                 <div id="collapseFive" class="accordion-collapse collapse"
                   data-bs-parent="#accordion-boletines-home">
                   <div class="accordion-body">
-                    <h3 class="titulo-boletin-home mt-4"><?php the_title(); ?></h3>
+                    <h3 class="titulo-boletin-home"><?php the_title(); ?></h3>
                     <div class="container">
                       <div class="row align-items-center">
                         <div class="col-lg-6 text-center">

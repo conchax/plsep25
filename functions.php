@@ -15,8 +15,8 @@ function funcion_footer()
   wp_enqueue_script("botstrap-js", "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js");
   wp_enqueue_script("fachada", get_template_directory_uri() . "/js/lite-yt-embed.min.js");
   wp_enqueue_script("main-js", get_template_directory_uri() . "/js/main.js");
-  wp_enqueue_script("plsep-js", get_template_directory_uri() . "/js/pls.min.js");
-}
+/*   wp_enqueue_script("plsep-js", "https://prepaenlinea.sep.gob.mx/assets/menu.min.js");
+ */}
 add_action('wp_footer', 'funcion_footer');
 
 function plsep_theme_supports()
@@ -83,7 +83,7 @@ function shortcode_log_comu($atts)
 add_shortcode("log_comu", "shortcode_log_comu");
 
 
-register_nav_menus( array(
+register_nav_menus(array(
   'menu-movil' => 'movil',
   'menu-conoce' => 'DT-conoce',
   'menu-perfiles' => 'DT-perfiles',
@@ -92,7 +92,7 @@ register_nav_menus( array(
   'menu-contacto' => 'DT-contacto',
   'menu-des_integral' => 'DT-desintegral',
   'menu-vinculaciones' => 'DT-vinculaciones',
-  ));
+));
 
 
 //Limitar con la funcion get_the_excerpt
@@ -154,10 +154,11 @@ add_filter('rest_endpoints', 'disable_rest_api_users_endpoints');
 
 
 /* Exclude Password Protected Posts */
-function alm_exclude_password_protected_posts( $alm_query ) {
-	if ( isset( $alm_query->query['alm_id'] ) && ! $alm_query->is_singular() ) {
-		$alm_query->set( 'has_password', false );
-	}
+function alm_exclude_password_protected_posts($alm_query)
+{
+  if (isset($alm_query->query['alm_id']) && ! $alm_query->is_singular()) {
+    $alm_query->set('has_password', false);
+  }
 }
 
-add_action( 'pre_get_posts', 'alm_exclude_password_protected_posts' );
+add_action('pre_get_posts', 'alm_exclude_password_protected_posts');

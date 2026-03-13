@@ -1,3 +1,24 @@
+window.addEventListener("DOMContentLoaded", (event) => {
+  var navbarShrink = function () {
+    const navbarCollapsible = document.body.querySelector(".fixedmenu");
+    if (!navbarCollapsible) {
+      return;
+    }
+    if (window.scrollY === 0) {
+      navbarCollapsible.classList.remove("navbar-shrink");
+    } else {
+      navbarCollapsible.classList.add("navbar-shrink");
+    }
+  };
+  navbarShrink();
+  document.addEventListener("scroll", navbarShrink);
+});
+function menufull() {
+  var element = document.getElementById("over");
+  element.classList.toggle("open");
+  var element = document.getElementById("close");
+  element.classList.toggle("active");
+}
 
 /* copy url */
 
@@ -39,5 +60,4 @@ showHideBtn.addEventListener('click', () => {
         container.classList.toggle('expanded');
     });
 });
-
 

@@ -21,11 +21,15 @@ if (!defined('ABSPATH'))
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-  <?php wp_head(); ?>
+  <?php get_template_part('template-parts/gatm'); ?>
+ <?php wp_head(); ?>
 
   <?php get_template_part('template-parts/gatm'); ?>
+  
   <link rel="stylesheet" id="estilos-css" href="<?php echo get_template_directory_uri(); ?>/css/style.css" type="text/css" media="all">
-  <link rel="stylesheet" id="estilos-css" href="<?php echo get_template_directory_uri(); ?>/css/pls.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="estilos-css" href=" https://prepaenlinea.sep.gob.mx/assets/menu.min.css" type="text/css" media="all">
+  <!-- <link rel="stylesheet" id="estilos-css" href="<?php /* echo get_template_directory_uri(); */ ?>/css/pls.min.css" type="text/css" media="all"> -->
+  
   
 </head>
 
@@ -34,7 +38,6 @@ if (!defined('ABSPATH'))
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQGQHDQN"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-
   <header>
     <nav class="navbar navbar-expand-lg nav-gob">
       <div class="container px-md-5">
@@ -117,8 +120,8 @@ if (!defined('ABSPATH'))
     <div class="aside-section aside-left">
       <div class="aside-content">
         <a href="https://prepaenlinea.sep.gob.mx/convocatorias-2025/">
-          <img class="bannerFull" alt="Banner" src="<?php echo get_template_directory_uri(); ?>/img/banner-registro85.png" class="" alt="registro">
-          <img class="bannerFullR" alt="Banner" src="<?php echo get_template_directory_uri(); ?>/img/banner-m-registro85.png" class="" alt="registro">
+          <img class="bannerFull" alt="Banner" src="https://prepaenlinea.sep.gob.mx/assets/banner-registro.png"  alt="registro">
+          <img class="bannerFullR" alt="Banner" src="https://prepaenlinea.sep.gob.mx/assets/banner-registro-m.png"  alt="registro">
         </a>
       </div>
     </div>

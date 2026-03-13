@@ -276,6 +276,7 @@ hr.verde{
       display: flex;
       align-items: center;
       height: 160px;
+      margin-top: -75px;
     }
 
     .main__title {
@@ -379,6 +380,7 @@ hr.verde{
 @media (max-width: 575.98px) { 
     .identidad-palabras {
         height: 335px;
+        margin-top: 0;
     }
     .main__title, .main__word{
         font-size: 56px;
@@ -390,7 +392,7 @@ hr.verde{
   padding-top: 20px;
  }
 
-.accordion {
+#accordion-boletines-home.accordion {
   display: flex; /* O tambiÃ©n inline-block, segÃºn el diseÃ±o */
   flex-direction: row; /* Para colocar los elementos en horizontal */
   border-width: 0px;
@@ -399,7 +401,7 @@ hr.verde{
   /* Otras propiedades segun sea necesario */
 }
 
- .accordion-button {
+ #accordion-boletines-home .accordion-button {
   align-items: center;
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -411,31 +413,31 @@ hr.verde{
   color: var(--color-secondary);
 }
 
-.accordion-button:not(.collapsed){
+#accordion-boletines-home .accordion-button:not(.collapsed){
     background-color: transparent;
     box-shadow: none;
     display: none;
     color: var(--color-text);
 }
- .accordion-button::after{ 
+ #accordion-boletines-home .accordion-button::after{ 
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"  fill="%23C1D13F" class="bi bi-plus" viewBox="0 0 16 16" > <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/> </svg>');
     background-size: 3rem;
     width: 3rem;
     height: 3rem;
     margin-top: auto;
 }
-.accordion-button:not(.collapsed)::after{
+#accordion-boletines-home .accordion-button:not(.collapsed)::after{
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"   fill="%23C1D13F" class="bi bi-dash" viewBox="0 0 16 16"> <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/> </svg>');
     background-size: 3rem;
     width: 3rem;
     height: 3rem;    
 }
- .accordion-body {
+ #accordion-boletines-home .accordion-body {
     font-size: 20px;
     font-weight: 400;
     color: var(--color-text);
 }
-.accordion-item{
+#accordion-boletines-home .accordion-item{
     display: flex;
     height: 360px;
     border: none;
@@ -462,23 +464,19 @@ hr.verde{
     border-right: 1px solid #ccc;
 }
 
-.accordion-collapse {
+#accordion-boletines-home .accordion-collapse {
   transition: height 0.2s ease-in-out;
 }
 
-.accordion-body {
-  transition: opacity 0.2s ease-in-out;
-}
-
-.accordion-body {
+#accordion-boletines-home .accordion-body {
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
 }
 
-.accordion-collapse.show .accordion-body {
+#accordion-boletines-home .accordion-collapse.show .accordion-body {
     opacity: 1;
 }
-.accordion-collapse.show button.accordion-button{
+#accordion-boletines-home .accordion-collapse.show button.accordion-button{
   display: none;
 }
 
@@ -492,19 +490,19 @@ hr.verde{
 
 
 @media (max-width: 991.98px) { 
-    .accordion {
+    #accordion-boletines-home.accordion {
   display: inline-block; /* O tambiÃ©n inline-block, segun el diseÃ±o */
   flex-direction: row; /* Para colocar los elementos en horizontal */
   /* Otras propiedades segun sea necesario */
     }
-    .accordion-button{
+    #accordion-boletines-home .accordion-button{
         writing-mode:horizontal-tb;
         transform: rotate(0deg);
         font-size: 18px;
         width: 100%;
         border:1px solid #ccc;
     }
-    .accordion-item{
+    #accordion-boletines-home .accordion-item{
         display: inline-block;
         height: fit-content;
         width: 100%;
@@ -513,13 +511,13 @@ hr.verde{
     transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out !important; /* Or your desired transition */
     overflow: hidden;
     }
-    .accordion-button::after{
+    #accordion-boletines-home .accordion-button::after{
       background-size: 2rem;
       width: 2rem;
       height: 2rem;
       top:0px
     }
-    .accordion-button:not(.collapsed)::after{
+    #accordion-boletines-home .accordion-button:not(.collapsed)::after{
       background-size: 2rem;
       width: 2rem;
       height: 2rem;
@@ -870,7 +868,6 @@ hr.verde{
     #branding .dos span {
       padding-left: 4rem;
     }
-    
  }
 
 
@@ -1015,7 +1012,7 @@ hr.verde{
     color: var(--color-text);
 }
 .section-h{
-  margin-top: 140px;
+  margin-top: 105px;
 }
 @media (max-width: 575.98px) {
     .breadcrumb {
@@ -1256,7 +1253,7 @@ a.zoom:hover, .zoom p.url:hover {
     #branding .dos span{
       padding-left: 10rem;
     }
-    #branding .accordion-body{
+    #branding {
       font-size: 16px;
     }
     #branding .carousel-item{
@@ -1265,7 +1262,7 @@ a.zoom:hover, .zoom p.url:hover {
     .titulo-boletin-home{
     font-size: 20px;
     }
-    .accordion-body{
+    #accordion-boletines-home .accordion-body{
       font-size: 16px;
     }
   }
@@ -1543,4 +1540,16 @@ border-bottom: 1px solid #fff;
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
     opacity: 0;
   }
+}
+
+.glow {
+  color: #444;
+  text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px #eee, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,
+    5px 4px 1px #ccc, 4px 5px 1px #eee,
+    6px 5px 1px #ccc, 5px 6px 1px #eee,
+    7px 6px 1px #ccc;
 }

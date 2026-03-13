@@ -33,7 +33,7 @@
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     data-bs-parent="#accordion-boletines-home">
                                     <div class="accordion-body">
-                                        <h3 class="titulo-boletin-home mt-6"><?php the_title(); ?></h3>
+                                        <h3 class="titulo-boletin-home"><?php the_title(); ?></h3>
                                         <div class="container">
                                             <div class="row align-items-center">
                                                 <div class="col-lg-6 text-center">
@@ -70,7 +70,7 @@
                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                     data-bs-parent="#accordion-boletines-home">
                                     <div class="accordion-body">
-                                        <h3 class="titulo-boletin-home mt-6"><?php the_title(); ?></h3>
+                                        <h3 class="titulo-boletin-home"><?php the_title(); ?></h3>
                                         <div class="container">
                                             <div class="row align-items-center">
                                                 <div class="col-lg-6 text-center">
@@ -107,7 +107,7 @@
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     data-bs-parent="#accordion-boletines-home">
                                     <div class="accordion-body">
-                                        <h3 class="titulo-boletin-home mt-4"><?php the_title(); ?></h3>
+                                        <h3 class="titulo-boletin-home"><?php the_title(); ?></h3>
                                         <div class="container">
                                             <div class="row align-items-center">
                                                 <div class="col-lg-6 text-center">
@@ -144,7 +144,7 @@
                                 <div id="collapseFour" class="accordion-collapse collapse"
                                     data-bs-parent="#accordion-boletines-home">
                                     <div class="accordion-body">
-                                        <h3 class="titulo-boletin-home mt-4"><?php the_title(); ?></h3>
+                                        <h3 class="titulo-boletin-home"><?php the_title(); ?></h3>
                                         <div class="container">
                                             <div class="row align-items-center">
                                                 <div class="col-lg-6 text-center">
@@ -181,7 +181,7 @@
                                 <div id="collapseFive" class="accordion-collapse collapse"
                                     data-bs-parent="#accordion-boletines-home">
                                     <div class="accordion-body">
-                                        <h3 class="titulo-boletin-home mt-4"><?php the_title(); ?></h3>
+                                        <h3 class="titulo-boletin-home"><?php the_title(); ?></h3>
                                         <div class="container">
                                             <div class="row align-items-center">
                                                 <div class="col-lg-6 text-center">
@@ -210,7 +210,7 @@
                         <?php endif; ?>
                     <?php endwhile;
                     wp_reset_postdata(); ?>
-                </div>                
+                </div>
             </div>
         </div>
         <div class="row justify-content-center mb-5">

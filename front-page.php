@@ -33,6 +33,8 @@ while (have_posts()) :
 			</video>
 			<div class="overlay"></div>
 			<div class="content">
+				<h3 class="titulo-boletin-home mb-3" style="text-shadow: 2px 2px 4px #FFFFFF; -webkit-text-stroke: 1px white; font-weight:900">¿Porqué Prepa en Línea-SEP?</h3>
+				<h2 style="text-shadow: 2px 2px 4px #FFFFFF; -webkit-text-stroke: 1px white; font-weight:900">descubrelo aquí</h2>
 				<a class="btn-play video-play-button" href="https://www.youtube.com/embed/JpsmHruSL48?si=GW_sNASnYs929A-F" data-bs-toggle="modal" data-bs-target="#videofull" data-url="https://www.youtube.com/embed/JpsmHruSL48?si=GW_sNASnYs929A-F" rel="noopener" tabindex="0">
 					<svg width="125" height="125" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M33.9868 22.397C35.3783 22.2006 36.4096 22.8881 37.5882 23.4774L68.6258 40.6659C69.1987 41.1079 70.2791 42.2375 70.4101 42.9414C70.8193 45.2659 68.7731 46.0353 67.1361 46.9684L36.4096 62.9619C34.2979 64.206 31.5641 63.1256 31.2694 60.6046L31.0075 26.2603C31.0402 24.4269 32.0879 22.6753 34.0032 22.397H33.9868Z" fill="#5B5A5A"/>
@@ -42,29 +44,6 @@ while (have_posts()) :
 				</a>
 			</div>
 		</section>
-
-		<!-- <section class="hero">
-			<video autoplay muted loop playsinline class="video-fondo">
-				<source src="<?php echo get_template_directory_uri(); ?>/mp4/bg-video.mp4" type="video/mp4">
-				Tu navegador no soporta videos.
-			</video>
-			<div class="container">
-				<div class="contenido">
-							<div class="row justify-content-center mt-5">
-								<div class="col-6 text-center">
-									<p><b>Dale play a otra mirada</b></p>
-									<a class="btn-play play-btn" href="https://www.youtube.com/embed/JpsmHruSL48?si=GW_sNASnYs929A-F" data-bs-toggle="modal" data-bs-target="#videofull" data-url="https://www.youtube.com/embed/JpsmHruSL48?si=GW_sNASnYs929A-F" rel="noopener" tabindex="0">
-										<svg width="125" height="125" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M33.9868 22.397C35.3783 22.2006 36.4096 22.8881 37.5882 23.4774L68.6258 40.6659C69.1987 41.1079 70.2791 42.2375 70.4101 42.9414C70.8193 45.2659 68.7731 46.0353 67.1361 46.9684L36.4096 62.9619C34.2979 64.206 31.5641 63.1256 31.2694 60.6046L31.0075 26.2603C31.0402 24.4269 32.0879 22.6753 34.0032 22.397H33.9868Z" fill="#5B5A5A"/>
-										<path d="M23.1173 30.4838C25.8183 29.9927 27.2752 31.8262 27.488 34.3308L27.4553 52.4851C27.2916 53.9584 26.8824 55.3826 25.4418 56.021C22.8717 57.1833 20.6454 55.4644 20.3998 52.7797L20.4326 33.3486C20.629 31.9571 21.7094 30.7294 23.1173 30.4838Z" fill="#C1D13F"/>
-										<path d="M82.7002 42.9248C82.7001 20.9578 64.8919 3.15039 42.9248 3.15039C20.9578 3.15049 3.15049 20.9578 3.15039 42.9248C3.15039 64.8919 20.9578 82.7001 42.9248 82.7002C64.8919 82.7002 82.7002 64.8919 82.7002 42.9248ZM85 42.9248C85 66.1622 66.1622 85 42.9248 85C19.6875 84.9999 0.849609 66.1621 0.849609 42.9248C0.849708 19.6876 19.6876 0.849708 42.9248 0.849609C66.1621 0.849609 84.9999 19.6875 85 42.9248Z" fill="#5B5A5A"/>
-										</svg>
-									</a>
-								</div>
-							</div>
-				</div>
-			</div>
-		</section> -->
 
 		
 
