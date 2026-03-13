@@ -161,6 +161,8 @@ a.single:hover{
   transition: .3s ease-in;
   text-decoration: none;
   display: contents;
+  font-size: 20px;
+  font-weight: 300;
 }
 .btn-icono:hover{
   color: var(--color-secondary)!important;
@@ -913,8 +915,17 @@ hr.verde{
  }
  .border-boletin{
   padding: 0 10px;
+  position: relative;
  }
-
+.pro {
+    position: absolute;
+    height: 80px;
+    top:-20px;
+  
+}
+.pro img{
+  height: 180px;
+}
 .line-boletines-svg{
   position: absolute;
   max-width: 1310px;   
