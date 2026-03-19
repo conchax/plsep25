@@ -33,7 +33,7 @@ while (have_posts()) :
 			</video>
 			<div class="overlay"></div>
 			<div class="content">
-				<h3 class="titulo-boletin-home mb-3" style="text-shadow: 2px 2px 4px #FFFFFF; -webkit-text-stroke: 1px white; font-weight:900">¿Porqué Prepa en Línea-SEP?</h3>
+				<h3 class="titulo-boletin-home mb-3" style="text-shadow: 2px 2px 4px #FFFFFF; -webkit-text-stroke: 1px white; font-weight:900">¿Por qué Prepa en Línea-SEP?</h3>
 				<h2 style="text-shadow: 2px 2px 4px #FFFFFF; -webkit-text-stroke: 0.8px white; font-weight:900">Descúbrelo aquí</h2>
 				<a class="btn-play video-play-button" href="https://www.youtube.com/embed/JpsmHruSL48?si=GW_sNASnYs929A-F" data-bs-toggle="modal" data-bs-target="#videofull" data-url="https://www.youtube.com/embed/JpsmHruSL48?si=GW_sNASnYs929A-F" rel="noopener" tabindex="0">
 					<svg width="125" height="125" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,7 +89,7 @@ while (have_posts()) :
 					</div>
 					<div class="col-xl-3 col-lg-6 mt-xl-0 mt-lg-5 mt-4">
 						<div class="text-center border-boletin ">
-							<a class="btn-icono" href="#" target="_blank">
+							<a class="btn-icono" href="https://prepaenlinea.sep.gob.mx:8090/readi" target="_blank">
 								<svg width="162" height="50">
 									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/servicios.svg#readi"></use>
 								</svg>
@@ -99,7 +99,7 @@ while (have_posts()) :
 					</div>
 					<div class="col-xl-3 col-lg-6 mt-xl-0 mt-lg-5 mt-4">
 						<div class="text-center border-boletin ">
-							<a class="btn-icono" href="http://10.3.29.145/difusion-cultural/">
+							<a class="btn-icono" href="https://prepaenlinea.sep.gob.mx:8090/difusion-cultural" target="_blank">
 								<svg width="108" height="50">
 									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/servicios.svg#difusion"></use>
 								</svg>
@@ -124,7 +124,7 @@ while (have_posts()) :
 					</div> -->
 					<div class="col-lg-3 text-center">
 						<div class="descripcion-servicios mt-4 mt-lg-3 mt-xl-4 ">
-							<a class="btn-icono" href="#" target="_blank">
+							<a class="btn-icono" href="https://prepaenlinea.sep.gob.mx:8090/bolsa-trabajo/" target="_blank">
 								<svg width="105" height="55">
 									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/servicios.svg#bolsa-trabajo" />
 								</svg>
