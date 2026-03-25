@@ -35,7 +35,7 @@ while (have_posts()) :
 			<div class="content">
 				<h3 class="titulo-boletin-home mb-3" style="text-shadow: 2px 2px 4px #FFFFFF; -webkit-text-stroke: 1px white; font-weight:900">¿Por qué Prepa en Línea-SEP?</h3>
 				<h2 style="text-shadow: 2px 2px 4px #FFFFFF; -webkit-text-stroke: 0.8px white; font-weight:900">Descúbrelo aquí</h2>
-				<a class="btn-play video-play-button" href="https://www.youtube.com/embed/JpsmHruSL48?si=GW_sNASnYs929A-F" data-bs-toggle="modal" data-bs-target="#videofull" data-url="https://www.youtube.com/embed/JpsmHruSL48?si=GW_sNASnYs929A-F" rel="noopener" tabindex="0">
+				<a class="btn-p video-play-button" href="https://www.youtube.com/embed/JpsmHruSL48?si=GW_sNASnYs929A-F" data-bs-toggle="modal" data-bs-target="#videofull" data-url="https://www.youtube.com/embed/JpsmHruSL48?si=GW_sNASnYs929A-F" rel="noopener" tabindex="0">
 					<svg width="125" height="125" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M33.9868 22.397C35.3783 22.2006 36.4096 22.8881 37.5882 23.4774L68.6258 40.6659C69.1987 41.1079 70.2791 42.2375 70.4101 42.9414C70.8193 45.2659 68.7731 46.0353 67.1361 46.9684L36.4096 62.9619C34.2979 64.206 31.5641 63.1256 31.2694 60.6046L31.0075 26.2603C31.0402 24.4269 32.0879 22.6753 34.0032 22.397H33.9868Z" fill="#5B5A5A"/>
 					<path d="M23.1173 30.4838C25.8183 29.9927 27.2752 31.8262 27.488 34.3308L27.4553 52.4851C27.2916 53.9584 26.8824 55.3826 25.4418 56.021C22.8717 57.1833 20.6454 55.4644 20.3998 52.7797L20.4326 33.3486C20.629 31.9571 21.7094 30.7294 23.1173 30.4838Z" fill="#C1D13F"/>
@@ -68,7 +68,8 @@ while (have_posts()) :
 				<div class="row justify-content-center align-items-start">
 					<div class="col-xl-3 col-lg-6">
 						<div class="text-center border-boletin ">
-							<a class="btn-icono" href="#" target="_blank">
+							<div class="pro" style="top:-28px;"><img src="<?php echo get_template_directory_uri(); ?>/img/tag-prox.png" alt="proximamente"></div> <!-- borrar -->
+							<a class="btn btn-icono disabled" href="#" target="_blank">
 								<svg width="139" height="50">
 									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/servicios.svg#sidat"></use>
 								</svg>
@@ -89,7 +90,7 @@ while (have_posts()) :
 					</div>
 					<div class="col-xl-3 col-lg-6 mt-xl-0 mt-lg-5 mt-4">
 						<div class="text-center border-boletin ">
-							<a class="btn-icono" href="https://prepaenlinea.sep.gob.mx:8090/readi" target="_blank">
+							<a class="btn-icono" href="https://prepaenlinea.sep.gob.mx/readi" target="_blank">
 								<svg width="162" height="50">
 									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/servicios.svg#readi"></use>
 								</svg>
@@ -99,7 +100,7 @@ while (have_posts()) :
 					</div>
 					<div class="col-xl-3 col-lg-6 mt-xl-0 mt-lg-5 mt-4">
 						<div class="text-center border-boletin ">
-							<a class="btn-icono" href="https://prepaenlinea.sep.gob.mx:8090/difusion-cultural" target="_blank">
+							<a class="btn-icono" href="https://prepaenlinea.sep.gob.mx/difusion-cultural" target="_blank">
 								<svg width="108" height="50">
 									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/servicios.svg#difusion"></use>
 								</svg>
@@ -124,7 +125,7 @@ while (have_posts()) :
 					</div> -->
 					<div class="col-lg-3 text-center">
 						<div class="descripcion-servicios mt-4 mt-lg-3 mt-xl-4 ">
-							<a class="btn-icono" href="https://prepaenlinea.sep.gob.mx:8090/bolsa-trabajo/" target="_blank">
+							<a class="btn-icono" href="https://prepaenlinea.sep.gob.mx/bolsa-trabajo/" target="_blank">
 								<svg width="105" height="55">
 									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/servicios.svg#bolsa-trabajo" />
 								</svg>
@@ -145,7 +146,7 @@ while (have_posts()) :
 							Centrado en el estudiante <br>
 							Aprendizaje social y significativo
 						</p>
-						<a class="btn-leer-mas mx-auto" href="http://10.3.29.145/modelo-educativo/">
+						<a class="btn-leer-mas mx-auto" href="https://prepaenlinea.sep.gob.mx/modelo-educativo/">
 							Más información
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px" width="15px"
 								class="icon">
@@ -164,7 +165,7 @@ while (have_posts()) :
 							5 áreas disciplinares<br>
 							Formación para el trabajo
 						</p>
-						<a class="btn-leer-mas mx-auto" href="http://10.3.29.145/plan-de-estudios/">
+						<a class="btn-leer-mas mx-auto" href="https://prepaenlinea.sep.gob.mx/plan-de-estudios/">
 							Más información
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px" width="15px"
 								class="icon">
@@ -250,12 +251,6 @@ while (have_posts()) :
 							<path d="M0 1028C6.04086e-09 1027.74 0.00324488 1027.48 0.00976562 1027.23C0.420519 1011.01 13.6904 998 30 998V999C13.9837 999 1 1011.98 1 1028V1213H352V1028C352 1011.98 339.016 999 323 999H30V998H176V962H30C13.6904 962 0.420519 948.985 0.00976562 932.774L0 932V72C3.02054e-08 71.7411 0.00324486 71.4829 0.00976562 71.2256C0.42052 55.015 13.6904 42 30 42V43C13.9837 43 1 55.9837 1 72V221H352V72C352 55.9837 339.016 43 323 43H30V42H176V0H178V42H323L323.774 42.0098C339.985 42.4205 353 55.6904 353 72V932L352.99 932.774C352.586 948.728 339.728 961.586 323.774 961.99L323 962H178V998H323L323.774 998.01C339.985 998.421 353 1011.69 353 1028V1399L352.99 1399.77C352.586 1415.73 339.728 1428.59 323.774 1428.99L323 1429H30C13.6904 1429 0.420519 1415.99 0.00976562 1399.77L0 1399V1028ZM1 1399C1 1415.02 13.9837 1428 30 1428H323C339.016 1428 352 1415.02 352 1399V1214H1V1399ZM1 932C1 948.016 13.9837 961 30 961H323C339.016 961 352 948.016 352 932V756H1V932ZM1 755H352V756H1V755ZM1 755H352V401H1V755ZM1 400H352V222H1V400Z" fill="#D9D9D9"/>
 							<path d="M353.006 578L353 579L1 577L1.00568 576L353.006 578Z" fill="#D9D9D9"/>
 							</svg>
-
-							<!-- <svg width="353" height="1580" viewBox="0 0 353 1580" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M0 1179C6.04109e-09 1178.74 0.00324488 1178.48 0.00976562 1178.23C0.420519 1162.01 13.6904 1149 30 1149V1150C13.9837 1150 1 1162.98 1 1179V1364H352V1179C352 1162.98 339.016 1150 323 1150H30V1149H176V1113H30C13.6904 1113 0.420519 1099.99 0.00976562 1083.77L0 1083V72C3.02054e-08 71.7411 0.00324486 71.4829 0.00976562 71.2256C0.42052 55.015 13.6904 42 30 42V43C13.9837 43 1 55.9837 1 72V221H352V72C352 55.9837 339.016 43 323 43H30V42H176V0H178V42H323L323.774 42.0098C339.985 42.4205 353 55.6904 353 72V1083L352.99 1083.77C352.586 1099.73 339.728 1112.59 323.774 1112.99L323 1113H178V1149H323L323.774 1149.01C339.985 1149.42 353 1162.69 353 1179V1550L352.99 1550.77C352.586 1566.73 339.728 1579.59 323.774 1579.99L323 1580H30C13.6904 1580 0.420519 1566.99 0.00976562 1550.77L0 1550V1179ZM1 1550C1 1566.02 13.9837 1579 30 1579H323C339.016 1579 352 1566.02 352 1550V1365H1V1550ZM1 1083C1 1099.02 13.9837 1112 30 1112H323C339.016 1112 352 1099.02 352 1083V934H1V1083ZM1 933H352V756H1V933ZM1 755H352V401H1V755ZM1 400H352V222H1V400Z" fill="#D9D9D9" />
-								<path d="M353.006 578L353 579L1 577L1.00568 576L353.006 578Z" fill="#D9D9D9" />
-							</svg> -->
-
 						</div>
 					</div>
 
@@ -293,7 +288,7 @@ while (have_posts()) :
 							</div>
 
 							<div class="list-item">
-								<a href="http://10.3.29.145/egresados/certificado-electronico/" target="_blank">
+								<a href="https://prepaenlinea.sep.gob.mx/egresados/certificado-electronico/" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-4.webp" alt="Certificación electrónica"
 										class="img-fluid">
 								</a>
@@ -386,7 +381,17 @@ while (have_posts()) :
   </div>
 </div>
 
+<script>
+	/* banner colavorativos  */
+const showHideBtn = document.querySelector('.show-hide-btn');
+const container = document.querySelector('.banner-colavorativos');
 
+showHideBtn.addEventListener('click', () => {
+    document.startViewTransition(() => {
+        container.classList.toggle('expanded');
+    });
+});
+</script>
 
 
 <script>

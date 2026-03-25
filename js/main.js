@@ -51,13 +51,5 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 });
 
-/* banner colavorativos  */
-const showHideBtn = document.querySelector('.show-hide-btn');
-const container = document.querySelector('.banner-colavorativos');
 
-showHideBtn.addEventListener('click', () => {
-    document.startViewTransition(() => {
-        container.classList.toggle('expanded');
-    });
-});
 

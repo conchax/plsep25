@@ -119,7 +119,7 @@ if (!defined('ABSPATH'))
     </a>
     <div class="aside-section aside-left">
       <div class="aside-content">
-        <a href="https://prepaenlinea.sep.gob.mx/convocatorias-2025/">
+        <a href="https://registro.prepaenlinea.sep.gob.mx/">
           <img class="bannerFull" alt="Banner" src="https://prepaenlinea.sep.gob.mx/assets/banner-registro.png"  alt="registro">
           <img class="bannerFullR" alt="Banner" src="https://prepaenlinea.sep.gob.mx/assets/banner-registro-m.png"  alt="registro">
         </a>

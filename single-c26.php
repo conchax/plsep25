@@ -65,7 +65,7 @@
     font-weight: 400;
     color: #5B5B5B!important;
     }
-    .main-c26 img{
+    .postid-50093 img{
     border-bottom: 5px solid #9DA73D!important;
     box-shadow: 0px 6px 7px 0px #00000040!important;
     margin-bottom: 14px;
