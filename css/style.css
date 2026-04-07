@@ -150,6 +150,7 @@ a.single:hover{
   border: 1px solid var(--color-border);
   border-radius: 10px;
   font-family: "Noto Sans", sans-serif!important;
+  padding: 8px 3px;
 }
 
 .btn-cal:hover{
@@ -1554,12 +1555,8 @@ border-bottom: 1px solid #fff;
 
 .glow {
   color: #444;
-  text-shadow: 
-    1px 0px 1px #ccc, 0px 1px 1px #eee, 
-    2px 1px 1px #ccc, 1px 2px 1px #eee,
-    3px 2px 1px #ccc, 2px 3px 1px #eee,
-    4px 3px 1px #ccc, 3px 4px 1px #eee,
-    5px 4px 1px #ccc, 4px 5px 1px #eee,
-    6px 5px 1px #ccc, 5px 6px 1px #eee,
-    7px 6px 1px #ccc;
+  text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc,1px 2px 1px #eee,3px 2px 1px #ccc, 2px 3px 1px #eee,4px 3px 1px #ccc, 3px 4px 1px #eee,5px 4px 1px #ccc, 4px 5px 1px #eee,6px 5px 1px #ccc, 5px 6px 1px #eee,7px 6px 1px #ccc;}
+
+.dropdown-item-plsep{
+  font-size:13px;
 }
