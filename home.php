@@ -43,7 +43,7 @@
           <svg width="50" height="50">
             <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/boletines.svg#icono-boletin-convocatoria" />
           </svg>
-          <p><b><?php single_cat_title(4); ?></b></p>
+          <p><b><?php echo get_cat_name(4); ?></b></p>
           <p class="parrafo-lineas-boletin">Te presentamos información de nuestras convocatorias, una guía para estar al tanto de fechas importantes, requisitos y particularidades del servicio.</p>
           <a class="btn-leer-mas mx-auto" href="<?php echo esc_url(get_category_link(4)); ?>">
             Ver todos
@@ -62,7 +62,7 @@
           <svg class="mt-3 mt-lg-0" width="50" height="50">
             <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/boletines.svg#icono-boletin-nem" />
           </svg>
-          <p><b>Nueva Escuela Mexicana</b></p>
+          <p><b><?php echo get_cat_name(5); ?></b></p>
           <p class="parrafo-lineas-boletin">Descubre temas relevantes de la Nueva Escuela Mexicana (NEM). Mantente informado sobre los pilares de la educación para la transformación educativa en México.</p>
           <a class="btn-leer-mas mx-auto" href="<?php echo esc_url(get_category_link(5)); ?>">
             Ver todos
@@ -81,7 +81,7 @@
           <svg width="50" height="50">
             <use xlink:href="<?php echo get_template_directory_uri(); ?>/img/boletines.svg#icono-boletin-eventos" />
           </svg>
-          <p><b>Eventos PL-SEP</b></p>
+          <p><b><?php echo get_cat_name(144); ?></b></p>
           <p class="parrafo-lineas-boletin">Aquí encontrarás información sobre noticias y eventos destacados para la comunidad de Prepa en Línea-SEP.<br><br></p>
           <a class="btn-leer-mas mx-auto" href="<?php echo esc_url(get_category_link(144)); ?>">
             Ver todos
