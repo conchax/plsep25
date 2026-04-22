@@ -5,7 +5,7 @@ define('SITE_TITLE', get_bloginfo('title'));
 
 function plsep_assets()
 {
- /*  wp_enqueue_style("estilos", get_template_directory_uri() . "/css/style.css"); */
+  /*  wp_enqueue_style("estilos", get_template_directory_uri() . "/css/style.css"); */
   wp_enqueue_style("fachada", get_template_directory_uri() . "/css/lite-yt-embed.css");
 }
 add_action("wp_enqueue_scripts", "plsep_assets");
@@ -15,8 +15,9 @@ function funcion_footer()
   wp_enqueue_script("botstrap-js", "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js");
   wp_enqueue_script("fachada", get_template_directory_uri() . "/js/lite-yt-embed.min.js");
   wp_enqueue_script("main-js", get_template_directory_uri() . "/js/main.js");
-/*   wp_enqueue_script("plsep-js", "https://prepaenlinea.sep.gob.mx/assets/menu.min.js");
- */}
+  /*   wp_enqueue_script("plsep-js", "https://prepaenlinea.sep.gob.mx/assets/menu.min.js");
+ */
+}
 add_action('wp_footer', 'funcion_footer');
 
 function plsep_theme_supports()
