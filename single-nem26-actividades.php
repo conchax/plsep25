@@ -74,45 +74,55 @@ while (have_posts()) :
 
     <div class="container">
         <div class="row">
-            <div class="col">
-            
-
+            <div class="col-12">
                 <hr>
-            <?php 
-                echo 'Explora nuestras actividades del mes de:';
-                $tags_fiter = array('enero-y-febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre');
+    <?php 
+        echo 'Explora nuestras actividades del mes de:';
+        $tags_fiter = array('enero-y-febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre');
 
-                // 1. Obtenemos el ID del post donde estamos actualmente
-                $current_post_id = get_the_ID();
+        $current_post_id = get_the_ID();
 
-                foreach ($tags_fiter as $slug) {
-                    $args = array(
-                        'tag'            => $slug,
-                        'posts_per_page' => 1,
-                        'post_status'    => 'publish'
-                    );
-                    
-                    $query_posts = get_posts($args);
+        echo '<div class="boletines-container" style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px;">';
 
-                    if (!empty($query_posts)) {
-                        $found_post = $query_posts[0]; // Tomamos el primer post encontrado
-                        
-                        // 2. Si el post encontrado es el MISMO donde estamos, lo ocultamos
-                        if ($found_post->ID == $current_post_id) {
-                            continue; 
-                        }
+        foreach ($tags_fiter as $slug) {
+            $args = array(
+                'tag'            => $slug,
+                'posts_per_page' => 1,
+                'post_status'    => 'publish'
+            );
+            
+            $query_posts = get_posts($args);
 
-                        $post_url = get_permalink($found_post->ID);
-                        $tag_obj = get_term_by('slug', $slug, 'post_tag');
-                        $tag_name = ($tag_obj) ? $tag_obj->name : $slug;
-
-                        echo ' <a class="nem-tag" href="' . esc_url($post_url) . '">' . esc_html($tag_name) . '</a>';
-                    }
+            if (!empty($query_posts)) {
+                $found_post = $query_posts[0]; 
+                
+                if ($found_post->ID == $current_post_id) {
+                    continue; 
                 }
 
-            ?>
-            <hr>
+                $post_url = get_permalink($found_post->ID);
                 
+                // CAMBIO AQUÍ: Usamos 'medium' en lugar de 'post-thumbnail'
+                $post_thumbnail = get_the_post_thumbnail($found_post->ID, 'medium', array('class' => 'img-boletin-mediana'));
+
+                if ($post_thumbnail) {
+                    echo '<div class="item-boletin" style="max-width: 188px; text-align: center;">';
+                        echo '<a href="' . esc_url($post_url) . '">';
+                            echo $post_thumbnail;
+                        echo '</a>';
+                        
+                        // Opcional: Si aún quieres que aparezca el nombre del mes debajo de la imagen
+                        $tag_obj = get_term_by('slug', $slug, 'post_tag');
+                        $tag_name = ($tag_obj) ? $tag_obj->name : $slug;
+                        //echo '<p style="margin-top: 10px; font-weight: bold;">' . esc_html($tag_name) . '</p>';
+                    echo '</div>';
+                }
+            }
+        }
+
+        echo '</div>';
+    ?>                
+                <hr>
             </div>
         </div>
     </div>
@@ -401,8 +411,8 @@ while (have_posts()) :
             {
             font-size: 14px;
 
+            }
         }
-
         .carousel-indicators button.active::after {
             height: 0;
         }
@@ -416,9 +426,20 @@ while (have_posts()) :
         .nem-tag:not(:last-child)::after {
         content: ", "; /* Agrega la coma y un espacio */
         }
-
+        .item-boletin{
+            overflow: hidden;
+        }
+        .item-boletin img{
+            width:188px;
+            height: 97px;
+            border-radius:5px;
+            border: 2px solid var(--color-border);
+            transition: transform 0.5s ease;
+        }
+        .item-boletin img:hover{
+            transform: scale(1.1);
+        }
     </style>
-
 
 <?php endwhile;
 
