@@ -821,41 +821,42 @@ hr.verde{
   padding-left: 15rem;
 }
 
-#branding .carousel-inner{
-  overflow: hidden;
-}
 
 #branding .carousel-identidad{
     position: absolute;
     top: 0;
 }
 
-#branding .carousel-item{
+#carousel-identidad-branding .carousel-inner{
+  overflow: hidden;
+}
+
+#carousel-identidad-branding .carousel-item{
   max-width: 660px;
   transition: transform 0.1s ease-in-out;
 }
 
 
-.carousel-item-next:not(.carousel-item-start),
-.active.carousel-item-end {
+#carousel-identidad-branding .carousel-item-next:not(#carousel-identidad-branding .carousel-item-start),
+#carousel-identidad-branding .active.carousel-item-end {
   transform: translateX(10%);
 }
 
-.carousel-item-prev:not(.carousel-item-end),
-.active.carousel-item-start {
+#carousel-identidad-branding .carousel-item-prev:not(#carousel-identidad-branding .carousel-item-end),
+#carousel-identidad-branding .active.carousel-item-start {
   transform: translateX(0%);
 }
 
 
 @media (max-width: 575.98px) { 
-    #branding .carousel-inner{
+    #carousel-identidad-branding .carousel-inner{
       overflow:hidden;
     }
-    #branding .carousel-item{
+    #carousel-identidad-branding .carousel-item{
         width: 220px;
         margin-top: 10px;
     }
-        #branding .uno, #branding .tres{
+    #branding .uno, #branding .tres{
         font-size: 26px;
         font-weight: 900;   
         color: var(--color-secondary);
@@ -1267,7 +1268,7 @@ a.zoom:hover, .zoom p.url:hover {
     #branding {
       font-size: 16px;
     }
-    #branding .carousel-item{
+    #carousel-identidad-branding .carousel-item{
       width: 480px;
      }
     .titulo-boletin-home{
@@ -1291,7 +1292,7 @@ a.zoom:hover, .zoom p.url:hover {
       font-size: 60px;
       line-height: 60px;
      }
-     #branding .carousel-item{
+     #carousel-identidad-branding .carousel-item{
       width: 400px;
      }
      .titulo-servicios{
