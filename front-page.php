@@ -67,9 +67,8 @@ while (have_posts()) :
 			<div class="container cont mt-5">
 				<div class="row justify-content-center align-items-start">
 					<div class="col-xl-3 col-lg-6">
-						<div class="text-center border-boletin ">
-							<div class="pro" style="top:-28px;"><img src="<?php echo get_template_directory_uri(); ?>/img/tag-prox.png" alt="proximamente"></div> <!-- borrar -->
-							<a class="btn btn-icono disabled" href="#" target="_blank">
+						<div class="text-center border-boletin ">							
+							<a class="btn btn-icono" href="https://sidat.dgb.sep.gob.mx/" target="_blank">
 								<svg width="139" height="50">
 									<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/servicios.svg#sidat"></use>
 								</svg>
