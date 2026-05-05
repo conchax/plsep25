@@ -1,4 +1,4 @@
-<?php get_header();
+ 	<?php get_header();
 /**
  * The template for displaying singular post-types: posts, pages and user-defined custom post types.
  *
