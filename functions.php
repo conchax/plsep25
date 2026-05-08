@@ -176,49 +176,53 @@ function remove_jquery_migrate($scripts)
 }
 add_action('wp_default_scripts', 'remove_jquery_migrate');
 
-//agregar artibuto defer a 
-/* function defer_jquery_script( $tag, $handle, $src ) {
-    // Si es jquery, añadimos el atributo defer
-    if ( 'jquery-core' === $handle || 'jquery' === $handle ) {
-        return str_replace( 'src=', 'defer src=', $tag );
-    }
-    return $tag;
-}
-add_filter( 'script_loader_tag', 'defer_jquery_script', 10, 3 ); */
 
-//cargar frontent de calendarios solo en la sección
-/* add_action( 'wp_enqueue_scripts', 'desactivar_css_events_calendar', 20 );
-function desactivar_css_events_calendar() {
-    // Si no es una página de eventos, desregistra los estilos
-    if ( !tribe_is_event_query() && !is_singular( 'tribe_events' ) ) {
-        wp_dequeue_style( 'tribe-events-calendar-style' );
-        wp_dequeue_style( 'tribe-events-calendar-pro-style' );
-        // Puedes añadir más estilos aquí si es necesario
-    }
-} */
+/**
+ * Limpieza radical de The Events Calendar en páginas ajenas
+ */
+add_action('wp_print_styles', function() {
+    // 1. Verificar si el plugin está activo y si NO estamos en sus páginas
+    if ( !function_exists('tribe_is_event_query') ) return;
 
-
-add_action( 'wp_enqueue_scripts', 'forzar_desactivar_tec_scripts', 999 );
-add_action( 'wp_print_footer_scripts', 'forzar_desactivar_tec_scripts', 999 );
-
-function forzar_desactivar_tec_scripts() {
-    // 1. Define aquí el slug de la página donde SÍ quieres el calendario
-    // O usa tribe_is_event_query() para detectar las páginas nativas del plugin
-    if ( !is_page('calendario') && !tribe_is_event_query() && !is_singular('tribe_events') ) {
+    if ( !is_singular('calendarios') && !tribe_is_event_query() && !tribe_is_event_category() ) {
         
-        // Estilos de la V2 (Versiones actuales)
-        wp_deregister_style( 'tribe-events-views-v2-skeleton' );
-        wp_deregister_style( 'tribe-events-views-v2-full' );
-        wp_deregister_style( 'tribe-events-pro-views-v2-skeleton' );
-        wp_deregister_style( 'tribe-events-pro-views-v2-full' );
+        global $wp_styles;
         
-        // Scripts principales
-        wp_deregister_script( 'tribe-events-views-v2-manager' );
-        wp_deregister_script( 'tribe-common' );
-        
-        // Estilos antiguos (por si acaso)
-        wp_deregister_style( 'tribe-events-calendar-style' );
-        wp_deregister_style( 'tribe-events-full-calendar-style' );
-        wp_deregister_style( 'tribe-events-custom-jquery-styles' );
+        // 2. Lista de palabras clave que queremos bloquear
+        $bloqueo_keywords = [
+            'tribe-events',
+            'tribe-common',
+            'tribe-accessibility',
+            'the-events-calendar'
+        ];
+
+        // 3. Recorremos todos los estilos en cola
+        foreach ( $wp_styles->queue as $handle ) {
+            foreach ( $bloqueo_keywords as $keyword ) {
+                if ( strpos( $handle, $keyword ) !== false ) {
+                    wp_dequeue_style( $handle );
+                    wp_deregister_style( $handle );
+                }
+            }
+        }
     }
-}
+}, 9999 );
+
+// Repetimos la lógica para los Scripts (JS)
+add_action('wp_print_scripts', function() {
+    if ( !function_exists('tribe_is_event_query') ) return;
+
+    if ( !is_singular('calendarios') && !tribe_is_event_query() && !tribe_is_event_category() ) {
+        global $wp_scripts;
+        $bloqueo_keywords = ['tribe-events', 'tribe-common', 'the-events-calendar'];
+
+        foreach ( $wp_scripts->queue as $handle ) {
+            foreach ( $bloqueo_keywords as $keyword ) {
+                if ( strpos( $handle, $keyword ) !== false ) {
+                    wp_dequeue_script( $handle );
+                    wp_deregister_script( $handle );
+                }
+            }
+        }
+    }
+}, 9999 );
