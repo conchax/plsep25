@@ -163,3 +163,62 @@ function alm_exclude_password_protected_posts($alm_query)
 }
 
 add_action('pre_get_posts', 'alm_exclude_password_protected_posts');
+
+//bolquar jquery-migrate
+function remove_jquery_migrate($scripts)
+{
+  if (! is_admin() && isset($scripts->registered['jquery'])) {
+    $script = $scripts->registered['jquery'];
+    if ($script->deps != array_diff($script->deps, array('jquery-migrate'))) {
+      $script->deps = array_diff($script->deps, array('jquery-migrate'));
+    }
+  }
+}
+add_action('wp_default_scripts', 'remove_jquery_migrate');
+
+//agregar artibuto defer a 
+/* function defer_jquery_script( $tag, $handle, $src ) {
+    // Si es jquery, añadimos el atributo defer
+    if ( 'jquery-core' === $handle || 'jquery' === $handle ) {
+        return str_replace( 'src=', 'defer src=', $tag );
+    }
+    return $tag;
+}
+add_filter( 'script_loader_tag', 'defer_jquery_script', 10, 3 ); */
+
+//cargar frontent de calendarios solo en la sección
+/* add_action( 'wp_enqueue_scripts', 'desactivar_css_events_calendar', 20 );
+function desactivar_css_events_calendar() {
+    // Si no es una página de eventos, desregistra los estilos
+    if ( !tribe_is_event_query() && !is_singular( 'tribe_events' ) ) {
+        wp_dequeue_style( 'tribe-events-calendar-style' );
+        wp_dequeue_style( 'tribe-events-calendar-pro-style' );
+        // Puedes añadir más estilos aquí si es necesario
+    }
+} */
+
+
+add_action( 'wp_enqueue_scripts', 'forzar_desactivar_tec_scripts', 999 );
+add_action( 'wp_print_footer_scripts', 'forzar_desactivar_tec_scripts', 999 );
+
+function forzar_desactivar_tec_scripts() {
+    // 1. Define aquí el slug de la página donde SÍ quieres el calendario
+    // O usa tribe_is_event_query() para detectar las páginas nativas del plugin
+    if ( !is_page('calendario') && !tribe_is_event_query() && !is_singular('tribe_events') ) {
+        
+        // Estilos de la V2 (Versiones actuales)
+        wp_deregister_style( 'tribe-events-views-v2-skeleton' );
+        wp_deregister_style( 'tribe-events-views-v2-full' );
+        wp_deregister_style( 'tribe-events-pro-views-v2-skeleton' );
+        wp_deregister_style( 'tribe-events-pro-views-v2-full' );
+        
+        // Scripts principales
+        wp_deregister_script( 'tribe-events-views-v2-manager' );
+        wp_deregister_script( 'tribe-common' );
+        
+        // Estilos antiguos (por si acaso)
+        wp_deregister_style( 'tribe-events-calendar-style' );
+        wp_deregister_style( 'tribe-events-full-calendar-style' );
+        wp_deregister_style( 'tribe-events-custom-jquery-styles' );
+    }
+}
