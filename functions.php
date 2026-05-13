@@ -177,52 +177,100 @@ function remove_jquery_migrate($scripts)
 add_action('wp_default_scripts', 'remove_jquery_migrate');
 
 
-/**
- * Limpieza radical de The Events Calendar en páginas ajenas
- */
-add_action('wp_print_styles', function() {
-    // 1. Verificar si el plugin está activo y si NO estamos en sus páginas
-    if ( !function_exists('tribe_is_event_query') ) return;
+/* evitar carga del front de calendar */
+add_action('wp_enqueue_scripts', 'deregister_tribe_events_resources', 100);
 
-    if ( !is_singular('calendarios') && !tribe_is_event_query() && !tribe_is_event_category() ) {
+function deregister_tribe_events_resources() {
+    // Verifica si NO es una página propia de The Events Calendar
+    if ( ! function_exists('tribe_is_event') || 
+         (! tribe_is_event() && ! tribe_is_event_category() && ! tribe_is_in_main_loop()) ) {
         
-        global $wp_styles;
+        // Desactivar Estilos CSS principales
+        wp_dequeue_style('the-events-calendar');
+        wp_dequeue_style('tribe-events-calendar-style');
+        wp_dequeue_style('tribe-events-calendar-full-calendar-style');
+        wp_dequeue_style('tribe-events-custom-templates');
         
-        // 2. Lista de palabras clave que queremos bloquear
-        $bloqueo_keywords = [
-            'tribe-events',
-            'tribe-common',
-            'tribe-accessibility',
-            'the-events-calendar'
-        ];
+        // Desactivar Bloques de Gutenberg (si usas otros editores)
+        wp_dequeue_style('tribe-events-gutenberg');
+        wp_dequeue_script('tribe-events-gutenberg-blocks');
 
-        // 3. Recorremos todos los estilos en cola
-        foreach ( $wp_styles->queue as $handle ) {
-            foreach ( $bloqueo_keywords as $keyword ) {
-                if ( strpos( $handle, $keyword ) !== false ) {
-                    wp_dequeue_style( $handle );
-                    wp_deregister_style( $handle );
-                }
-            }
-        }
+        // Desactivar Scripts JavaScript principales
+        wp_dequeue_script('the-events-calendar');
+        wp_dequeue_script('tribe-events-calendar-script');
+        wp_dequeue_script('tribe-events-bootstrap-datepicker');
+        wp_dequeue_script('tribe-events-jquery-resize');
     }
-}, 9999 );
+}
 
-// Repetimos la lógica para los Scripts (JS)
-add_action('wp_print_scripts', function() {
-    if ( !function_exists('tribe_is_event_query') ) return;
+add_action('wp_enqueue_scripts', 'remove_remaining_tribe_scripts', 999);
 
-    if ( !is_singular('calendarios') && !tribe_is_event_query() && !tribe_is_event_category() ) {
-        global $wp_scripts;
-        $bloqueo_keywords = ['tribe-events', 'tribe-common', 'the-events-calendar'];
-
-        foreach ( $wp_scripts->queue as $handle ) {
-            foreach ( $bloqueo_keywords as $keyword ) {
-                if ( strpos( $handle, $keyword ) !== false ) {
-                    wp_dequeue_script( $handle );
-                    wp_deregister_script( $handle );
-                }
-            }
-        }
+function remove_remaining_tribe_scripts() {
+    // Reemplaza la condición según tus necesidades (ej. si no es página de eventos)
+    if ( ! function_exists('tribe_is_event') || ! tribe_is_event() ) {
+        
+        // Remueve los estilos V2 Single Skeleton que mencionas
+        wp_dequeue_style('tribe-events-v2-single-skeleton');
+        wp_deregister_style('tribe-events-v2-single-skeleton');
+        
+        wp_dequeue_style('tribe-events-v2-single-skeleton-full');
+        wp_deregister_style('tribe-events-v2-single-skeleton-full');
+        
+        // Remueve la integración de estilos con Elementor
+        wp_dequeue_style('tec-events-elementor-widgets-base-styles');
+        wp_deregister_style('tec-events-elementor-widgets-base-styles');
+        
+        // Remueve el script general tec-user-agent
+        wp_dequeue_script('tec-user-agent');
+        wp_deregister_script('tec-user-agent');
     }
-}, 9999 );
+}
+
+
+/* carga de wp-polls */
+add_action('wp_enqueue_scripts', 'load_wp_polls_only_when_present', 999);
+
+function load_wp_polls_only_when_present() {
+    // Si no es un post, página o contenido individual, salimos rápido
+    if ( ! is_singular() ) {
+        wp_dequeue_style('wp-polls');
+        wp_deregister_style('wp-polls');
+        wp_dequeue_script('wp-polls');
+        wp_deregister_script('wp-polls');
+        return;
+    }
+
+    // Obtenemos el contenido del post actual
+    $post = get_post();
+    
+    // Verificamos si el contenido tiene el shortcode [poll o si es un bloque de WP-Polls
+    $has_poll_shortcode = has_shortcode($post->post_content, 'poll');
+    $has_poll_block     = has_block('wp-polls/poll', $post->post_content) || strpos($post->post_content, 'wp-polls') !== false;
+
+    // Si NO se encuentra ninguna encuesta en el contenido, removemos los recursos
+    if ( ! $has_poll_shortcode && ! $has_poll_block ) {
+        wp_dequeue_style('wp-polls');
+        wp_deregister_style('wp-polls');
+        
+        wp_dequeue_script('wp-polls');
+        wp_deregister_script('wp-polls');
+    }
+}
+
+/* eliminar ccs de gutenger */
+add_action('wp_enqueue_scripts', 'clean_classic_elementor_styles', 999);
+
+function clean_classic_elementor_styles() {
+    // Elimina el CSS de la biblioteca de bloques que mencionas
+    wp_dequeue_style('wp-block-library');
+    wp_deregister_style('wp-block-library');
+    
+    // Elimina estilos innecesarios que inyecta WordPress para inline/global styles
+    wp_dequeue_style('global-styles');
+    wp_deregister_style('global-styles');
+    
+    // Elimina estilos de soporte clásico para bloques (innecesarios con Elementor)
+    wp_dequeue_style('classic-theme-styles');
+    wp_deregister_style('classic-theme-styles');
+}
+
