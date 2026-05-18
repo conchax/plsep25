@@ -27,10 +27,20 @@ while (have_posts()) :
 				</div>
 			</div>
 		</section>
+
 		<section class="hero-container">
-			<video autoplay muted loop playsinline class="video-bg">
-				<source src="<?php echo get_template_directory_uri(); ?>/mp4/bg-video.mp4" type="video/mp4">
-			</video>
+			<!-- <video autoplay muted loop playsinline class="video-bg">
+				<source src="<?php // echo get_template_directory_uri(); ?>/mp4/bg-video.mp4" type="video/mp4">
+			</video> -->
+			<div id="video-placeholder"></div>
+			<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				setTimeout(function() {
+					var placeholder = document.getElementById('video-placeholder');
+					placeholder.innerHTML = '<video autoplay muted loop playsinline class="video-bg"><source src="<?php echo get_template_directory_uri(); ?>/mp4/bg-video.mp4" type="video/mp4"></video>';
+				}, 5000); // 5000 milisegundos = 5 segundos
+			});
+			</script>
 			<div class="overlay"></div>
 			<div class="content">
 				<h3 class="titulo-boletin-home mb-3" style="text-shadow: 2px 2px 4px #FFFFFF; -webkit-text-stroke: 1px white; font-weight:900">¿Por qué Prepa en Línea-SEP?</h3>
@@ -41,12 +51,9 @@ while (have_posts()) :
 					<path d="M23.1173 30.4838C25.8183 29.9927 27.2752 31.8262 27.488 34.3308L27.4553 52.4851C27.2916 53.9584 26.8824 55.3826 25.4418 56.021C22.8717 57.1833 20.6454 55.4644 20.3998 52.7797L20.4326 33.3486C20.629 31.9571 21.7094 30.7294 23.1173 30.4838Z" fill="#C1D13F"/>
 					<path d="M82.7002 42.9248C82.7001 20.9578 64.8919 3.15039 42.9248 3.15039C20.9578 3.15049 3.15049 20.9578 3.15039 42.9248C3.15039 64.8919 20.9578 82.7001 42.9248 82.7002C64.8919 82.7002 82.7002 64.8919 82.7002 42.9248ZM85 42.9248C85 66.1622 66.1622 85 42.9248 85C19.6875 84.9999 0.849609 66.1621 0.849609 42.9248C0.849708 19.6876 19.6876 0.849708 42.9248 0.849609C66.1621 0.849609 84.9999 19.6875 85 42.9248Z" fill="#5B5A5A"/>
 					</svg>
-				</a>
-				
+				</a>				
 			</div>
 		</section>
-
-		
 
 		<section id="prepa-distinta">
 			<div class="container">
@@ -402,34 +409,34 @@ while (have_posts()) :
 								<a href="https://educacionmediasuperior.sep.gob.mx/SEMS_en_cifras.html"
 									target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-1.webp" alt="banner SEMS cifras"
-										class="img-fluid">
+										width="1296" height="279">
 								</a>
 							</div>
 
 							<div class="list-item">
 								<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/01/carteles-descrimincacion.pdf" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-2.webp" alt="te descriminaron DENUNCIA"
-										class="img-fluid">
+										width="1296" height="279">
 								</a>
 							</div>
 
 							<div class="list-item">
 								<a href="https://estrategiaenelaula.sep.gob.mx/" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-3.webp" alt="Te drogas te dañas"
-										class="img-fluid">
+										width="1296" height="279">
 								</a>
 							</div>
 
 							<div class="list-item">
 								<a href="https://prepaenlinea.sep.gob.mx/egresados/certificado-electronico/" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-4.webp" alt="Certificación electrónica"
-										class="img-fluid">
+										width="1296" height="279">
 								</a>
 							</div>
 							<div class="list-item">
 								<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/07/09C.05_Banners_certificado_RVOE_Aviso_VF-1.png" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-5.webp" alt="Estudios oficiales RVOE"
-										class="img-fluid">
+										width="1296" height="279"">
 								</a>
 							</div>
 						</div>

@@ -37,7 +37,7 @@
                                         <div class="container">
                                             <div class="row align-items-center">
                                                 <div class="col-lg-6 text-center">
-                                                    <img src="<?php the_post_thumbnail('large', ['class' => 'img-fluid']); ?> 
+                                                    <img src="<?php the_post_thumbnail('medium', array('class' => 'img-fluid mediums')); ?> 
                                             </div>
                                             <div class=" col-lg-6">
                                                     <p><?php echo excerpt('31'); ?></p>
@@ -74,9 +74,9 @@
                                         <div class="container">
                                             <div class="row align-items-center">
                                                 <div class="col-lg-6 text-center">
-                                                    <img src="<?php the_post_thumbnail('large', ['class' => 'img-fluid']); ?> 
-                                            </div>
-                                            <div class=" col-lg-6">
+                                                    <img src="<?php the_post_thumbnail('medium', array('class' => 'img-fluid mediums')); ?> 
+                                                </div>
+                                                <div class=" col-lg-6">
                                                     <p><?php echo excerpt('31'); ?></p>
                                                     <p class="fecha-boletin-home">Prepa en Línea-SEP, <time datetime="<?php the_time('c') ?>" title="<?php the_time('c') ?>"><?php the_time('j \d\e F \d\e Y'); ?>.
                                                     </p>
@@ -111,7 +111,7 @@
                                         <div class="container">
                                             <div class="row align-items-center">
                                                 <div class="col-lg-6 text-center">
-                                                    <img src="<?php the_post_thumbnail('large', ['class' => 'img-fluid']); ?> 
+                                                    <img src="<?php the_post_thumbnail('medium', array('class' => 'img-fluid mediums')); ?> 
                                             </div>
                                             <div class=" col-lg-6">
                                                     <p><?php echo excerpt('31'); ?></p>
@@ -148,7 +148,7 @@
                                         <div class="container">
                                             <div class="row align-items-center">
                                                 <div class="col-lg-6 text-center">
-                                                    <img src="<?php the_post_thumbnail('large', ['class' => 'img-fluid']); ?> 
+                                                    <img src="<?php the_post_thumbnail('medium', array('class' => 'img-fluid mediums')); ?> 
                                             </div>
                                             <div class=" col-lg-6">
                                                     <p><?php echo excerpt('31'); ?></p>
@@ -185,7 +185,7 @@
                                         <div class="container">
                                             <div class="row align-items-center">
                                                 <div class="col-lg-6 text-center">
-                                                    <img src="<?php the_post_thumbnail('large', ['class' => 'img-fluid']); ?> 
+                                                    <img src="<?php the_post_thumbnail('medium', array('class' => 'img-fluid mediums')); ?> 
                                             </div>
                                             <div class=" col-lg-6">
                                                     <p><?php echo excerpt('31'); ?></p>
