@@ -115,8 +115,8 @@ if (!defined('ABSPATH'))
     <div class="aside-section aside-left">
       <div class="aside-content">
         <a href="https://registro.prepaenlinea.sep.gob.mx/">
-          <img class="bannerFull" alt="Banner" src="https://prepaenlinea.sep.gob.mx/assets/banner-registro.png"  alt="registro">
-          <img class="bannerFullR" alt="Banner" src="https://prepaenlinea.sep.gob.mx/assets/banner-registro-m.png"  alt="registro">
+          <img class="bannerFull" alt="Banner" fetchpriority="high" src="https://prepaenlinea.sep.gob.mx/assets/banner-registro.png"  alt="registro">
+          <img class="bannerFullR" alt="Banner" fetchpriority="high" src="https://prepaenlinea.sep.gob.mx/assets/banner-registro-m.png"  alt="registro">
         </a>
       </div>
     </div>

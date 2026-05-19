@@ -15,7 +15,14 @@ while (have_posts()) :
 	<section class="section-h"></section>
 	<main>
 		<?php add_revslider('slider-2', 'homepage'); ?>
-
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var img = document.querySelector(".optimiz img");
+				if (img) {
+					img.setAttribute("fetchpriority", "high");
+				}
+			});
+		</script>
 		<section class="identidad-palabras">
 			<div class="container">
 				<div class="row ">
@@ -398,7 +405,26 @@ while (have_posts()) :
 			</div>
 		</section>
 
-		<?php get_template_part('template-parts/boletines-home'); ?>
+		<section id="boletines">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h2 class="titulou">Boletines</h2>
+					</div>
+				</div>
+				<div class="row my-4">
+					<div class="col-12">
+						<?php get_template_part('template-parts/boletines-home'); ?>
+					</div>
+				</div>
+				<div class="row justify-content-center mb-5">
+					<div class="col-lg-4">
+						<p class="my-3 text-center"><a class="btn-dos btn-lg btn w-100" aria-current="page" href="<?php echo SITE_URL ?>/boletines">Ver todos</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>	
 
 		<section class="banner-colavorativos">
 			<div class="container">
@@ -408,34 +434,34 @@ while (have_posts()) :
 							<div class="list-item">
 								<a href="https://educacionmediasuperior.sep.gob.mx/SEMS_en_cifras.html"
 									target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-1.webp" alt="banner SEMS cifras"
+									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-1.webp" loading="lazy" alt="banner SEMS cifras"
 										width="1296" height="279">
 								</a>
 							</div>
 
 							<div class="list-item">
 								<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/01/carteles-descrimincacion.pdf" target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-2.webp" alt="te descriminaron DENUNCIA"
+									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-2.webp" loading="lazy" alt="te descriminaron DENUNCIA"
 										width="1296" height="279">
 								</a>
 							</div>
 
 							<div class="list-item">
 								<a href="https://estrategiaenelaula.sep.gob.mx/" target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-3.webp" alt="Te drogas te dañas"
+									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-3.webp" loading="lazy" alt="Te drogas te dañas"
 										width="1296" height="279">
 								</a>
 							</div>
 
 							<div class="list-item">
 								<a href="https://prepaenlinea.sep.gob.mx/egresados/certificado-electronico/" target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-4.webp" alt="Certificación electrónica"
+									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-4.webp"  loading="lazy" alt="Certificación electrónica"
 										width="1296" height="279">
 								</a>
 							</div>
 							<div class="list-item">
 								<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/07/09C.05_Banners_certificado_RVOE_Aviso_VF-1.png" target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-5.webp" alt="Estudios oficiales RVOE"
+									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-5.webp" loading="lazy" alt="Estudios oficiales RVOE"
 										width="1296" height="279"">
 								</a>
 							</div>
@@ -470,22 +496,22 @@ while (have_posts()) :
 							<div id="carousel-identidad-branding" class="carousel slide " data-bs-interval="10000" data-bs-ride="carousel" data-bs-pause="false">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/1.png" class="img-fluid" alt="m1">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/1.png" class="img-fluid" loading="lazy" alt="m1">
 									</div>
 									<div class="carousel-item">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/2.png" class="img-fluid" alt="m2">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/2.png" class="img-fluid" loading="lazy" alt="m2">
 									</div>
 									<div class="carousel-item">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/3.png" class="img-fluid" alt="m3">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/3.png" class="img-fluid" loading="lazy" alt="m3">
 									</div>
 									<div class="carousel-item">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/4.png" class="img-fluid" alt="m4">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/4.png" class="img-fluid" loading="lazy" alt="m4">
 									</div>
 									<div class="carousel-item">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/5.png" class="img-fluid" alt="m5">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/5.png" class="img-fluid" loading="lazy" alt="m5">
 									</div>
 									<div class="carousel-item">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/6.png" class="img-fluid" alt="m6">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/6.png" class="img-fluid" loading="lazy" alt="m6">
 									</div>
 
 								</div>
