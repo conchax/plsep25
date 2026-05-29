@@ -88,7 +88,8 @@ while (have_posts()) :
             $args = array(
                 'tag'            => $slug,
                 'posts_per_page' => 1,
-                'post_status'    => 'publish'
+                'post_status'    => 'publish',
+                'has_password' => false
             );
             
             $query_posts = get_posts($args);
