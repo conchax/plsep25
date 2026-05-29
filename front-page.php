@@ -432,6 +432,12 @@ while (have_posts()) :
 					<div class="col-12">
 						<div class="list">
 							<div class="list-item">
+								<a href="https://abcdelasemociones.sep.gob.mx/" target="_blank">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-6.webp" loading="lazy" alt="El ABC de las emociones salud mental para las y los jóvenes"
+										width="1296" height="279"">
+								</a>
+							</div>
+							<div class="list-item">
 								<a href="https://educacionmediasuperior.sep.gob.mx/SEMS_en_cifras.html"
 									target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-1.webp" loading="lazy" alt="banner SEMS cifras"
