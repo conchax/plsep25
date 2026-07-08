@@ -28,9 +28,9 @@
                         <div class="container">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 text-center">
-                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" class="img-fluid mediums" loading="lazy" alt="<?php the_title_attribute(); ?>">
-                            </div>
-                            <div class="col-lg-6">
+                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'mi-imagen-destacada'); ?>" class="img-fluid mediums" loading="lazy" alt="<?php the_title_attribute(); ?>">
+                                </div>
+                                <div class="col-lg-6">
                                     <p><?php echo excerpt('31'); ?></p>
                                     <a class="btn-leer-mas" href="<?php the_permalink(); ?>">
                                         Leer completo
@@ -63,7 +63,7 @@
                         <div class="container">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 text-center">
-                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" class="img-fluid mediums" loading="lazy" alt="<?php the_title_attribute(); ?>">
+                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'mi-imagen-destacada'); ?>" class="img-fluid mediums" loading="lazy" alt="<?php the_title_attribute(); ?>">
                                 </div>
                                 <div class=" col-lg-6">
                                     <p><?php echo excerpt('31'); ?></p>
@@ -98,9 +98,9 @@
                         <div class="container">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 text-center">
-                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" class="img-fluid mediums" loading="lazy" alt="<?php the_title_attribute(); ?>">
-                            </div>
-                            <div class=" col-lg-6">
+                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'mi-imagen-destacada'); ?>" class="img-fluid mediums" loading="lazy" alt="<?php the_title_attribute(); ?>">
+                                </div>
+                                <div class=" col-lg-6">
                                     <p><?php echo excerpt('31'); ?></p>
                                     <a class="btn-leer-mas" href="<?php the_permalink(); ?>">
                                         Leer completo
@@ -133,9 +133,9 @@
                         <div class="container">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 text-center">
-                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" class="img-fluid mediums" loading="lazy" alt="<?php the_title_attribute(); ?>">
-                            </div>
-                            <div class=" col-lg-6">
+                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'mi-imagen-destacada'); ?>" class="img-fluid mediums" loading="lazy" alt="<?php the_title_attribute(); ?>">
+                                </div>
+                                <div class=" col-lg-6">
                                     <p><?php echo excerpt('31'); ?></p>
                                     <a class="btn-leer-mas" href="<?php the_permalink(); ?>">
                                         Leer completo
@@ -168,9 +168,9 @@
                         <div class="container">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 text-center">
-                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" class="img-fluid mediums" loading="lazy" alt="<?php the_title_attribute(); ?>">
-                            </div>
-                            <div class=" col-lg-6">
+                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'mi-imagen-destacada'); ?>" class="img-fluid mediums" loading="lazy" alt="<?php the_title_attribute(); ?>">
+                                </div>
+                                <div class=" col-lg-6">
                                     <p><?php echo excerpt('31'); ?></p>
                                     <a class="btn-leer-mas" href="<?php the_permalink(); ?>">
                                         Leer completo

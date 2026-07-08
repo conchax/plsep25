@@ -274,3 +274,17 @@ function clean_classic_elementor_styles() {
     wp_deregister_style('classic-theme-styles');
 }
 
+/* nuemva medita de imagen para los boletines del home y solo paralas imagenes destacadas*/
+
+add_image_size( 'mi-imagen-destacada', 472, 246 );
+
+
+/* función para seleccional aimagen destacada y la escale */
+function registrar_tamano_destacada( $sizes ) {
+    return array_merge( $sizes, array(
+        'mi-imagen-destacada' => __( 'Mi Imagen Destacada' ),
+    ) );
+}
+add_filter( 'image_size_names_choose', 'registrar_tamano_destacada' );
+
+
