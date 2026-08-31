@@ -288,3 +288,13 @@ function registrar_tamano_destacada( $sizes ) {
 add_filter( 'image_size_names_choose', 'registrar_tamano_destacada' );
 
 
+// Agregar esto en functions.php
+function cambiar_cantidad_resultados_busqueda( $query ) {
+    if ( ! is_admin() && $query->is_main_query() && $query->is_search() ) {
+        $query->set( 'posts_per_page', 20 );
+    }
+}
+add_action( 'pre_get_posts', 'cambiar_cantidad_resultados_busqueda' );
+
+
+

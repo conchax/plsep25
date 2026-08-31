@@ -48,10 +48,26 @@ $query = new WP_Query($args);  */ ?>
   <div class="row align-items-center">
 
     <?php
-    $cat = get_query_var('cat');
+    /* $cat = get_query_var('cat');
     $category = get_category($cat);
-    echo do_shortcode('[ajax_load_more seo="true" category="' . $category->slug . '" posts_per_page="12" post_status="publish" post_type="post" has_password="false"]');
+    echo do_shortcode('[ajax_load_more seo="true" category="' . $category->slug . '" posts_per_page="12" post_status="publish" post_type="post" has_password="false" cache="false"]'); */
     ?>
+
+
+<?php 
+$queried_object = get_queried_object(); 
+
+if ( $queried_object && isset($queried_object->slug) ) {
+    $category_slug = $queried_object->slug;
+    
+    // Forzamos "false" en SEO para evitar el bloqueo estricto del WebKit de iOS
+    echo do_shortcode('[ajax_load_more seo="false" button_label="Cargar más" scroll="false" category="' . $category_slug . '" posts_per_page="12" post_status="publish" post_type="post" has_password="false" cache="false"]'); 
+} else {
+    echo do_shortcode('[ajax_load_more seo="false" button_label="Cargar más" scroll="false" posts_per_page="12" post_status="publish" post_type="post" has_password="false" cache="false"]');
+}
+?>
+
+
   </div>
 </div>
 

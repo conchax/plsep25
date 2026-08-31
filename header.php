@@ -132,8 +132,8 @@ if (!defined('ABSPATH'))
   
       <div class="menu-footer">
         <div class="container-links">
-          <a class="aside-anchor" href="<?php echo SITE_URL ?>/mapa-del-sitio/">Mapa de sitio</a> <a class="aside-anchor"
-            type="button" data-bs-toggle="modal" data-bs-target="#mesa-servicio">Mesa de servicio</a> <a
+          <a class="aside-anchor" href="<?php echo SITE_URL ?>/mapa-del-sitio/">Mapa de sitio</a> 
+          <a href="https://prepaenlinea.sep.gob.mx/mesadeservicio/" target="_blank" class="aside-anchor">Mesa de servicio</a> <a
             class="aside-anchor" href="<?php echo SITE_URL ?>/transparencia/">Transparencia</a>
         </div>
         <hr class="line-menu-over">
