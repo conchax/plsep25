@@ -167,7 +167,6 @@
     /* SECCIÓN GENERAL */
 .nem-section {
   padding: 2rem 0;
-  font-family: 'Noto Sans-Serif', sans-serif;
 }
 
 /* SUBTÍTULO */
