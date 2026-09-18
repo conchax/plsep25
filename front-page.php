@@ -23,6 +23,7 @@
  					}
  				});
  			</script>
+
  			<section class="identidad-palabras">
  				<div class="container">
  					<div class="row ">
@@ -39,7 +40,7 @@
  				<!-- <video autoplay muted loop playsinline class="video-bg">
 				<source src="<?php // echo get_template_directory_uri(); 
 								?>/mp4/bg-video.mp4" type="video/mp4">
-			</video> -->
+				</video> -->
  				<div id="video-placeholder"></div>
  				<script>
  					document.addEventListener("DOMContentLoaded", function() {
@@ -438,6 +439,12 @@
  						<div class="col-12">
  							<div class="list">
 								<div class="list-item">
+ 									<a href="https://bidiban.sep.gob.mx/Home" target="_blank">
+ 										<img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/09/Banners_Campana_BIDIBAN_Septiembre-02.webp" loading="lazy" alt="BIDIBAN"
+ 											width="1296" height="279">
+									</a>
+								</div>
+								<div class="list-item">
  									<a href="https://dgb.sep.gob.mx/storage/recursos/PDF/yJVqptS2Fu-09C.05_Convocatoria_del_Proyecto_Voces_que_Inspiran_Transformacion.pdf" target="_blank">
  										<img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/09/09C.05_Convocatoria-Voces-que-Inspiran_Banner.webp" loading="lazy" alt="voces que inspirarn"
  											width="1296" height="279">
@@ -456,17 +463,17 @@
 									</a>
 								</div>
  								<div class=" list-item">
- 										<a href="https://abcdelasemociones.sep.gob.mx/" target="_blank">
- 											<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-6.webp" loading="lazy" alt="El ABC de las emociones salud mental para las y los jóvenes"
- 												width="1296" height="279">
+									<a href="https://abcdelasemociones.sep.gob.mx/" target="_blank">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-6.webp" loading="lazy" alt="El ABC de las emociones salud mental para las y los jóvenes"
+											width="1296" height="279">
 									</a>
 								</div>
 								<div class=" list-item">
- 											<a href="https://educacionmediasuperior.sep.gob.mx/SEMS_en_cifras.html"
- 												target="_blank">
- 												<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-1.webp" loading="lazy" alt="banner SEMS cifras"
- 													width="1296" height="279">
- 											</a>
+									<a href="https://educacionmediasuperior.sep.gob.mx/SEMS_en_cifras.html"
+										target="_blank">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-1.webp" loading="lazy" alt="banner SEMS cifras"
+											width="1296" height="279">
+									</a>
  								</div>
 
  								<div class="list-item">
@@ -493,7 +500,7 @@
  									<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/07/09C.05_Banners_certificado_RVOE_Aviso_VF-1.png" target="_blank">
  										<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-5.webp" loading="lazy" alt="Estudios oficiales RVOE"
  											width="1296" height="279"">
-								</a>
+									</a>
 							</div>
 						</div>
 
