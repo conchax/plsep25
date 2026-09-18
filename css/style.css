@@ -758,6 +758,9 @@ hr.verde {
 .list-item:nth-child(8) {
   transform: scale(0.80);
 }
+.list-item:nth-child(9) {
+  transform: scale(0.77);
+}
 
 .expanded .list-item:nth-child(1) {
   margin-bottom: 0;
@@ -770,7 +773,8 @@ hr.verde {
 .expanded .list-item:nth-child(5),
 .expanded .list-item:nth-child(6),
 .expanded .list-item:nth-child(7),
-.expanded .list-item:nth-child(8) {
+.expanded .list-item:nth-child(8),
+.expanded .list-item:nth-child(9) {
   margin-top: 0px;
   margin-bottom: 0;
   transform: scale(0.99);
@@ -779,7 +783,8 @@ hr.verde {
 .expanded .list-item:nth-child(5), 
 .expanded .list-item:nth-child(6),
 .expanded .list-item:nth-child(7),
-.expanded .list-item:nth-child(8) {
+.expanded .list-item:nth-child(8),
+.expanded .list-item:nth-child(9) {
   margin-top: 0px;
 }
 
@@ -848,7 +853,11 @@ hr.verde {
   z-index: 1;
 }
 .list-item:nth-child(8) {
-  view-transition-name: list-item-7;
+  view-transition-name: list-item-8;
+  z-index: 0;
+}
+.list-item:nth-child(9) {
+  view-transition-name: list-item-9;
   z-index: 0;
 }
 .show-hide-btn {

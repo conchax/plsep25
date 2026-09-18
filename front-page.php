@@ -438,8 +438,14 @@
  						<div class="col-12">
  							<div class="list">
 								<div class="list-item">
- 									<a href="#" >
- 										<img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/08/Banner-Escritorio_-Segundo-Informe-scaled.webp" loading="lazy" alt="SIDAT"
+ 									<a href="https://dgb.sep.gob.mx/storage/recursos/PDF/yJVqptS2Fu-09C.05_Convocatoria_del_Proyecto_Voces_que_Inspiran_Transformacion.pdf" target="_blank">
+ 										<img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/09/09C.05_Convocatoria-Voces-que-Inspiran_Banner.webp" loading="lazy" alt="voces que inspirarn"
+ 											width="1296" height="279">
+									</a>
+								</div>
+								<div class="list-item">
+ 									<a href="https://www.segundoinformedegobierno.gob.mx/" target="_blank">
+ 										<img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/08/Banner-Escritorio_-Segundo-Informe-scaled.webp" loading="lazy" alt="segundo informe de gobierno"
  											width="1296" height="279">
 									</a>
 								</div>
