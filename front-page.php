@@ -456,36 +456,17 @@
  											width="1296" height="279">
 									</a>
 								</div>
- 								<div class="list-item">
- 									<a href="https://sidat.dgb.sep.gob.mx/" target="_blank">
- 										<img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/07/Banner_sidat.webp" loading="lazy" alt="SIDAT"
- 											width="1296" height="279">
-									</a>
-								</div>
+ 								
  								<div class=" list-item">
 									<a href="https://abcdelasemociones.sep.gob.mx/" target="_blank">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-6.webp" loading="lazy" alt="El ABC de las emociones salud mental para las y los jóvenes"
 											width="1296" height="279">
 									</a>
 								</div>
-								<div class=" list-item">
-									<a href="https://educacionmediasuperior.sep.gob.mx/SEMS_en_cifras.html"
-										target="_blank">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-1.webp" loading="lazy" alt="banner SEMS cifras"
-											width="1296" height="279">
-									</a>
- 								</div>
-
+								
  								<div class="list-item">
  									<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/01/carteles-descrimincacion.pdf" target="_blank">
  										<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-2.webp" loading="lazy" alt="te descriminaron DENUNCIA"
- 											width="1296" height="279">
- 									</a>
- 								</div>
-
- 								<div class="list-item">
- 									<a href="https://estrategiaenelaula.sep.gob.mx/" target="_blank">
- 										<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-3.webp" loading="lazy" alt="Te drogas te dañas"
  											width="1296" height="279">
  									</a>
  								</div>
@@ -499,7 +480,7 @@
  								<div class="list-item">
  									<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2025/07/09C.05_Banners_certificado_RVOE_Aviso_VF-1.png" target="_blank">
  										<img src="<?php echo get_template_directory_uri(); ?>/img/banners-h-5.webp" loading="lazy" alt="Estudios oficiales RVOE"
- 											width="1296" height="279"">
+ 											width="1296" height="279">
 									</a>
 							</div>
 						</div>
