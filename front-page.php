@@ -94,8 +94,7 @@
  						</div>
  						<div class="col-xl-3 col-lg-6 mt-5 m-lg-0">
  							<div class="text-center border-boletin ">
- 								<div class="pro" style="top:-28px;"><img src="<?php echo get_template_directory_uri(); ?>/img/tag-prox.png" alt="proximamente"></div> <!-- borrar -->
- 								<a class="btn btn-icono disabled " href="#" target="_blank">
+ 								<a class="btn btn-icono" href="https://prepaenlinea.sep.gob.mx/proyecta360/" target="_blank">
  									<svg width="226" height="29">
  										<use xlink:href="<?php echo get_template_directory_uri(); ?>/img/servicios.svg#proyecta"></use>
  									</svg>
