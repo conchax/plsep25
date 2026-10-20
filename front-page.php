@@ -36,7 +36,7 @@
  				</div>
  			</section>
 
- 			<section class="hero-container">
+ 			<section class="hero-container d-none">
  				<!-- <video autoplay muted loop playsinline class="video-bg">
 				<source src="<?php // echo get_template_directory_uri(); 
 								?>/mp4/bg-video.mp4" type="video/mp4">
@@ -47,7 +47,7 @@
  						setTimeout(function() {
  							var placeholder = document.getElementById('video-placeholder');
  							placeholder.innerHTML = '<video autoplay muted loop playsinline class="video-bg"><source src="<?php echo get_template_directory_uri(); ?>/mp4/bg-video.mp4" type="video/mp4"></video>';
- 						}, 5000); // 5000 milisegundos = 5 segundos
+ 						}, 5000); 
  					});
  				</script>
  				<div class="overlay"></div>
