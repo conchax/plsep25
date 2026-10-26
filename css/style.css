@@ -756,7 +756,7 @@ hr.verde {
   transform: scale(0.83);
 }
 .list-item:nth-child(8) {
- 
+  margin-bottom: -21%;
   transform: scale(0.80);
 }
 .list-item:nth-child(9) {

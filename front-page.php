@@ -438,6 +438,12 @@
  						<div class="col-12">
  							<div class="list">
 								<div class="list-item">
+ 									<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/10/09C.05_Cartel-ganadores_Voces-que-Inspiran.pdf" target="_blank">
+ 										<img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/10/09C.05_Cartel-ganadores_Voces-que-Inspiran_Banner.webp" loading="lazy" alt="Concurso de calaveras literarias"
+ 											width="1296" height="279">
+									</a>
+								</div>
+								<div class="list-item">
  									<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/09/09C.04_Convocatoria_Concurso.pdf" target="_blank">
  										<img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/09/Banner_CCL_2026.webp" loading="lazy" alt="Concurso de calaveras literarias"
  											width="1296" height="279">
