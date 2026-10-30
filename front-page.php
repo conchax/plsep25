@@ -438,17 +438,17 @@
  						<div class="col-12">
  							<div class="list">
 								<div class="list-item">
- 									<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/10/09C.05_Cartel-ganadores_Voces-que-Inspiran.pdf" target="_blank">
- 										<img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/10/09C.05_Cartel-ganadores_Voces-que-Inspiran_Banner.webp" loading="lazy" alt="Concurso de calaveras literarias"
+ 									<a href="https://prepaenlinea.sep.gob.mx/nos-emociona-presentar-a-las-personas-ganadoras-de-este-ano/" target="_blank">
+ 										<img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/10/Resultados_CCL_2026_Banner.webp" loading="lazy" alt="Concurso de calaveras literarias"
  											width="1296" height="279">
 									</a>
 								</div>
 								<div class="list-item">
- 									<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/09/09C.04_Convocatoria_Concurso.pdf" target="_blank">
- 										<img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/09/Banner_CCL_2026.webp" loading="lazy" alt="Concurso de calaveras literarias"
+ 									<a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/10/09C.05_Cartel-ganadores_Voces-que-Inspiran.pdf" target="_blank">
+ 										<img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/10/09C.05_Cartel-ganadores_Voces-que-Inspiran_Banner.webp" loading="lazy" alt="Concurso de calaveras literarias"
  											width="1296" height="279">
 									</a>
-								</div>
+								</div>								
 								<div class="list-item">
  									<a href="https://bidiban.sep.gob.mx/Home" target="_blank">
  										<img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/09/Banners_Campana_BIDIBAN_Septiembre-02.webp" loading="lazy" alt="BIDIBAN"
